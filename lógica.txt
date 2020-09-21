@@ -61,6 +61,16 @@ qtsTercoRezados = 44 - Primeiro Mistério
 qtsTercoRezados = 57 - Primeiro Mistério
 
 
+=================== projeto =============
+SplashScreenActivity
+IdiomaActivity
+OfercimentoActivity
+TercoActivity
+MistériosActivity
+AgradecimentoActivity
+SalveRainhaActivity
+CarpeDiemActivity
+CarpeDiemSuporteActivity
 
 
 
