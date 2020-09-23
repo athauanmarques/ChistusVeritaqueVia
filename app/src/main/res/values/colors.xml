@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#7E0000</color>
+    <color name="colorPrimaryDark">#3F0000</color>
+    <color name="colorAccent">#ffffff</color>
+    <!-- Layout Todos -->
+    <color name="fundo">#000000</color>
+    <color name="texto">#ffffff</color>
+
+    <!-- Layout Splash -->
+    <color name="letraInicio">#F8513E</color>
+
+    <!-- Layout Seleção idiomas -->
+    <color name="bntColorIdiomaPT">#000000</color>
+    <color name="bntColorIdiomaLT">#333333</color>
+
+
+
+
 </resources>

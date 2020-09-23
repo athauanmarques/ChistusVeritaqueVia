@@ -6,4 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Activity.MisteriosActivity">
 
+    <!--TODO fazer inteface mistério -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

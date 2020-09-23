@@ -1,3 +1,61 @@
 <resources>
     <string name="app_name">TercoChistusVeritaqueVia</string>
+
+    <!-- Splash -->
+    <string name="logoDescricao">Chistus Veritaque Via</string>
+
+    <!-- Seleção de idiomas -->
+    <string name="latim">Latim</string>
+    <string name="portugues">Português</string>
+
+    <!-- Opção tipo de Terço -->
+    <string name="lblDescricaoOpTerco">Deseja o acompanhamento do terço virtual?</string>
+    <string name="bntSim">sim</string>
+    <string name="bntNao">não</string>
+
+    <!-- Oferecimento -->
+    <string name="lblOferecimento">Oferecimento do Terço</string>
+    <string name="lblDescricaoOF">Divino Jesus, nós Vos oferecemos este terço que vamos rezar, meditando nos mistérios da Vossa Redenção. Concedei-nos, por intercessão da Virgem Maria, Mãe de Deus e nossa Mãe, as virtudes que nos são necessárias para bem rezá-lo e a graça de ganharmos as indulgências desta santa devoção.</string>
+    <string name="bntIniciarOF">Iniciar</string>
+
+    <!-- ========== Terço ================== -->
+    <string name="lblDicaTercoPosicao">Toque na tela para mudar a posição do terço</string>
+    <!-- Creio -->
+    <string name="lblCreioTitulo">Creio</string>
+    <string name="lblCreio">Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado. Desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na Santa Igreja Católica, na comunhão dos Santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém.</string>
+    <!-- Pai Nosso -->
+    <string name="lblPaiNossoTitulo">Pai Nosso</string>
+    <string name="lblPaiNosso">Pai-Nosso que estais nos céus, santificado seja vosso nome, venha a nós o vosso reino, seja feita a vossa vontade assim na terra como no céu. O pão nosso de cada dia nos dai hoje, perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido, e não nos deixeis cair em tentação, mas livrai-nos do mal.Amém.</string>
+    <!-- Ave Maria -->
+    <string name="lblAveMariaTitulo">Ave Maria</string>
+    <string name="lblAveMariao">Ave Maria, cheia de graça, o Senhor é convosco, bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora da nossa morte. Amém.</string>
+    <!-- Gloria -->
+    <string name="lblGloriaTitulo">Glória</string>
+    <string name="lblGloria">Glória ao Pai, ao Filho e ao Espírito Santo. Como era no princípio, agora e sempre. Amém</string>
+     <!-- Jaculatória -->
+    <string name="lblJaculatoriaTitulo">Jaculatória</string>
+    <string name="lblJaculatoria">Óh! meu Jesus, perdoai-nos, livrai-nos do fogo do inferno. Levai as almas todas para o céu e socorrei principalmente as que mais precisarem.</string>
+
+    <!-- ============================ -->
+
+    <!-- Títulos dos Mistérios -->
+    <string name="tituloMt1">1º Mistério</string>
+    <string name="tituloMt2">2º Mistério</string>
+    <string name="tituloMt3">3º Mistério</string>
+    <string name="tituloMt4">4º Mistério</string>
+    <string name="tituloMt5">5º Mistério</string>
+
+    <!-- subtítulos e descrição dos Mistérios Segunda e Sábados-->
+    <string name="subTituloMt1_Seg">Anunciação – O anjo anuncia a Maria que ela Será Mãe do Filho de DEUS - O SIM..</string>
+    <string name="descricaoMt1_Seg">Contemplamos a anunciação do anjo Gabriel à Nossa Senhora e a encarnação do verbo de Deus em seu ventre. "Eis aqui a serva do Senhor, faça-se em mim segundo a vossa palavra" - aqui vemos em Maria o despojamento, a humildade, o amor a Deus e a entrega de si mesma. Meditação: Hoje o Senhor nos chama dar o sim para Jesus; nascer em nosso coração em nossa vida, dar sentido à nossa vida terrena e acolher o plano de Deus para nossa salvação.</string>
+    <string name="subTituloMt2_Seg">MARIA visita sua prima Izabel idosa que estava grávida de João Batista - Anunciando a boa-nova..</string>
+    <string name="descricaoMt2_Seg">Contemplamos a visitação de Nossa Senhora à Santa Isabel. "E partindo às pressas foi às montanhas ficar com sua prima que já de idade avançada estava grávida".... Isabel a saúda: Tu és bendita.. como posso merecer que a MÃE do meu Senhor venha me visitar, quando adentrastes pela porta a criança saltou em meu ventre. Maria responde: "Minha Alma glorifica o Senhor... Meu espírito exulta em Deus Meu Salvador!" A humildade e a entrega de si mesma em favor dos mais necessitados; hoje Deus nos chama a trabalhar em sua vinha, sair de nosso conforto e procurar os que estão necessitados; não só de pão, mas de amor, apoio e do conhecimento da palavra do Senhor.</string>
+    <string name="subTituloMt3_Seg">Jesus nasce em uma gruta, em belém</string>
+    <string name="descricaoMt3_Seg">Contemplamos o nascimento de Nosso Senhor Jesus Cristo em Belém. Um Deus tão grande e poderoso vem até nós... o verbo de Deus se faz carne, sai da sua divindade e se torna um pobre mortal semelhante a nós em tudo, menos no pecado. Jesus nos mostra que nada que temos ou possuímos, nesse mundo importa, comparado àquilo que há de vir... o mais importante: a vida eterna. O orgulho de um anjo que queria ser Deus gerou o pecado. E o salário do pecado é a morte... ...a humildade é a chave de toda a nossa salvação, a pureza de coração, a entrega sincera a Deus é a obediência, e o salário da obediência é a vida eterna. Pois todo aquele que crer em mim mesmo que morra eu o ressuscitarei.</string>
+    <string name="subTituloMt4_Seg">Apresentação de JESUS ao Templo</string>
+    <string name="descricaoMt4_Seg">Contemplamos a apresentação do Menino Jesus no Templo e a Purificação de Nossa Senhora. Uma espada de dor transpassará o vosso Coração. Apresentando o nosso coração ao Senhor para que ele faça a circuncisão e tire aquela pele que impede a ação do Espírito Santo em nossa vida. E mesmo que em nossa caminhada junto ao Senhor uma espada penetre nossa alma, possamos pela força de seu Espírito Santo ver a salvação que vem de Jesus</string>
+    <string name="subTituloMt5_Seg">A perda e o reencontro de JESUS em Jerusalém</string>
+    <string name="descricaoMt5_Seg">Contemplamos a perda e o reencontro de Jesus no templo de Jerusalém. Maria e José perderam Jesus ainda menino aos 12 anos em Jerusalém e após três dias de dor e sofrimento o encontram no templo no meio de doutores da lei ensinando a doutrina do Pai. A Escritura Sagrada, é o caminho para encontrarmos Jesus, quando nos perdemos ou desviamos desse caminho, a conseqüência é a dor o sofrimento. Na procura diária pela leitura, estudo e reflexão da Bíblia, podemos buscar o encontro ou o reencontro com Nosso Senhor e depois viver essas palavras e ensinamentos o quanto mais cedo. E, assim como Jesus, crescer na obediência e cuidar das coisas do Pai.</string>
+
+
 </resources>
