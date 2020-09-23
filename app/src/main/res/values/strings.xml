@@ -18,6 +18,13 @@
     <string name="lblDescricaoOF">Divino Jesus, nós Vos oferecemos este terço que vamos rezar, meditando nos mistérios da Vossa Redenção. Concedei-nos, por intercessão da Virgem Maria, Mãe de Deus e nossa Mãe, as virtudes que nos são necessárias para bem rezá-lo e a graça de ganharmos as indulgências desta santa devoção.</string>
     <string name="bntIniciarOF">Iniciar</string>
 
+    <!-- Agradecimento -->
+    <string name="lblAgradecimentoTitulo">Agradecimento do Terço</string>
+    <string name="AgradecimentoAnunciado">Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos agora e para sempre tomar-nos debaixo de vosso poderoso amparo e para mais vos suplicar vos saudamos com uma Salve Rainha....</string>
+
+    <!-- _____________________________________________________________________________________________________________________________________-->
+    <!-- _______________________________________________________VERSÃO PORTUGUÊS _____________________________________________________________-->
+    <!-- _____________________________________________________________________________________________________________________________________-->
     <!-- ========== Terço ================== -->
     <string name="lblDicaTercoPosicao">Toque na tela para mudar a posição do terço</string>
     <!-- Creio -->
@@ -36,8 +43,7 @@
     <string name="lblJaculatoriaTitulo">Jaculatória</string>
     <string name="lblJaculatoria">Óh! meu Jesus, perdoai-nos, livrai-nos do fogo do inferno. Levai as almas todas para o céu e socorrei principalmente as que mais precisarem.</string>
 
-    <!-- ============================ -->
-
+    <!-- ========== Mistérios ================== -->
     <!-- Títulos dos Mistérios -->
     <string name="tituloMt1">1º Mistério</string>
     <string name="tituloMt2">2º Mistério</string>
@@ -57,5 +63,17 @@
     <string name="subTituloMt5_Seg">A perda e o reencontro de JESUS em Jerusalém</string>
     <string name="descricaoMt5_Seg">Contemplamos a perda e o reencontro de Jesus no templo de Jerusalém. Maria e José perderam Jesus ainda menino aos 12 anos em Jerusalém e após três dias de dor e sofrimento o encontram no templo no meio de doutores da lei ensinando a doutrina do Pai. A Escritura Sagrada, é o caminho para encontrarmos Jesus, quando nos perdemos ou desviamos desse caminho, a conseqüência é a dor o sofrimento. Na procura diária pela leitura, estudo e reflexão da Bíblia, podemos buscar o encontro ou o reencontro com Nosso Senhor e depois viver essas palavras e ensinamentos o quanto mais cedo. E, assim como Jesus, crescer na obediência e cuidar das coisas do Pai.</string>
 
+    <!-- Botão dos Mistérios -->
+    <string name="bntMisterio">Terço</string>
 
+    <!-- Botão dos Agradecimento em Português -->
+    <string name="bntAgradecimentoPT">Salve Maria</string>
+
+
+
+
+    <!-- _____________________________________________________________________________________________________________________________________-->
+    <!-- _______________________________________________________VERSÃO LATIM _________________________________________________________________-->
+    <!-- _____________________________________________________________________________________________________________________________________-->
+    
 </resources>
