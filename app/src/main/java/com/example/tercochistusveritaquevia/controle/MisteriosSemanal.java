@@ -10,11 +10,15 @@ public class MisteriosSemanal extends ProgressoTerco {
     private String subTituloMt;
     private String descricaoMt;
 
-    public String misterioSemanaExibir() {
-
+    public int diaHoje(){
         Calendar cal = Calendar.getInstance();
         int diaHoje = cal.get(DAY_OF_WEEK);
-        switch (diaHoje) {
+        return  diaHoje;
+    }
+
+    public String misterioSemanaExibir() {
+
+        switch (diaHoje()) {
             case 2:
             case 7:
                 this.msgMisterioDia = "Oração de hoje: Mistérios da Alegria";
@@ -31,7 +35,7 @@ public class MisteriosSemanal extends ProgressoTerco {
                 this.msgMisterioDia = "Oração de hoje: Mistérios da Luz";
                 break;
             default:
-                throw new IllegalStateException("Unexpected value: " + diaHoje);
+                throw new IllegalStateException("Unexpected value: " + diaHoje());
         }
         return getMsgMisterioDia();
 

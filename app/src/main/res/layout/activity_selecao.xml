@@ -14,12 +14,12 @@
         android:background="@color/bntColorIdiomaLT"
         android:text="@string/latim"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/bntPortugues"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/bntPortugues"
         android:layout_width="0dp"
         android:layout_height="300dp"
         android:background="@color/colorPrimary"

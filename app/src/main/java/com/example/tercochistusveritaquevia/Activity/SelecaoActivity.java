@@ -5,16 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tercochistusveritaquevia.R;
 import com.example.tercochistusveritaquevia.controle.MisteriosSemanal;
-
-import java.text.DateFormatSymbols;
-import java.util.Calendar;
-
-import static java.util.Calendar.DAY_OF_WEEK;
 
 public class SelecaoActivity extends AppCompatActivity {
     @Override
@@ -31,7 +25,7 @@ public class SelecaoActivity extends AppCompatActivity {
 
     }
     public void abrirTercoPortugues(View view){
-        Intent tercoOferencimento = new Intent(this, OfercimentoActivity.class);
+        Intent tercoOferencimento = new Intent(this, OferecimentoActivity.class);
         startActivity(tercoOferencimento);
     }
 

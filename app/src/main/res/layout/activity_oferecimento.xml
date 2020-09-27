@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="fill"
     android:foregroundGravity="fill"
-    tools:context=".Activity.OfercimentoActivity">
+    tools:context=".Activity.OferecimentoActivity">
 
     <TextView
         android:id="@+id/textView2"
@@ -29,13 +29,13 @@
         android:gravity="center|center_horizontal|center_vertical"
         android:text="@string/lblDescricaoOF"
         app:autoSizeTextType="none"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/bntIniciar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/bntIniciar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -45,6 +45,7 @@
         android:layout_marginRight="32dp"
         android:layout_marginBottom="32dp"
         android:background="@color/colorPrimary"
+        android:onClick="iniciarCreio"
         android:text="@string/bntIniciarOF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
