@@ -4,14 +4,15 @@
     <!-- Splash -->
     <string name="logoDescricao">Chistus Veritaque Via</string>
 
-    <!-- Seleção de idiomas -->
+    <!-- Seleção  -->
     <string name="latim">Latim</string>
     <string name="portugues">Português</string>
-
-    <!-- Opção tipo de Terço -->
-    <string name="lblDescricaoOpTerco">Deseja o acompanhamento do terço virtual?</string>
-    <string name="bntSim">sim</string>
-    <string name="bntNao">não</string>
+    <string name="lblOpcoesTitulo">Opções</string>
+    <string name="lblOpcoesSubTitulo">Selecione o tipo de acompanhamento do Terço e a linguagem das orações</string>
+    <string name="lblVirtualTitulo">Terço Virtual</string>
+    <string name="lblSim">Sim</string>
+    <string name="lblNao">Não</string>
+    <string name="lblIdiomaTitulo">Selecione idioma</string>
 
     <!-- Oferecimento -->
     <string name="lblOferecimento">Oferecimento do Terço</string>
@@ -21,6 +22,14 @@
     <!-- Agradecimento -->
     <string name="lblAgradecimentoTitulo">Agradecimento do Terço</string>
     <string name="AgradecimentoAnunciado">Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos agora e para sempre tomar-nos debaixo de vosso poderoso amparo e para mais vos suplicar vos saudamos com uma Salve Rainha....</string>
+    <!-- Agradecimento -->
+    <string name="lblCarpeDiem">Carpe Diem</string>
+    <string name="lblCarpeDiemDesc1">Se estiver com alguma dúvida, sugestão ou critíticas. Por gentileza nos comunique atravez do link:</string>
+    <string name="lblCarpeDiemDesc2">Não se esquece nos avaliar no Google Store.</string>
+    <string name="lblCarpeDiemDesc3">DEUS VULT!</string>
+    <string name="lblCarpeDiemDesc4">Non nobis, Domine, non nobis, sed nomini Tuo da gloriam</string>
+    <string name="bntAvaliar">Avaliar</string>
+    <string name="bntInicio">Voltar ao início</string>
 
     <!-- _____________________________________________________________________________________________________________________________________-->
     <!-- _______________________________________________________VERSÃO PORTUGUÊS _____________________________________________________________-->
@@ -42,7 +51,10 @@
      <!-- Jaculatória -->
     <string name="lblJaculatoriaTitulo">Jaculatória</string>
     <string name="lblJaculatoria">Óh! meu Jesus, perdoai-nos, livrai-nos do fogo do inferno. Levai as almas todas para o céu e socorrei principalmente as que mais precisarem.</string>
-
+     <!-- Salve Rainha -->
+    <string name="lblSalveRainhaTitulo">Salve Rainha</string>
+    <string name="lblSalveRainhaOracao">Contemplamos a flagelação de Nosso Senhor. O sofrimento – a humilhação o escárnio- a violência de um inocente. Toda essa humilhação e dor por cada um de nós, pecadores. O amor que sente por cada ser humano é impossível de se imaginar. E todas as vezes que pecamos e ofendemos um irmão estamos sendo os carrascos que torturaram Jesus.</string>
+    <string name="bntSalveRainha">Carpe Diem</string>
     <!-- ========== Mistérios ================== -->
     <!-- Títulos dos Mistérios -->
     <string name="tituloMt1">1º Mistério</string>
@@ -68,6 +80,7 @@
 
     <!-- Botão dos Agradecimento em Português -->
     <string name="bntAgradecimentoPT">Salve Maria</string>
+
 
 
 

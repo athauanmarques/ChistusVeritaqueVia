@@ -9,16 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.SelecaoTercoActivity"></activity>
         <activity android:name=".Activity.CarpeDiemSuporteActivity" />
         <activity android:name=".Activity.CarpeDiemActivity" />
         <activity android:name=".Activity.SalveRainhaActivity" />
         <activity android:name=".Activity.AgradecimentoActivity" />
         <activity android:name=".Activity.MisteriosActivity" />
-        <activity android:name=".Activity.SplashScreenActivity" />
+        <activity android:name=".Activity.TercoActivity" />
         <activity android:name=".Activity.OfercimentoActivity" />
-        <activity android:name=".Activity.IdiomaActivity" /> <!-- <activity android:name=".Activity.SplashScreenActivity" /> -->
-        <activity android:name=".Activity.TercoActivity">
+        <activity android:name=".Activity.SelecaoActivity" /> <!-- <activity android:name=".Activity.SplashScreenActivity" /> -->
+        <activity android:name=".Activity.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
