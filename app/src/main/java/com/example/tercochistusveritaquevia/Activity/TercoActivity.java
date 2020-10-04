@@ -1,62 +1,83 @@
 package com.example.tercochistusveritaquevia.Activity;
 
 import androidx.annotation.DrawableRes;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.tercochistusveritaquevia.R;
 import com.example.tercochistusveritaquevia.controle.ProgressoTerco;
 
+import static android.widget.Toast.*;
+import static com.example.tercochistusveritaquevia.R.*;
+import static com.example.tercochistusveritaquevia.R.drawable.logosplash;
+
 public class TercoActivity extends AppCompatActivity {
 
     ProgressoTerco terco = new ProgressoTerco();
 
-    private ImageView tercoImagem;
+    private ImageView imgTerco;
 
-    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_terco);
+        setContentView(layout.activity_terco);
 
-        @SuppressLint("UseCompatLoadingForDrawables") final Drawable img1 = getResources().getDrawable(R.drawable.p1);
-        @SuppressLint("UseCompatLoadingForDrawables") final Drawable img2 = getResources().getDrawable(R.drawable.p2);
-        @SuppressLint("UseCompatLoadingForDrawables") final Drawable img3 = getResources().getDrawable(R.drawable.p3);
-        @SuppressLint("UseCompatLoadingForDrawables") final Drawable img4 = getResources().getDrawable(R.drawable.p4);
-        @SuppressLint("UseCompatLoadingForDrawables") final Drawable img5 = getResources().getDrawable(R.drawable.p5);
+        imgTerco = findViewById(R.id.imgTerco);
+        int qtsOracaoes = terco.getContador();
 
-        tercoImagem = findViewById(R.id.imgProgresso);
-
-        tercoImagem.setOnTouchListener(new View.OnTouchListener() {
+        imgTerco.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                int qtsOracaoes = terco.verificarTerco();
+            public void onClick(View v) {
 
-                if (qtsOracaoes == 1){
-                    tercoImagem.setImageDrawable(img1);
-                } else if(qtsOracaoes == 2) {
-                    tercoImagem.setImageDrawable(img2);
-                } else if(qtsOracaoes == 3) {
-                    tercoImagem.setImageDrawable(img3);
-                } else if(qtsOracaoes == 4){
-                    tercoImagem.setImageDrawable(img4);
-                } else if(qtsOracaoes == 5){
-                    tercoImagem.setImageDrawable(img5);
-                }
-
-                return true;
+                executarTerco(terco.contarTerco());
             }
         });
 
-
     }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        setContentView(layout.activity_terco);
+
+        imgTerco = findViewById(R.id.imgTerco);
+
+        imgTerco.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                executarTerco(terco.contarTerco());
+
+            }
+        });
+    }
+
+
+    public void executarTerco(int contadorAtual){
+                if(contadorAtual == 1 || contadorAtual == 0) {
+                    imgTerco.setImageResource(drawable.p2);
+                } else if(contadorAtual == 2) {
+                    imgTerco.setImageResource(drawable.p3);
+                } else if(contadorAtual == 3){
+                    imgTerco.setImageResource(R.drawable.p4);
+                } else if(contadorAtual == 4){
+                    imgTerco.setImageResource(drawable.p5);
+                }
+    }
+
+
+
 
 
 }
