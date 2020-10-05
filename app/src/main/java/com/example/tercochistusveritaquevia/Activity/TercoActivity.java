@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,9 +14,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.tercochistusveritaquevia.R;
+import com.example.tercochistusveritaquevia.controle.MisteriosSemanal;
 import com.example.tercochistusveritaquevia.controle.ProgressoTerco;
 
 import static android.widget.Toast.*;
@@ -27,56 +30,67 @@ public class TercoActivity extends AppCompatActivity {
     ProgressoTerco terco = new ProgressoTerco();
 
     private ImageView imgTerco;
+    private Button bntTercoMT;
+    private TextView txtTitulo, txtOracao;
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_terco);
 
         imgTerco = findViewById(R.id.imgTerco);
-        int qtsOracaoes = terco.getContador();
+        bntTercoMT = findViewById(R.id.bntMisterio);
+        txtTitulo = findViewById(id.txtTituloOracao);
+        txtOracao = findViewById(id.txtOracao);
 
-        imgTerco.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                executarTerco(terco.contarTerco());
-            }
-        });
-
+        controleExibicao();
     }
 
+    @SuppressLint("WrongConstant")
     @Override
     protected void onRestart() {
         super.onRestart();
         setContentView(layout.activity_terco);
 
         imgTerco = findViewById(R.id.imgTerco);
+        bntTercoMT = findViewById(id.bntMisterio);
+        txtTitulo = findViewById(id.txtTituloOracao);
+        txtOracao = findViewById(id.txtOracao);
 
+        controleExibicao();
+
+    }
+
+    public void controleExibicao(){
         imgTerco.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("WrongConstant")
             @Override
             public void onClick(View v) {
+                atualizarTexto();
+            }
+        });
 
-                executarTerco(terco.contarTerco());
-
+        bntTercoMT.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent irMisterio = new Intent(TercoActivity.this, MisteriosActivity.class);
+                startActivity(irMisterio);
             }
         });
     }
 
 
-    public void executarTerco(int contadorAtual){
-                if(contadorAtual == 1 || contadorAtual == 0) {
-                    imgTerco.setImageResource(drawable.p2);
-                } else if(contadorAtual == 2) {
-                    imgTerco.setImageResource(drawable.p3);
-                } else if(contadorAtual == 3){
-                    imgTerco.setImageResource(R.drawable.p4);
-                } else if(contadorAtual == 4){
-                    imgTerco.setImageResource(drawable.p5);
-                }
+    @SuppressLint("WrongConstant")
+    public void atualizarTexto(){
+        terco.contarTerco();
+        txtTitulo.setText(terco.getTituloTC());
+        imgTerco.setImageResource(terco.getImgTC());
+        txtOracao.setText(terco.getOracaoTC());
+        if(terco.getExibirBotao()!=2){
+            bntTercoMT.setVisibility(0);
+        }
     }
-
-
 
 
 

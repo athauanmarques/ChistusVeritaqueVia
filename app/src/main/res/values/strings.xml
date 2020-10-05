@@ -24,7 +24,7 @@
     <string name="AgradecimentoAnunciado">Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos agora e para sempre tomar-nos debaixo de vosso poderoso amparo e para mais vos suplicar vos saudamos com uma Salve Rainha....</string>
     <!-- Agradecimento -->
     <string name="lblCarpeDiem">Carpe Diem</string>
-    <string name="lblCarpeDiemDesc1">Se estiver com alguma dúvida, sugestão ou critíticas. Por gentileza nos comunique atravez do link:</string>
+    <string name="lblCarpeDiemDesc1">Se estiver com alguma dúvida, sugestão ou critícas. Por gentileza nos comunique atravez do link:</string>
     <string name="lblCarpeDiemDesc2">Não se esquece nos avaliar no Google Store.</string>
     <string name="lblCarpeDiemDesc3">DEUS VULT!</string>
     <string name="lblCarpeDiemDesc4">Non nobis, Domine, non nobis, sed nomini Tuo da gloriam</string>
@@ -44,7 +44,7 @@
     <string name="lblPaiNosso">Pai-Nosso que estais nos céus, santificado seja vosso nome, venha a nós o vosso reino, seja feita a vossa vontade assim na terra como no céu. O pão nosso de cada dia nos dai hoje, perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido, e não nos deixeis cair em tentação, mas livrai-nos do mal.Amém.</string>
     <!-- Ave Maria -->
     <string name="lblAveMariaTitulo">Ave Maria</string>
-    <string name="lblAveMariao">Ave Maria, cheia de graça, o Senhor é convosco, bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora da nossa morte. Amém.</string>
+    <string name="lblAveMaria">Ave Maria, cheia de graça, o Senhor é convosco, bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora da nossa morte. Amém.</string>
     <!-- Gloria -->
     <string name="lblGloriaTitulo">Glória</string>
     <string name="lblGloria">Glória ao Pai, ao Filho e ao Espírito Santo. Como era no princípio, agora e sempre. Amém</string>

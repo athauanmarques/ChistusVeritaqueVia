@@ -7,7 +7,7 @@
     tools:context=".Activity.MisteriosActivity">
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/bntVoltarTerco"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="55dp"
@@ -20,23 +20,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricaoMT" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/txtTituloMT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="@string/tituloMt1"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintBottom_toTopOf="@+id/txtSubTituloMT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/txtSubTituloMT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -45,13 +45,13 @@
         android:text="@string/subTituloMt1_Seg"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/imgMisterio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloMT" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/txtDescricaoMT"
         android:layout_width="388dp"
         android:layout_height="145dp"
         android:layout_marginStart="16dp"
@@ -59,13 +59,13 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/descricaoMt1_Seg"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/bntVoltarTerco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imgMisterio" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgMisterio"
         android:layout_width="281dp"
         android:layout_height="321dp"
         android:layout_marginStart="55dp"
@@ -73,9 +73,9 @@
         android:layout_marginEnd="55dp"
         android:layout_marginRight="55dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintBottom_toTopOf="@+id/txtDescricaoMT"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubTituloMT"
         app:srcCompat="@drawable/segmt1" />
 </androidx.constraintlayout.widget.ConstraintLayout>

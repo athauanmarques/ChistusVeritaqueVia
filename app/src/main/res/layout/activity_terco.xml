@@ -7,36 +7,39 @@
     tools:context=".Activity.TercoActivity">
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txtTituloOracao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:text="@string/lblCreioTitulo"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toTopOf="@+id/imgTerco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32999998"
-        app:layout_constraintVertical_chainStyle="packed"
-        tools:layout_editor_absoluteX="166dp" />
+        app:layout_constraintVertical_bias="0.29000002"
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/txtOracao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
         android:text="@string/lblCreio"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintBottom_toTopOf="@+id/bntMisterio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <ImageView
         android:id="@+id/imgTerco"
         android:layout_width="236dp"
         android:layout_height="347dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:srcCompat="@drawable/p1"
-        tools:layout_editor_absoluteX="88dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloOracao"
+        app:srcCompat="@drawable/p0" />
 
     <TextView
         android:id="@+id/textView6"
@@ -45,8 +48,21 @@
         android:layout_marginBottom="16dp"
         android:text="@string/lblDicaTercoPosicao"
         android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/imgTerco"
-        tools:layout_editor_absoluteX="93dp" />
+        app:layout_constraintBottom_toTopOf="@+id/txtOracao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTerco" />
+
+    <Button
+        android:id="@+id/bntMisterio"
+        android:layout_width="177dp"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+        android:text="1º Mistério"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOracao" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
