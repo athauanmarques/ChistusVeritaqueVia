@@ -10,8 +10,12 @@ public class ProgressoTerco{
 
     public int contarTerco(){
         
-        if(getContador() >= 0){
+        if(getPosicaoTercoAtual() >= 0 && getPosicaoTercoAtual() < 5){
             setContador(1);
+            setPosicaoTercoAtual(getContador());
+            executarTerco();
+        } else if(getPosicaoTercoAtual() >= 5){
+            setContador(6);
             setPosicaoTercoAtual(getContador());
             executarTerco();
         }
