@@ -5,20 +5,15 @@ import com.example.tercochistusveritaquevia.R;
 public class ProgressoTerco{
     private static int posicaoTercoAtual;
     private static boolean tercoVirtual;
-    private int contador = 0, tituloTC, imgTC, oracaoTC, exibirBotao;
+    private int contador = 0, tituloTC, imgTC, subTituloTC, oracaoTC, exibirBotao;
 
 
     public int contarTerco(){
-        
-        if(getPosicaoTercoAtual() >= 0 && getPosicaoTercoAtual() < 5){
+
             setContador(1);
             setPosicaoTercoAtual(getContador());
             executarTerco();
-        } else if(getPosicaoTercoAtual() >= 5){
-            setContador(6);
-            setPosicaoTercoAtual(getContador());
-            executarTerco();
-        }
+
         return getContador();
         
     }
@@ -26,6 +21,7 @@ public class ProgressoTerco{
     public void executarTerco(){
         if(getPosicaoTercoAtual() == 1) {
             setTituloTC(R.string.lblPaiNossoTitulo);
+            setSubTituloTC(R.string.lblIncioSubTitulo);
             setImgTC(R.drawable.p1);
             setOracaoTC(R.string.lblPaiNosso);
             setExibirBotao(2);
@@ -41,7 +37,18 @@ public class ProgressoTerco{
             setTituloTC(R.string.lblGloriaTitulo);
             setImgTC(R.drawable.p5);
             setOracaoTC(R.string.lblGloria);
+        }
+        else if(getPosicaoTercoAtual() == 6){
+            setTituloTC(R.string.titulo1Mt);
+            setSubTituloTC(R.string.subTituloMt1Seg);
+            setImgTC(R.drawable.segmt1);
+            setOracaoTC(R.string.descricaoMt1Seg);
             setExibirBotao(0); //exibir
+        } if(getPosicaoTercoAtual() == 7) {
+            setTituloTC(R.string.lblPaiNossoTitulo);
+            setImgTC(R.drawable.p1);
+            setOracaoTC(R.string.lblPaiNosso);
+            setExibirBotao(2);
         }
     }
 
@@ -99,5 +106,13 @@ public class ProgressoTerco{
 
     public void setExibirBotao(int exibirBotao) {
         this.exibirBotao = exibirBotao;
+    }
+
+    public int getSubTituloTC() {
+        return subTituloTC;
+    }
+
+    public void setSubTituloTC(int subTituloTC) {
+        this.subTituloTC = subTituloTC;
     }
 }

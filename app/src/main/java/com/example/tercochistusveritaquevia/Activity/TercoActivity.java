@@ -31,7 +31,7 @@ public class TercoActivity extends AppCompatActivity {
 
     private ImageView imgTerco;
     private Button bntTercoMT;
-    private TextView txtTitulo, txtOracao;
+    private TextView txtTitulo, txtOracao, txtSub;
 
     @SuppressLint("WrongConstant")
     @Override
@@ -43,6 +43,7 @@ public class TercoActivity extends AppCompatActivity {
         bntTercoMT = findViewById(R.id.bntMisterio);
         txtTitulo = findViewById(id.txtTituloOracao);
         txtOracao = findViewById(id.txtOracao);
+        txtSub = findViewById(R.id.txtSub);
 
         controleExibicao();
     }
@@ -85,10 +86,12 @@ public class TercoActivity extends AppCompatActivity {
     public void atualizarTexto(){
         terco.contarTerco();
         txtTitulo.setText(terco.getTituloTC());
+        txtSub.setText(terco.getSubTituloTC());
         imgTerco.setImageResource(terco.getImgTC());
         txtOracao.setText(terco.getOracaoTC());
         if(terco.getExibirBotao()!=2){
             bntTercoMT.setVisibility(0);
+            txtSub.setVisibility(0);
         }
     }
 

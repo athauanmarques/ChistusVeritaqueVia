@@ -10,39 +10,40 @@
         android:id="@+id/txtTituloOracao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/lblCreioTitulo"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toTopOf="@+id/imgTerco"
+        app:layout_constraintBottom_toTopOf="@+id/txtSub"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29000002"
+        app:layout_constraintVertical_bias="0.13999999"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/txtOracao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/lblCreio"
         app:layout_constraintBottom_toTopOf="@+id/bntMisterio"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/txtAjuda" />
 
     <ImageView
         android:id="@+id/imgTerco"
         android:layout_width="236dp"
         android:layout_height="347dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintBottom_toTopOf="@+id/txtAjuda"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTituloOracao"
+        app:layout_constraintTop_toBottomOf="@+id/txtSub"
         app:srcCompat="@drawable/p0" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txtAjuda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -58,11 +59,23 @@
         android:layout_width="177dp"
         android:layout_height="48dp"
         android:background="@color/colorPrimary"
-        android:text="1º Mistério"
+        android:text="@string/bntMisterio"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtOracao" />
+
+    <TextView
+        android:id="@+id/txtSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/lblIncioSubTitulo"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/imgTerco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloOracao" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
