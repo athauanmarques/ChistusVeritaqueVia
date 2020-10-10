@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.tercochistusveritaquevia.R;
-import com.example.tercochistusveritaquevia.controle.MisteriosSemanal;
+import com.example.tercochistusveritaquevia.controle.ProgressoTerco;
 
 public class SelecaoActivity extends AppCompatActivity {
     @Override
@@ -17,7 +17,7 @@ public class SelecaoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selecao);
-        MisteriosSemanal dia = new MisteriosSemanal();
+        ProgressoTerco dia = new ProgressoTerco();
 
             Toast toast = Toast.makeText(this,  dia.misterioSemanaExibir(), Toast.LENGTH_LONG);
             toast.show();

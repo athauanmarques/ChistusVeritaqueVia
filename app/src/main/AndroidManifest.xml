@@ -13,7 +13,6 @@
         <activity android:name=".Activity.CarpeDiemActivity" />
         <activity android:name=".Activity.SalveRainhaActivity" />
         <activity android:name=".Activity.AgradecimentoActivity" />
-        <activity android:name=".Activity.MisteriosActivity" />
         <activity android:name=".Activity.TercoActivity" />
         <activity android:name=".Activity.OferecimentoActivity" />
         <activity android:name=".Activity.SelecaoActivity" /> <!-- <activity android:name=".Activity.SplashScreenActivity" /> -->
