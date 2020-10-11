@@ -20,7 +20,7 @@ import static com.example.tercochistusveritaquevia.R.string.titulo4Mt;
 import static com.example.tercochistusveritaquevia.R.string.titulo5Mt;
 
 public class AtribuirTexto extends ProgressoTerco {
-    private int titulo, img, subTitulo, oracao, exibirComponente = 2;
+    private int titulo, img, subTitulo, oracao, exibirComponente = 2, exibirBotao = 0;
     private String enderecoFoto;
 
     public void executarTerco(){
@@ -36,8 +36,8 @@ public class AtribuirTexto extends ProgressoTerco {
             setImg(R.drawable.p4);
         } else if(getPosicaoTercoAtual() == 5){
             fixarTexto(7);// Glória
-        } else if(getPosicaoTercoAtual() == 6){ //Primeiro Mistério
-            setExibirComponente(0); //exibir
+        } //Primeiro Mistério
+        else if(getPosicaoTercoAtual() == 6){
             atribuirMisterios(1);
         } else if(getPosicaoTercoAtual() == 7) {
             fixarTexto(1);// Pai Nosso
@@ -47,8 +47,8 @@ public class AtribuirTexto extends ProgressoTerco {
             fixarTexto(3);// Glória
         } else if(getPosicaoTercoAtual() == 19) {
             fixarTexto(4);// Jaculatoria
-        }else if(getPosicaoTercoAtual() == 20) { //Segundo Mistério
-            setExibirComponente(0); //exibir
+        }//Segundo Mistério
+        else if(getPosicaoTercoAtual() == 20) {
             atribuirMisterios(2);
         }else if(getPosicaoTercoAtual() == 21) {
             fixarTexto(1);
@@ -58,21 +58,44 @@ public class AtribuirTexto extends ProgressoTerco {
             fixarTexto(3);
         } else if(getPosicaoTercoAtual() == 33) {
             fixarTexto(4);
-        }/*
+        }  //Terceiro Mistério
         else if(getPosicaoTercoAtual() == 34) {
-            //Terceiro Mistério
-            setExibirComponente(0); //exibir
             atribuirMisterios(3);
-        }else if(getPosicaoTercoAtual() == 35) {
+        } else if(getPosicaoTercoAtual() == 35) {
             fixarTexto(1);
         } else if(getPosicaoTercoAtual() >= 36 && getPosicaoTercoAtual() <= 45) {
             fixarTexto(2);
-        }else if(getPosicaoTercoAtual() == 46) {
+        } else if(getPosicaoTercoAtual() == 46) {
             fixarTexto(3);
         } else if(getPosicaoTercoAtual() == 47) {
             fixarTexto(4);
+        } //Quarto Mistério
+        else if(getPosicaoTercoAtual() == 48) {
+            atribuirMisterios(4);
+        } else if(getPosicaoTercoAtual() == 49) {
+            fixarTexto(1);
+        } else if(getPosicaoTercoAtual() >= 50 && getPosicaoTercoAtual() <= 59) {
+            fixarTexto(2);
+        } else if(getPosicaoTercoAtual() == 60) {
+            fixarTexto(3);
+        } else if(getPosicaoTercoAtual() == 61) {
+            fixarTexto(4);
+        } //Quinto Mistério
+        else if(getPosicaoTercoAtual() == 62) {
+            atribuirMisterios(5);
+        } else if(getPosicaoTercoAtual() == 63) {
+            fixarTexto(1);
+        } else if(getPosicaoTercoAtual() >= 64 && getPosicaoTercoAtual() <= 73) {
+            fixarTexto(2);
+        } else if(getPosicaoTercoAtual() == 74) {
+            fixarTexto(3);
+        }//Agredecimentos
+        else if(getPosicaoTercoAtual() == 75) {
+            fixarTexto(4);
+            setExibirBotao(2);
         }
-*/
+
+
     }
 
     public void fixarTexto(int op){
@@ -135,7 +158,43 @@ public class AtribuirTexto extends ProgressoTerco {
             case 29: setImg(R.drawable.p24); break;
             case 30: setImg(R.drawable.p25); break;
             case 31: setImg(R.drawable.p26); break; //Gloria
-            case 32:  setImg(R.drawable.p27);break;
+            case 32: setImg(R.drawable.p27); break;
+            //Terceira Parte Terço
+            case 36: setImg(R.drawable.p28); break;
+            case 37: setImg(R.drawable.p29); break;
+            case 38: setImg(R.drawable.p30); break;
+            case 39: setImg(R.drawable.p31); break;
+            case 40: setImg(R.drawable.p32); break;
+            case 41: setImg(R.drawable.p33); break;
+            case 42: setImg(R.drawable.p34); break;
+            case 43: setImg(R.drawable.p35); break;
+            case 44: setImg(R.drawable.p36); break;
+            case 45: setImg(R.drawable.p37); break;
+            case 46: setImg(R.drawable.p38); break; //Gloria
+            //Quarta Parte Terço
+            case 50: setImg(R.drawable.p40); break;
+            case 51: setImg(R.drawable.p41); break;
+            case 52: setImg(R.drawable.p42); break;
+            case 53: setImg(R.drawable.p43); break;
+            case 54: setImg(R.drawable.p44); break;
+            case 55: setImg(R.drawable.p45); break;
+            case 56: setImg(R.drawable.p46); break;
+            case 57: setImg(R.drawable.p47); break;
+            case 58: setImg(R.drawable.p48); break;
+            case 59: setImg(R.drawable.p49); break;
+            case 60: setImg(R.drawable.p50); break; //Gloria
+            //Quinta Parte Terço
+            case 64: setImg(R.drawable.p51); break;
+            case 65: setImg(R.drawable.p52); break;
+            case 66: setImg(R.drawable.p53); break;
+            case 67: setImg(R.drawable.p54); break;
+            case 68: setImg(R.drawable.p55); break;
+            case 69: setImg(R.drawable.p56); break;
+            case 70: setImg(R.drawable.p57); break;
+            case 71: setImg(R.drawable.p58); break;
+            case 72: setImg(R.drawable.p59); break;
+            case 73: setImg(R.drawable.p60); break;
+            case 74: setImg(R.drawable.completo); break; //Gloria
         }
     }
 
@@ -144,42 +203,44 @@ public class AtribuirTexto extends ProgressoTerco {
             case 2:
             case 7:
                 if(posicao == 1){
+                    setExibirComponente(0);
                     setTitulo(R.string.titulo1Mt);
                     setSubTitulo(subTituloMt1Seg);
                     setImg(R.drawable.segmt1);
                     setOracao(descricaoMt1Seg);
                 } else if(posicao == 2){
+                    setExibirComponente(0);
                     setTitulo(titulo2Mt);
                     setSubTitulo(subTituloMt2Seg);
                     setImg(R.drawable.segmt2);
                     setOracao(descricaoMt2Seg);
                 } else if(posicao == 3){
+                    setExibirComponente(0);
                     setTitulo(titulo3Mt);
                     setSubTitulo(subTituloMt3Seg);
                     setImg(R.drawable.segmt3);
                     setOracao(descricaoMt3Seg);
                 } else if(posicao == 4){
+                    setExibirComponente(0);
                     setTitulo(titulo4Mt);
                     setSubTitulo(subTituloMt4Seg);
                     setImg(R.drawable.segmt4);
                     setOracao(descricaoMt4Seg);
                 }else if(posicao == 5){
+                    setExibirComponente(0);
                     setTitulo(titulo5Mt);
                     setSubTitulo(subTituloMt5Seg);
                     setImg(R.drawable.segmt5);
                     setOracao(descricaoMt5Seg);
                 }
-
                 break;
             case 3:
             case 6:
-
-
+                //TODO fazer Strings do mistérios
                 break;
             case 4:
             case 1:
-                //  this.msgMisterioDia = "Oração de hoje: Mistérios da Glória";
-                break;
+
             case 5:
                 //  this.msgMisterioDia = "Oração de hoje: Mistérios da Luz";
                 break;
@@ -190,8 +251,13 @@ public class AtribuirTexto extends ProgressoTerco {
     }
 
 
+    public int getExibirBotao() {
+        return exibirBotao;
+    }
 
-
+    public void setExibirBotao(int exibirBotao) {
+        this.exibirBotao = exibirBotao;
+    }
 
     public int getTitulo() {
         return titulo;

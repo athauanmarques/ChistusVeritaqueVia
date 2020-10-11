@@ -81,10 +81,11 @@
     <string name="descricaoMt5Seg">Contemplamos a perda e o reencontro de Jesus no templo de Jerusalém. Maria e José perderam Jesus ainda menino aos 12 anos em Jerusalém e após três dias de dor e sofrimento o encontram no templo no meio de doutores da lei ensinando a doutrina do Pai. A Escritura Sagrada, é o caminho para encontrarmos Jesus, quando nos perdemos ou desviamos desse caminho, a conseqüência é a dor o sofrimento. Na procura diária pela leitura, estudo e reflexão da Bíblia, podemos buscar o encontro ou o reencontro com Nosso Senhor e depois viver essas palavras e ensinamentos o quanto mais cedo. E, assim como Jesus, crescer na obediência e cuidar das coisas do Pai.</string>
 
     <!-- Botão dos Mistérios -->
-    <string name="bntMisterio">Terço</string>
+    <string name="bntMisterio">Agradecimento</string>
 
     <!-- Botão dos Agradecimento em Português -->
     <string name="bntAgradecimentoPT">Salve Maria</string>
+    <string name="bntIrAgradecimentoPT">Agradecimento</string>
 
 
 

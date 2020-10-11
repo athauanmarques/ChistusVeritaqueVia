@@ -12,11 +12,11 @@
         <activity android:name=".Activity.CarpeDiemSuporteActivity" />
         <activity android:name=".Activity.CarpeDiemActivity" />
         <activity android:name=".Activity.SalveRainhaActivity" />
-        <activity android:name=".Activity.AgradecimentoActivity" />
+        <activity android:name=".Activity.SplashScreenActivity" />
         <activity android:name=".Activity.TercoActivity" />
         <activity android:name=".Activity.OferecimentoActivity" />
         <activity android:name=".Activity.SelecaoActivity" /> <!-- <activity android:name=".Activity.SplashScreenActivity" /> -->
-        <activity android:name=".Activity.SplashScreenActivity">
+        <activity android:name=".Activity.AgradecimentoActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

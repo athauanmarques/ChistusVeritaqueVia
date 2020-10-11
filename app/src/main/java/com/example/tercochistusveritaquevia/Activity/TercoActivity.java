@@ -3,6 +3,7 @@ package com.example.tercochistusveritaquevia.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -65,7 +66,8 @@ public class TercoActivity extends AppCompatActivity {
         bntTercoMT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent = new Intent(TercoActivity.this, AgradecimentoActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -82,9 +84,13 @@ public class TercoActivity extends AppCompatActivity {
         //Exbir e  esconder subTexto
         if (atribuir.getExibirComponente() == 2) {
             txtSub.setVisibility(View.GONE);
+            if (atribuir.getExibirBotao() == 2){
+                bntTercoMT.setVisibility(View.VISIBLE);
+            }
         } else {
             txtSub.setVisibility(View.VISIBLE);
         }
+
 
     }
 
