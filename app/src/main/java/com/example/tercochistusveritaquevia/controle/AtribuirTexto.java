@@ -19,7 +19,7 @@ import static com.example.tercochistusveritaquevia.R.string.titulo3Mt;
 import static com.example.tercochistusveritaquevia.R.string.titulo4Mt;
 import static com.example.tercochistusveritaquevia.R.string.titulo5Mt;
 
-public class AtribuirTexto extends ProgressoTerco {
+public class AtribuirTexto extends ProgressoTerco{
     private int titulo, img, subTitulo, oracao, exibirComponente = 2, exibirBotao = 0;
     private static boolean tipoIdioma;
     private String enderecoFoto;
@@ -102,34 +102,27 @@ public class AtribuirTexto extends ProgressoTerco {
     public void fixarTexto(int op){
         if(op == 1) {
             setExibirComponente(2);
-            setTitulo(R.string.lblPaiNossoTitulo);
+            idiomaSelecionado(1); //Pai Nosso
             setImg(R.drawable.pai);
-            setOracao(R.string.lblPaiNosso);
         } else if(op == 2) {
-            setTitulo(R.string.lblAveMariaTitulo);
+            idiomaSelecionado(2); //Ave Maria
             mudarFoto();
-            setOracao(R.string.lblAveMaria);
         } else if(op == 3){
-            setTitulo(R.string.lblGloriaTitulo);
+            idiomaSelecionado(3); //Glória
             mudarFoto();
-            setOracao(R.string.lblGloria);
         } else if (op == 4){
-            setTitulo(R.string.lblJaculatoriaTitulo);
+            idiomaSelecionado(4); //jaculatoria
             setImg(R.drawable.jaculatoria);
-            setOracao(R.string.lblJaculatoria);
         } else if (op == 5){
-            setTitulo(R.string.lblPaiNossoTitulo);
+            idiomaSelecionado(1); //Pai Nosso
             setSubTitulo(R.string.lblIncioSubTitulo);
             setImg(R.drawable.p1);
-            setOracao(R.string.lblPaiNosso);
         } else if (op == 6){
-            setTitulo(R.string.lblAveMariaTitulo);
+            idiomaSelecionado(2); //Ave Maria
             setImg(R.drawable.p2);
-            setOracao(R.string.lblAveMaria);
         } else if (op == 7){
-            setTitulo(R.string.lblGloriaTitulo);
+            idiomaSelecionado(3); //Glória
             setImg(R.drawable.p5);
-            setOracao(R.string.lblGloria);
         }
 
     }
@@ -449,11 +442,4 @@ public class AtribuirTexto extends ProgressoTerco {
         this.exibirComponente = exibirComponente;
     }
 
-    public String getEnderecoFoto() {
-        return enderecoFoto;
-    }
-
-    public void setEnderecoFoto(String enderecoFoto) {
-        this.enderecoFoto = enderecoFoto;
-    }
 }
