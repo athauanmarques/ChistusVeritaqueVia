@@ -8,12 +8,11 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.example.tercochistusveritaquevia.R;
+import com.example.tercochistusveritaquevia.controle.AtribuirTexto;
 import com.example.tercochistusveritaquevia.controle.ProgressoTerco;
 
 public class SelecaoActivity extends AppCompatActivity {
     @Override
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selecao);
@@ -25,6 +24,11 @@ public class SelecaoActivity extends AppCompatActivity {
 
     }
     public void abrirTercoPortugues(View view){
+        Intent tercoOferencimento = new Intent(this, OferecimentoActivity.class);
+        startActivity(tercoOferencimento);
+    }
+    public void abrirTercoLatim(View view){
+        AtribuirTexto.setTipoIdioma(true);
         Intent tercoOferencimento = new Intent(this, OferecimentoActivity.class);
         startActivity(tercoOferencimento);
     }

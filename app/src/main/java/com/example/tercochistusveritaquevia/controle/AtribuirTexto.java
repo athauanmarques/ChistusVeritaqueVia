@@ -21,6 +21,7 @@ import static com.example.tercochistusveritaquevia.R.string.titulo5Mt;
 
 public class AtribuirTexto extends ProgressoTerco {
     private int titulo, img, subTitulo, oracao, exibirComponente = 2, exibirBotao = 0;
+    private static boolean tipoIdioma;
     private String enderecoFoto;
 
     public void executarTerco(){
@@ -236,13 +237,104 @@ public class AtribuirTexto extends ProgressoTerco {
                 break;
             case 3:
             case 6:
-                //TODO fazer Strings do mistérios
+                if(posicao == 1){
+                    setExibirComponente(0);
+                    setTitulo(R.string.titulo1Mt);
+                    setSubTitulo(R.string.subTituloMt1Ter);
+                    setImg(R.drawable.termt1);
+                    setOracao(R.string.descricaoMt1Ter);
+                } else if(posicao == 2){
+                    setExibirComponente(0);
+                    setTitulo(titulo2Mt);
+                    setSubTitulo(R.string.subTituloMt2Ter);
+                    setImg(R.drawable.termt2);
+                    setOracao(R.string.descricaoMt2Ter);
+                } else if(posicao == 3){
+                    setExibirComponente(0);
+                    setTitulo(titulo3Mt);
+                    setSubTitulo(R.string.subTituloMt3Ter);
+                    setImg(R.drawable.termt3);
+                    setOracao(R.string.descricaoMt3Ter);
+                } else if(posicao == 4){
+                    setExibirComponente(0);
+                    setTitulo(titulo4Mt);
+                    setSubTitulo(R.string.subTituloMt4Ter);
+                    setImg(R.drawable.termt4);
+                    setOracao(R.string.descricaoMt4Ter);
+                }else if(posicao == 5){
+                    setExibirComponente(0);
+                    setTitulo(titulo5Mt);
+                    setSubTitulo(R.string.subTituloMt5Ter);
+                    setImg(R.drawable.termt5);
+                    setOracao(R.string.descricaoMt5Ter);
+                }
                 break;
             case 4:
             case 1:
-
+                if(posicao == 1){
+                    setExibirComponente(0);
+                    setTitulo(R.string.titulo1Mt);
+                    setSubTitulo(R.string.subTituloMt1Dom);
+                    setImg(R.drawable.domt1);
+                    setOracao(R.string.descricaoMt1Dom);
+                } else if(posicao == 2){
+                    setExibirComponente(0);
+                    setTitulo(titulo2Mt);
+                    setSubTitulo(R.string.subTituloMt2Dom);
+                    setImg(R.drawable.domt2);
+                    setOracao(R.string.descricaoMt2Dom);
+                } else if(posicao == 3){
+                    setExibirComponente(0);
+                    setTitulo(titulo3Mt);
+                    setSubTitulo(R.string.subTituloMt3Dom);
+                    setImg(R.drawable.domt3);
+                    setOracao(R.string.descricaoMt3Dom);
+                } else if(posicao == 4){
+                    setExibirComponente(0);
+                    setTitulo(titulo4Mt);
+                    setSubTitulo(R.string.subTituloMt4Dom);
+                    setImg(R.drawable.domt4);
+                    setOracao(R.string.descricaoMt4Dom);
+                }else if(posicao == 5){
+                    setExibirComponente(0);
+                    setTitulo(titulo5Mt);
+                    setSubTitulo(R.string.subTituloMt5Dom);
+                    setImg(R.drawable.domt5);
+                    setOracao(R.string.descricaoMt5Dom);
+                }
+                break;
             case 5:
-                //  this.msgMisterioDia = "Oração de hoje: Mistérios da Luz";
+                if(posicao == 1){
+                    setExibirComponente(0);
+                    setTitulo(R.string.titulo1Mt);
+                    setSubTitulo(R.string.subTituloMt1Qui);
+                    setImg(R.drawable.quimt1);
+                    setOracao(R.string.descricaoMt1Qui);
+                } else if(posicao == 2){
+                    setExibirComponente(0);
+                    setTitulo(titulo2Mt);
+                    setSubTitulo(R.string.subTituloMt2Qui);
+                    setImg(R.drawable.quimt2);
+                    setOracao(R.string.descricaoMt2Qui);
+                } else if(posicao == 3){
+                    setExibirComponente(0);
+                    setTitulo(titulo3Mt);
+                    setSubTitulo(R.string.subTituloMt3Qui);
+                    setImg(R.drawable.quimt3);
+                    setOracao(R.string.descricaoMt3Qui);
+                } else if(posicao == 4){
+                    setExibirComponente(0);
+                    setTitulo(titulo4Mt);
+                    setSubTitulo(R.string.subTituloMt4Qui);
+                    setImg(R.drawable.quimt4);
+                    setOracao(R.string.descricaoMt4Qui);
+                }else if(posicao == 5){
+                    setExibirComponente(0);
+                    setTitulo(titulo5Mt);
+                    setSubTitulo(R.string.subTituloMt5Qui);
+                    setImg(R.drawable.quimt5);
+                    setOracao(R.string.descricaoMt5Qui);
+                }
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + diaHoje());
@@ -250,6 +342,64 @@ public class AtribuirTexto extends ProgressoTerco {
 
     }
 
+    public void idiomaSelecionado(int opIdioma) {
+        //true == latim
+        if (tipoIdioma) {
+            switch (opIdioma) {
+                case 1:
+                    setTitulo(R.string.lblPaiNossoTituloLT);
+                    setOracao(R.string.lblPaiNossoLT);
+                    break;
+                case 2:
+                    setTitulo(R.string.lblAveMariaTituloLT);
+                    setOracao(R.string.lblAveMariaLT);
+                    break;
+                case 3:
+                    setTitulo(R.string.lblGloriaTituloLT);
+                    setOracao(R.string.lblGloriaLT);
+                    break;
+                case 4:
+                    setTitulo(R.string.lblJaculatoriaTituloLT);
+                    setOracao(R.string.lblJaculatoriaLT);
+                    break;
+
+                default:
+                    throw new IllegalStateException("Unexpected value: " + opIdioma);
+            }
+        } else {
+            switch (opIdioma) {
+                case 1:
+                    setTitulo(R.string.lblPaiNossoTitulo);
+                    setOracao(R.string.lblPaiNosso);
+                    break;
+                case 2:
+                    setTitulo(R.string.lblAveMariaTitulo);
+                    setOracao(R.string.lblAveMaria);
+                    break;
+                case 3:
+                    setTitulo(R.string.lblGloriaTitulo);
+                    setOracao(R.string.lblGloria);
+                    break;
+                case 4:
+                    setTitulo(R.string.lblJaculatoriaTitulo);
+                    setOracao(R.string.lblJaculatoria);
+                    break;
+
+                default:
+                    throw new IllegalStateException("Unexpected value: " + opIdioma);
+            }
+
+        }
+    }
+
+
+    public static boolean isTipoIdioma() {
+        return tipoIdioma;
+    }
+
+    public static void setTipoIdioma(boolean tipoIdioma) {
+        AtribuirTexto.tipoIdioma = tipoIdioma;
+    }
 
     public int getExibirBotao() {
         return exibirBotao;

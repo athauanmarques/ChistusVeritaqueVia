@@ -27,20 +27,13 @@
     <!-- Agradecimento -->
     <string name="lblAgradecimentoTitulo">Agradecimento do Terço</string>
     <string name="AgradecimentoAnunciado">Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos agora e para sempre tomar-nos debaixo de vosso poderoso amparo e para mais vos suplicar vos saudamos com uma Salve Rainha....</string>
-    <!-- Agradecimento -->
-    <string name="lblCarpeDiem">Carpe Diem</string>
-    <string name="lblCarpeDiemDesc1">Se estiver com alguma dúvida, sugestão ou critícas. Por gentileza nos comunique atravez do link:</string>
-    <string name="lblCarpeDiemDesc2">Não se esquece nos avaliar no Google Store.</string>
-    <string name="lblCarpeDiemDesc3">DEUS VULT!</string>
-    <string name="lblCarpeDiemDesc4">Non nobis, Domine, non nobis, sed nomini Tuo da gloriam</string>
-    <string name="bntAvaliar">Avaliar</string>
-    <string name="bntInicio">Voltar ao início</string>
+
+    <!-- ========== Terço ================== -->
+    <string name="lblDicaTercoPosicao">Toque no terço para mudar a posição</string>
 
     <!-- _____________________________________________________________________________________________________________________________________-->
     <!-- _______________________________________________________VERSÃO PORTUGUÊS _____________________________________________________________-->
     <!-- _____________________________________________________________________________________________________________________________________-->
-    <!-- ========== Terço ================== -->
-    <string name="lblDicaTercoPosicao">Toque no terço para mudar a posição</string>
     <!-- Creio -->
     <string name="lblCreioTitulo">Creio</string>
     <string name="lblCreio">Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado. Desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na Santa Igreja Católica, na comunhão dos Santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém.</string>
@@ -58,17 +51,45 @@
     <string name="lblJaculatoria">Óh! meu Jesus, perdoai-nos, livrai-nos do fogo do inferno. Levai as almas todas para o céu e socorrei principalmente as que mais precisarem.</string>
      <!-- Salve Rainha -->
     <string name="lblSalveRainhaTitulo">Salve Rainha</string>
-    <string name="lblSalveRainhaOracao">Contemplamos a flagelação de Nosso Senhor. O sofrimento – a humilhação o escárnio- a violência de um inocente. Toda essa humilhação e dor por cada um de nós, pecadores. O amor que sente por cada ser humano é impossível de se imaginar. E todas as vezes que pecamos e ofendemos um irmão estamos sendo os carrascos que torturaram Jesus.</string>
-    <string name="bntSalveRainha">Carpe Diem</string>
-    <!-- ========== Mistérios ================== -->
+    <string name="lblSalveRainhaOracao">Salve, Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos os degredados filhos de Eva. A vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses vossos olhos misericordiosos a nós volvei, e depois deste desterro mostrai-nos Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce e sempre Virgem Maria. Rogai por nós, Santa Mãe de Deus. Para que sejamos dignos das promessas de Cristo.Amém.</string>
+    <string name="bntSalveRainha">Voltar</string>
+     <!-- _____________________________________________________________________________________________________________________________________-->
+    <!-- _______________________________________________________VERSÃO LATIM _________________________________________________________________-->
+    <!-- _____________________________________________________________________________________________________________________________________-->
+    <!-- Creio -->
+    <string name="lblCreioTituloLT">Credo</string>
+    <string name="lblCreioLT">Credimus in unum Deum Patrem omnipotentem. Factorem caeli et terrae, Visibilium omniumet invisibilum Conditorem. Et in unum Dominum Iesum Christum, Filium Dei unigenitum. Et ex Patre natum ante omnia seacula. Deum ex Deo. Lumem de lumine. Deum verum ex Deo vero. Natum non factum. Omousion Patri: Hoc est, eiusdem cum Patre substantie. Per quem omnia facta sunt, quae in caelo et quae in terra. Qui propter nos homines et propter nostram salutem descendit de caelis. Et incarnatus est Spiritu Sancto Natus ex Maria Virgine. Et homo factus est. Passus sub Pontio Pilatus. Sepultus, tertia dia resurrexit. Ascendit ad caelos, sedet at dexteram Dei Patris omnipotentis. Inde venturus est iudicare vivos et mortuos. Cuius regni non erit finis. Et in Sipritum Santcum Dominum vivificatorem et ex Patre et Filio procedentem. Cum Patre et Filio adorandum et conglorificandum. Qui locutus est per prophetas. Et unam Sanctam Catholicam et apostolicam Ecclesiam. Expectamus resurrectionem mortuorum et vitam venturi seaculi. Amen.</string>
+    <!-- Pai Nosso -->
+    <string name="lblPaiNossoTituloLT">Pater Noster</string>
+    <string name="lblPaiNossoLT">Pater Noster, qui es in coelis.Sanctificetur nomen tuuum.Adveniat regnum tuum.Fiat voluntas tua, sicut in coelo et in terra.Panem nostrum quotidianum da nobis hodie.Dimitte nobis debita nostra, sicut et nos dimittimus debitoribus nostris.Et ne nos inducas in tentationem, sed libera nos a malo. Amen.</string>
+    <!-- Ave Maria -->
+    <string name="lblAveMariaTituloLT">Ave Maria</string>
+    <string name="lblAveMariaLT">Ave Maria, gratia plena, Dominus tecum.Benedicta tu in mulieribus, et benedictus fructus ventris tui, Jesus.Sancta Maria, Mater Dei, ora pro nobis peccatoribus, nunc et in hora mortis nostrae. Amem</string>
+    <!-- Gloria -->
+    <string name="lblGloriaTituloLT">Glória</string>
+    <string name="lblGloriaLT">Gloria Patri, et Filio, et Spiritui Sancto. Sicut erat in principio, et nunc et semper, et in saecula saeculorum. Amen.</string>
+     <!-- Jaculatória -->
+    <string name="lblJaculatoriaTituloLT">Oratio Fatimae</string>
+    <string name="lblJaculatoriaLT">Domine Iesu, dimitte nobis debita nostra, salva nos ab igne inferiori, perduc in caelum omnes animas, praesertim eas, quae misericordiae tuae maxime indigent. Amen.</string>
+     <!-- Salve Rainha -->
+    <string name="lblSalveRainhaTituloLT">Salve Regina</string>
+    <string name="lblSalveRainhaOracaoLT">Salve, Regina, mater misericordiae Vita, dulcedo, et spes nostra, salve. Ad te clamamus, exsules, filii evae. Ad te suspiramus, gementes et flentes in hac lacrimarum valle. Eia ergo, Advocata nostra, illos tuos misericordes oculos ad nos converte. Et Iesum, benedictum fructum ventris tui, nobis post hoc exsilium ostende. O clemens, O pia, O dulcis Virgo Maria. Ora pro nobis sancta Dei Genetrix. Ut digni efficiamur promissionibus Christi. Amen.</string>
+    <!-- Botão dos Mistérios -->
+    <string name="bntMisterio">Agradecimento</string>
+    <!-- Botão dos Agradecimento em latim -->
+    <string name="bntAgradecimentoLT">Salve Regina</string>
+    <!-- _____________________________________________________________________________________________________________________________________-->
+    <!-- _______________________________________________________MISTÉRIOS _________________________________________________________________-->
+    <!-- _____________________________________________________________________________________________________________________________________-->
+    
     <!-- Títulos dos Mistérios -->
     <string name="titulo1Mt">1º Mistério</string>
     <string name="titulo2Mt">2º Mistério</string>
     <string name="titulo3Mt">3º Mistério</string>
     <string name="titulo4Mt">4º Mistério</string>
     <string name="titulo5Mt">5º Mistério</string>
-
     <!-- subtítulos e descrição dos Mistérios Segunda e Sábados-->
+    <!-- Mistérios Segunda/Sábado -->
     <string name="subTituloMt1Seg">Anunciação – O anjo anuncia a Maria que ela Será Mãe do Filho de DEUS - O SIM..</string>
     <string name="descricaoMt1Seg">Contemplamos a anunciação do anjo Gabriel à Nossa Senhora e a encarnação do verbo de Deus em seu ventre. "Eis aqui a serva do Senhor, faça-se em mim segundo a vossa palavra" - aqui vemos em Maria o despojamento, a humildade, o amor a Deus e a entrega de si mesma. Meditação: Hoje o Senhor nos chama dar o sim para Jesus; nascer em nosso coração em nossa vida, dar sentido à nossa vida terrena e acolher o plano de Deus para nossa salvação.</string>
     <string name="subTituloMt2Seg">MARIA visita sua prima Izabel idosa que estava grávida de João Batista - Anunciando a boa-nova..</string>
@@ -79,20 +100,42 @@
     <string name="descricaoMt4Seg">Contemplamos a apresentação do Menino Jesus no Templo e a Purificação de Nossa Senhora. Uma espada de dor transpassará o vosso Coração. Apresentando o nosso coração ao Senhor para que ele faça a circuncisão e tire aquela pele que impede a ação do Espírito Santo em nossa vida. E mesmo que em nossa caminhada junto ao Senhor uma espada penetre nossa alma, possamos pela força de seu Espírito Santo ver a salvação que vem de Jesus</string>
     <string name="subTituloMt5Seg">A perda e o reencontro de JESUS em Jerusalém</string>
     <string name="descricaoMt5Seg">Contemplamos a perda e o reencontro de Jesus no templo de Jerusalém. Maria e José perderam Jesus ainda menino aos 12 anos em Jerusalém e após três dias de dor e sofrimento o encontram no templo no meio de doutores da lei ensinando a doutrina do Pai. A Escritura Sagrada, é o caminho para encontrarmos Jesus, quando nos perdemos ou desviamos desse caminho, a conseqüência é a dor o sofrimento. Na procura diária pela leitura, estudo e reflexão da Bíblia, podemos buscar o encontro ou o reencontro com Nosso Senhor e depois viver essas palavras e ensinamentos o quanto mais cedo. E, assim como Jesus, crescer na obediência e cuidar das coisas do Pai.</string>
-
-    <!-- Botão dos Mistérios -->
-    <string name="bntMisterio">Agradecimento</string>
+    <!-- Mistérios Terça/Sexta -->
+    <string name="subTituloMt1Ter">A agonia de JESUS</string>
+    <string name="descricaoMt1Ter">Contemplamos a agonia Mortal de Nosso Senhor, quando suou sangue no Horto das Oliveiras. "Minha alma está triste a ponto de morrer, ficai aqui e vigiai. "Vigiai e orai para não cairdes em tentação, o espírito está pronto, mas a carne é fraca." A oração e vigilância nos livra de cairmos nas armadilhas do demônio. Ele está sempre esperando uma oportunidade para nos fazer cair no pecado. Só com a força da oração constante podemos vencê-lo. Jesus mesmo sabendo tudo o que iria lhe acontecer, suportou toda tristeza e foi obediente ao Pai. Seguir o seu exemplo e em todas as coisas que nos acontecer, seja boa ou má ...sempre seja feito a vontade de Deus e não a nossa, pois Ele sabe o que é melhor para cada um de nós</string>
+    <string name="subTituloMt2Ter">A flagelação de JESUS atado a uma coluna</string>
+    <string name="descricaoMt2Ter">Contemplamos a flagelação de Nosso Senhor. O sofrimento – a humilhação o escárnio- a violência de um inocente. Toda essa humilhação e dor por cada um de nós, pecadores. O amor que sente por cada ser humano é impossível de se imaginar. E todas as vezes que pecamos e ofendemos um irmão estamos sendo os carrascos que torturaram Jesus.</string>
+    <string name="subTituloMt3Ter">A coroaçao de espinho</string>
+    <string name="descricaoMt3Ter">Contemplamos a coroação de espinhos de Nosso Senhor Jesus Cristo. Cada ponta de espinho... um pecado – em cada gota de sangue derramado o perdão. Sua sagrada face coberta de sangue... o sangue que nos lavou e limpou de nossos pecados; na dor provocada pelos espinhos resgatou-nos da morte. O mesmo sangue que hoje derrama em cada Santa Missa Celebrada; poderoso sangue redentor, que nos cura e liberta de toda escravidão do pecado.</string>
+    <string name="subTituloMt4Ter">JESUS carrega a cruz até o calvário</string>
+    <string name="descricaoMt4Ter">Contemplamos a subida dolorosa de Jesus carregando a Cruz para o Calvário. O peso dos pecados do mundo nos ombros abriram chagas que chegavam até os ossos. Todo aquele que quiser vir após mim, renegue a si mesmo toma sua cruz e siga-me. As cruzes diárias é caminho de redenção e salvação. Aceitar as cruzes é amar a Jesus e imitá-lo. O servo fiel que segue seu mestre e também dá a vida por outro irmão.</string>
+    <string name="subTituloMt5Ter">JESUS morre na cruz</string>
+    <string name="descricaoMt5Ter">Contemplamos a crucificação e morte de Nosso Senhor Jesus Cristo. Cruz, escândalo para os judeus, loucura para os gentios, consolo e sinal de fé para os cristãos. A cruz Sagrada seja a nossa luz... todo sofrimento na terra não tem comparação ao da cruz do Senhor. Por amor ao ser humano e ao pecador suportou dores incalculáveis, humilhou-se, foi insultado e desprezado, tratado como o pior dos criminosos. O maior dos tesouro de um cristão ..honrar a Santa Cruz!</string>
+    <!-- Mistérios Quarta/Domingo -->
+    <string name="subTituloMt1Dom">A ressurreição de JESUS</string>
+    <string name="descricaoMt1Dom">Contemplamos a ressurreição de Jesus. A morte não é o fim para aqueles que crêem em Jesus. A vitória sobre a morte, a esperança na vida eterna, o envio a anunciar a boa-nova, a remissão dos pecados. A paz de Jesus àqueles que O seguem.</string>
+    <string name="subTituloMt2Dom">A ascenção do SENHOR</string>
+    <string name="descricaoMt2Dom">Contemplamos a ascensão de Nosso Senhor Jesus Cristo ao Céu. A volta ao Pai para preparar–nos um lugar e para cuidar de cada um de nós intercedendo junto a Deus pelo perdão de nossos pecados.</string>
+    <string name="subTituloMt3Dom">A descida do ESPÍRITO SANTO sobre os apóstolos</string>
+    <string name="descricaoMt3Dom">Contemplamos a vinda do Espírito Santo sobre os apóstolos reunidos com a Virgem Maria em Jerusalém. A vinda do Prometido, o Espírito Santo Paráclito: o advogado-defensor. O Paráclito, o Espírito Santo que o Pai enviará em meu nome, vos ensinará todas as coisas e vos fará recordar tudo os que vos disse. O Espírito Santo que recebemos no Batismo é nosso condutor, defende-nos diante do Pai, pois temos um acusador dia e noite que nos acusa diante de Deus... satanás; mas o Espírito Santo que habita em nós, ora em nós com gemidos inefáveis, pois não sabemos o que pedir a Deus.</string>
+    <string name="subTituloMt4Dom">A assunção de MARIA ao céu</string>
+    <string name="descricaoMt4Dom">Contemplamos a assunção de Nossa Senhora ao Céu: o encontro da Mãe com o Filho no céu. Concebida sem pecado Virgem Santa merecedora de todas as graças. A filha predileta do Pai sempre fiel a Deus, guardou tudo sempre em seu coração, virgem do silêncio, seu corpo templo do Espírito Santo, Sacrário Vivo, não poderia ser corrompido pela terra como simples pecadora.</string>
+    <string name="subTituloMt5Dom">A Coroaçao de MARIA por JESUS e os Anjos</string>
+    <string name="descricaoMt5Dom">Contemplamos a coroação de Nossa Senhora como Rainha de todos os anjos e santos. Rainha dos Anjos: Uma mulher vestida de Sol, sobre a cabeça uma coroa de estrelas e sobre o os pés a lua. Rainha da Terra, Rainha da Igreja intercessora poderosa junto a Jesus, tem poder de esmagar a cabeça do dragão infernal, na hora de nossa morte nos defenderá junto a Jesus, e a todos aqueles que por amor a ela e a seu filho forem fiéis na oração do Santo Rosário. ...a cada Ave-Maria depositamos uma rosa a seus pés...</string>
+    <!-- Mistérios Quinta-Feira -->
+    <string name="subTituloMt1Qui">O batismo de JESUS</string>
+    <string name="descricaoMt1Qui">Contemplamos o Batismo de Jesus Cristo no rio Jordão. Com atitude humilde ele nos mostra o caminho inicial da Salvação: a aceitação de Deus como nosso único Senhor. Cristo é a luz do mundo, Luz é o atributo da divindade. "Esta era a luz verdadeira, que vindo ao mundo a todos ilumina"(Jo 1,9). "Quem me segue..."- disse Jesus - terá a luz da vida"(Jo 8,12). Nós, cristãos, somos "filhos da luz" (cf. Ef 5,8). A luz de Cristo é levada a todo o mundo pelos seus discípulos. Batismo de Jesus - Enquanto Cristo desce à água do rio Jordão, como inocente que se faz pecado por nós (cf 2Cor 5,21), o céu se abre e a voz do Pai proclama-o Filho amado (cf Mt 3,17), ao mesmo tempo em que o Espírito o investe na missão que o esperava.</string>
+    <string name="subTituloMt2Qui">A auto-revelaçao de JESUS nas bodas de Caná</string>
+    <string name="descricaoMt2Qui">Contemplamos sua auto-revelação nas bodas de Caná, quando transformou água em vinho. Atendendo o pedido de Maria, Jesus inicia seu caminho em direção à Salvação dos Homens fazendo seu primeiro milagre. Auto-revelação de Jesus nas bodas de Caná - Mistério de luz é o inicio dos sinais em Caná (cf Jo 2, 1-12), quando Cristo, transformando a água em vinho, abre a fé o coração dos discípulos graças à intervenção de Maria, a primeira entre os que crêem.</string>
+    <string name="subTituloMt3Qui">O anúncio do Reino de DEUS</string>
+    <string name="descricaoMt3Qui">Contemplamos o anúncio do Reino de Deus com o convite à conversão. Jesus nos convida a nos convertermos plenamente às leis de Deus em busca da felicidade eterna. O anúncio da Boa-Nova traz a esperança de um mundo melhor para todos os homens. Jesus anuncia o Reino de Deus com o convite à conversão - Mistério de luz é a pregação com a qual Jesus anuncia o advento do Reino de Deus e convida à conversão (cf Mc 1,15), perdoando os pecados de quem a ele se dirige com humilde confiança (cf Mc 2,3-1; Lc 7,47s), início do mistério de misericórdia que ele prosseguirá exercendo até o fim do mundo, especialmente da reconciliação confiado à sua Igreja (cf Jo 20,22s)</string>
+    <string name="subTituloMt4Qui">A transfiguração</string>
+    <string name="descricaoMt4Qui">Contemplamos a transfiguração de Nosso Senhor Jesus Cristo. Assim Ele mostra aos Apóstolos e a todos os seres humanos a Sua verdadeira essência divina. Sua Luz nos orienta a seguir os caminhos do bem. Transfiguração de Jesus - Mistério da luz por excelência é a transfiguração que, segundo a tradição, se deu no monte Tabor. A glória da divindade reluz no rosto de Cristo, enquanto o Pai o apresenta aos apóstolos extasiados para que o "escutem" (cf Lc 9,35) e se disponham a viver com ele o momento doloroso da paixão, a fim de chegarem com ele à glória da ressurreição e a uma vida transfigurada pelo Espírito Santo.</string>
+    <string name="subTituloMt5Qui">A instituição da Eucaristia</string>
+    <string name="descricaoMt5Qui">Contemplamos a instituição da Eucaristia. Jesus nos dá seu próprio corpo e sangue como alimento espiritual para nossas almas. É a entrega total e a maior prova de Seu Amor por toda a humanidade. Mesmo sabendo que ia ser traído e entregue ao sacrifício Ele nos deu uma mostra suprema de Sua divindade. Instituição da Eucaristia - Mistério da luz é, enfim, a instituição da Eucaristia, na qual Cristo se faz alimento com o seu corpo e o seu sangue sob os sinais do pão e do vinho, testemunhando "até o extremo" o seu amor pela humanidade (Jo 13,1), por cuja salvação se oferecerá em sacrifício.</string>
 
     <!-- Botão dos Agradecimento em Português -->
     <string name="bntAgradecimentoPT">Salve Maria</string>
     <string name="bntIrAgradecimentoPT">Agradecimento</string>
-
-
-
-
-
-    <!-- _____________________________________________________________________________________________________________________________________-->
-    <!-- _______________________________________________________VERSÃO LATIM _________________________________________________________________-->
-    <!-- _____________________________________________________________________________________________________________________________________-->
-    
+  
 </resources>
