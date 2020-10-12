@@ -30,13 +30,16 @@ public class TercoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_terco);
 
+
+
         imgTerco = findViewById(R.id.imgTerco);
         bntTercoMT = findViewById(R.id.bntMisterio);
         txtTitulo = findViewById(id.txtTituloOracao);
         txtOracao = findViewById(id.txtOracao);
         txtSub = findViewById(R.id.txtSub);
 
-        controleExibicao();
+            controleExibicao();
+
     }
 
     @SuppressLint("WrongConstant")
@@ -59,7 +62,7 @@ public class TercoActivity extends AppCompatActivity {
             @SuppressLint("WrongConstant")
             @Override
             public void onClick(View v) {
-                atualizarTexto();
+                    atualizarTexto();
             }
         });
 
@@ -75,24 +78,26 @@ public class TercoActivity extends AppCompatActivity {
 
     @SuppressLint("WrongConstant")
     public void atualizarTexto() {
-
-        atribuir.executarTerco();
-        txtTitulo.setText(atribuir.getTitulo());
-        txtSub.setText(atribuir.getSubTitulo());
-        imgTerco.setImageResource(atribuir.getImg());
-        txtOracao.setText(atribuir.getOracao());
-        //Exbir e  esconder subTexto
-        if (atribuir.getExibirComponente() == 2) {
-            txtSub.setVisibility(View.GONE);
-            if (atribuir.getExibirBotao() == 2){
-                bntTercoMT.setVisibility(View.VISIBLE);
+            atribuir.executarTerco();
+            txtTitulo.setText(atribuir.getTitulo());
+            txtSub.setText(atribuir.getSubTitulo());
+            imgTerco.setImageResource(atribuir.getImg());
+            txtOracao.setText(atribuir.getOracao());
+            //Exbir e  esconder subTexto
+            if (atribuir.getExibirComponente() == 2) {
+                txtSub.setVisibility(View.GONE);
+                if (atribuir.getExibirBotao() == 2){
+                    bntTercoMT.setVisibility(View.VISIBLE);
+                }
+            } else {
+                txtSub.setVisibility(View.VISIBLE);
             }
-        } else {
-            txtSub.setVisibility(View.VISIBLE);
         }
 
 
-    }
+
+
+
 
 }
 

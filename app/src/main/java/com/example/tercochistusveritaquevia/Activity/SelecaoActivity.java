@@ -12,6 +12,7 @@ import com.example.tercochistusveritaquevia.controle.AtribuirTexto;
 import com.example.tercochistusveritaquevia.controle.ProgressoTerco;
 
 public class SelecaoActivity extends AppCompatActivity {
+    ProgressoTerco reiniciarTerco = new ProgressoTerco();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,10 +25,13 @@ public class SelecaoActivity extends AppCompatActivity {
 
     }
     public void abrirTercoPortugues(View view){
+        reiniciarTerco.zerarTerco();
+        AtribuirTexto.setTipoIdioma(false);
         Intent tercoOferencimento = new Intent(this, OferecimentoActivity.class);
         startActivity(tercoOferencimento);
     }
     public void abrirTercoLatim(View view){
+        reiniciarTerco.zerarTerco();
         AtribuirTexto.setTipoIdioma(true);
         Intent tercoOferencimento = new Intent(this, OferecimentoActivity.class);
         startActivity(tercoOferencimento);

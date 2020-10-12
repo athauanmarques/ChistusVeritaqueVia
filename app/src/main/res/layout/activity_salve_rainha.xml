@@ -7,7 +7,7 @@
     tools:context=".Activity.SalveRainhaActivity">
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/txtTituloRainha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -21,7 +21,7 @@
         tools:text="@string/lblSalveRainhaTitulo" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/txtOracaoRainha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -44,16 +44,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintTop_toBottomOf="@+id/txtOracaoRainha" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="300dp"
         android:layout_height="350dp"
         android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintBottom_toTopOf="@+id/txtOracaoRainha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloRainha"
         app:srcCompat="@drawable/rainha" />
 </androidx.constraintlayout.widget.ConstraintLayout>

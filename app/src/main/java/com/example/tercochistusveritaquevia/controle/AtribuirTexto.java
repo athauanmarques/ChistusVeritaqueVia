@@ -22,81 +22,78 @@ import static com.example.tercochistusveritaquevia.R.string.titulo5Mt;
 public class AtribuirTexto extends ProgressoTerco{
     private int titulo, img, subTitulo, oracao, exibirComponente = 2, exibirBotao = 0;
     private static boolean tipoIdioma;
-    private String enderecoFoto;
+
 
     public void executarTerco(){
-
-        contarTerco();
-        if(getPosicaoTercoAtual() == 1) {
-            fixarTexto(5);// Pai Nosso
-        } else if(getPosicaoTercoAtual() == 2) {
-            fixarTexto(6);// Ave Maria
-        } else if(getPosicaoTercoAtual() == 3){
-            setImg(R.drawable.p3);
-        } else if(getPosicaoTercoAtual() == 4){
-            setImg(R.drawable.p4);
-        } else if(getPosicaoTercoAtual() == 5){
-            fixarTexto(7);// Glória
-        } //Primeiro Mistério
-        else if(getPosicaoTercoAtual() == 6){
-            atribuirMisterios(1);
-        } else if(getPosicaoTercoAtual() == 7) {
-            fixarTexto(1);// Pai Nosso
-        } else if(getPosicaoTercoAtual() >= 8 && getPosicaoTercoAtual() <= 17) {
-            fixarTexto(2);// Ave Maria
-        }else if(getPosicaoTercoAtual() == 18) {
-            fixarTexto(3);// Glória
-        } else if(getPosicaoTercoAtual() == 19) {
-            fixarTexto(4);// Jaculatoria
-        }//Segundo Mistério
-        else if(getPosicaoTercoAtual() == 20) {
-            atribuirMisterios(2);
-        }else if(getPosicaoTercoAtual() == 21) {
-            fixarTexto(1);
-        } else if(getPosicaoTercoAtual() >= 22 && getPosicaoTercoAtual() <= 31) {
-            fixarTexto(2);
-        }else if(getPosicaoTercoAtual() == 32) {
-            fixarTexto(3);
-        } else if(getPosicaoTercoAtual() == 33) {
-            fixarTexto(4);
-        }  //Terceiro Mistério
-        else if(getPosicaoTercoAtual() == 34) {
-            atribuirMisterios(3);
-        } else if(getPosicaoTercoAtual() == 35) {
-            fixarTexto(1);
-        } else if(getPosicaoTercoAtual() >= 36 && getPosicaoTercoAtual() <= 45) {
-            fixarTexto(2);
-        } else if(getPosicaoTercoAtual() == 46) {
-            fixarTexto(3);
-        } else if(getPosicaoTercoAtual() == 47) {
-            fixarTexto(4);
-        } //Quarto Mistério
-        else if(getPosicaoTercoAtual() == 48) {
-            atribuirMisterios(4);
-        } else if(getPosicaoTercoAtual() == 49) {
-            fixarTexto(1);
-        } else if(getPosicaoTercoAtual() >= 50 && getPosicaoTercoAtual() <= 59) {
-            fixarTexto(2);
-        } else if(getPosicaoTercoAtual() == 60) {
-            fixarTexto(3);
-        } else if(getPosicaoTercoAtual() == 61) {
-            fixarTexto(4);
-        } //Quinto Mistério
-        else if(getPosicaoTercoAtual() == 62) {
-            atribuirMisterios(5);
-        } else if(getPosicaoTercoAtual() == 63) {
-            fixarTexto(1);
-        } else if(getPosicaoTercoAtual() >= 64 && getPosicaoTercoAtual() <= 73) {
-            fixarTexto(2);
-        } else if(getPosicaoTercoAtual() == 74) {
-            fixarTexto(3);
-        }//Agredecimentos
-        else if(getPosicaoTercoAtual() == 75) {
-            fixarTexto(4);
-            setExibirBotao(2);
-        }
-
-
+            contarTerco();
+           if(getPosicaoTercoAtual() == 1) {
+                fixarTexto(5);// Pai Nosso
+            } else if(getPosicaoTercoAtual() == 2) {
+                fixarTexto(6);// Ave Maria
+            } else if(getPosicaoTercoAtual() == 3){
+                setImg(R.drawable.p3);
+            } else if(getPosicaoTercoAtual() == 4){
+                setImg(R.drawable.p4);
+            } else if(getPosicaoTercoAtual() == 5){
+                fixarTexto(7);// Glória
+            } //Primeiro Mistério
+            else if(getPosicaoTercoAtual() == 6){
+                atribuirMisterios(1);
+            } else if(getPosicaoTercoAtual() == 7) {
+                fixarTexto(1);// Pai Nosso
+            } else if(getPosicaoTercoAtual() >= 8 && getPosicaoTercoAtual() <= 17) {
+                fixarTexto(2);// Ave Maria
+            }else if(getPosicaoTercoAtual() == 18) {
+                fixarTexto(3);// Glória
+            } else if(getPosicaoTercoAtual() == 19) {
+                fixarTexto(4);// Jaculatoria
+            }//Segundo Mistério
+            else if(getPosicaoTercoAtual() == 20) {
+                atribuirMisterios(2);
+            }else if(getPosicaoTercoAtual() == 21) {
+                fixarTexto(1);
+            } else if(getPosicaoTercoAtual() >= 22 && getPosicaoTercoAtual() <= 31) {
+                fixarTexto(2);
+            }else if(getPosicaoTercoAtual() == 32) {
+                fixarTexto(3);
+            } else if(getPosicaoTercoAtual() == 33) {
+                fixarTexto(4);
+            }  //Terceiro Mistério
+            else if(getPosicaoTercoAtual() == 34) {
+                atribuirMisterios(3);
+            } else if(getPosicaoTercoAtual() == 35) {
+                fixarTexto(1);
+            } else if(getPosicaoTercoAtual() >= 36 && getPosicaoTercoAtual() <= 45) {
+                fixarTexto(2);
+            } else if(getPosicaoTercoAtual() == 46) {
+                fixarTexto(3);
+            } else if(getPosicaoTercoAtual() == 47) {
+                fixarTexto(4);
+            } //Quarto Mistério
+            else if(getPosicaoTercoAtual() == 48) {
+                atribuirMisterios(4);
+            } else if(getPosicaoTercoAtual() == 49) {
+                fixarTexto(1);
+            } else if(getPosicaoTercoAtual() >= 50 && getPosicaoTercoAtual() <= 59) {
+                fixarTexto(2);
+            } else if(getPosicaoTercoAtual() == 60) {
+                fixarTexto(3);
+            } else if(getPosicaoTercoAtual() == 61) {
+                fixarTexto(4);
+            } //Quinto Mistério
+            else if(getPosicaoTercoAtual() == 62) {
+                atribuirMisterios(5);
+            } else if(getPosicaoTercoAtual() == 63) {
+                fixarTexto(1);
+            } else if(getPosicaoTercoAtual() >= 64 && getPosicaoTercoAtual() <= 73) {
+                fixarTexto(2);
+            } else if(getPosicaoTercoAtual() == 74) {
+                fixarTexto(3);
+            }//Agredecimentos
+            else if(getPosicaoTercoAtual() == 75) {
+                fixarTexto(4);
+                setExibirBotao(2);
+            }
     }
 
     public void fixarTexto(int op){
@@ -120,11 +117,10 @@ public class AtribuirTexto extends ProgressoTerco{
         } else if (op == 6){
             idiomaSelecionado(2); //Ave Maria
             setImg(R.drawable.p2);
-        } else if (op == 7){
+        } else if (op == 7) {
             idiomaSelecionado(3); //Glória
             setImg(R.drawable.p5);
         }
-
     }
 
     public void mudarFoto(){
@@ -335,11 +331,13 @@ public class AtribuirTexto extends ProgressoTerco{
 
     }
 
+
+
     public void idiomaSelecionado(int opIdioma) {
         //true == latim
         if (tipoIdioma) {
             switch (opIdioma) {
-                case 1:
+             case 1:
                     setTitulo(R.string.lblPaiNossoTituloLT);
                     setOracao(R.string.lblPaiNossoLT);
                     break;
@@ -361,7 +359,7 @@ public class AtribuirTexto extends ProgressoTerco{
             }
         } else {
             switch (opIdioma) {
-                case 1:
+               case 1:
                     setTitulo(R.string.lblPaiNossoTitulo);
                     setOracao(R.string.lblPaiNosso);
                     break;

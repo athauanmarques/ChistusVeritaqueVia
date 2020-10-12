@@ -46,14 +46,14 @@
     <!-- Gloria -->
     <string name="lblGloriaTitulo">Glória</string>
     <string name="lblGloria">Glória ao Pai, ao Filho e ao Espírito Santo. Como era no princípio, agora e sempre. Amém</string>
-     <!-- Jaculatória -->
+    <!-- Jaculatória -->
     <string name="lblJaculatoriaTitulo">Jaculatória</string>
     <string name="lblJaculatoria">Óh! meu Jesus, perdoai-nos, livrai-nos do fogo do inferno. Levai as almas todas para o céu e socorrei principalmente as que mais precisarem.</string>
-     <!-- Salve Rainha -->
+    <!-- Salve Rainha -->
     <string name="lblSalveRainhaTitulo">Salve Rainha</string>
     <string name="lblSalveRainhaOracao">Salve, Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos os degredados filhos de Eva. A vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses vossos olhos misericordiosos a nós volvei, e depois deste desterro mostrai-nos Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce e sempre Virgem Maria. Rogai por nós, Santa Mãe de Deus. Para que sejamos dignos das promessas de Cristo.Amém.</string>
     <string name="bntSalveRainha">Voltar</string>
-     <!-- _____________________________________________________________________________________________________________________________________-->
+    <!-- _____________________________________________________________________________________________________________________________________-->
     <!-- _______________________________________________________VERSÃO LATIM _________________________________________________________________-->
     <!-- _____________________________________________________________________________________________________________________________________-->
     <!-- Creio -->
@@ -68,10 +68,10 @@
     <!-- Gloria -->
     <string name="lblGloriaTituloLT">Glória</string>
     <string name="lblGloriaLT">Gloria Patri, et Filio, et Spiritui Sancto. Sicut erat in principio, et nunc et semper, et in saecula saeculorum. Amen.</string>
-     <!-- Jaculatória -->
+    <!-- Jaculatória -->
     <string name="lblJaculatoriaTituloLT">Oratio Fatimae</string>
     <string name="lblJaculatoriaLT">Domine Iesu, dimitte nobis debita nostra, salva nos ab igne inferiori, perduc in caelum omnes animas, praesertim eas, quae misericordiae tuae maxime indigent. Amen.</string>
-     <!-- Salve Rainha -->
+    <!-- Salve Rainha -->
     <string name="lblSalveRainhaTituloLT">Salve Regina</string>
     <string name="lblSalveRainhaOracaoLT">Salve, Regina, mater misericordiae Vita, dulcedo, et spes nostra, salve. Ad te clamamus, exsules, filii evae. Ad te suspiramus, gementes et flentes in hac lacrimarum valle. Eia ergo, Advocata nostra, illos tuos misericordes oculos ad nos converte. Et Iesum, benedictum fructum ventris tui, nobis post hoc exsilium ostende. O clemens, O pia, O dulcis Virgo Maria. Ora pro nobis sancta Dei Genetrix. Ut digni efficiamur promissionibus Christi. Amen.</string>
     <!-- Botão dos Mistérios -->
@@ -81,7 +81,7 @@
     <!-- _____________________________________________________________________________________________________________________________________-->
     <!-- _______________________________________________________MISTÉRIOS _________________________________________________________________-->
     <!-- _____________________________________________________________________________________________________________________________________-->
-    
+
     <!-- Títulos dos Mistérios -->
     <string name="titulo1Mt">1º Mistério</string>
     <string name="titulo2Mt">2º Mistério</string>
@@ -137,5 +137,5 @@
     <!-- Botão dos Agradecimento em Português -->
     <string name="bntAgradecimentoPT">Salve Maria</string>
     <string name="bntIrAgradecimentoPT">Agradecimento</string>
-  
+
 </resources>

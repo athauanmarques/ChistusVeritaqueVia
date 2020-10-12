@@ -8,10 +8,9 @@ import static java.util.Calendar.DAY_OF_WEEK;
 
 public class ProgressoTerco{
     private String msgMisterioDia;
-    private static int posicaoTercoAtual;
+    private static int posicaoTercoAtual = 0;
     private static boolean tercoVirtual;
     private int contador = 0;
-
 
     public int contarTerco(){
 
@@ -20,6 +19,11 @@ public class ProgressoTerco{
 
         return getContador();
         
+    }
+
+    public void zerarTerco(){
+        this.contador = 0;
+        setPosicaoTercoAtual(getContador());
     }
 
     public int diaHoje(){

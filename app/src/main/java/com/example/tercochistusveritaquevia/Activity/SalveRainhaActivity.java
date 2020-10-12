@@ -6,12 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.example.tercochistusveritaquevia.R;
+import com.example.tercochistusveritaquevia.controle.AtribuirTexto;
+import com.example.tercochistusveritaquevia.controle.ProgressoTerco;
 
 public class SalveRainhaActivity extends AppCompatActivity {
 
     private Button bntCarpeDiem;
+    private TextView txtRainhaTitulo, txtRainhaOracao;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +24,14 @@ public class SalveRainhaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_salve_rainha);
         bntCarpeDiem = findViewById(R.id.bntCarpeDiem);
         final Intent intent = new Intent(this, SelecaoActivity.class);
+
+        txtRainhaOracao = findViewById(R.id.txtOracaoRainha);
+        txtRainhaTitulo = findViewById(R.id.txtTituloRainha);
+
+        if(AtribuirTexto.isTipoIdioma()){
+            txtRainhaTitulo.setText(R.string.lblSalveRainhaTituloLT);
+            txtRainhaOracao.setText(R.string.lblSalveRainhaOracaoLT);
+        }
 
         bntCarpeDiem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,6 +41,7 @@ public class SalveRainhaActivity extends AppCompatActivity {
         });
 
     }
+
 
 
 

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.tercochistusveritaquevia.R;
+import com.example.tercochistusveritaquevia.controle.AtribuirTexto;
 
 public class OferecimentoActivity extends AppCompatActivity {
 
@@ -17,7 +18,13 @@ public class OferecimentoActivity extends AppCompatActivity {
     }
 
     public void iniciarCreio(View view){
-        Intent creio = new Intent(this, TercoActivity.class);
-        startActivity(creio);
+        if(AtribuirTexto.isTipoIdioma()){
+            Intent creio = new Intent(this, CreioActivity.class);
+            startActivity(creio);
+        } else {
+            Intent creio = new Intent(this, TercoActivity.class);
+            startActivity(creio);
+        }
+
     }
 }
