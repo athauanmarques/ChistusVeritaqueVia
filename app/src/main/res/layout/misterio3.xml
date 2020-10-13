@@ -9,26 +9,27 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/titulo3Mt"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMt1SubTitulo"
+        app:layout_constraintBottom_toTopOf="@+id/txtMt3SubTitulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13999999"
         app:layout_constraintVertical_chainStyle="packed" />
 
-    <ImageView
-        android:id="@+id/imgMt1TV"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMt1DescricaoTV"
+    <Button
+        android:id="@+id/bntCreioOremos"
+        android:layout_width="302dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/bntColorIdiomaLT"
+        android:onClick="onClick_exibirPaiNosso"
+        android:text="@string/lblPaiNossoTitulo"
+        app:layout_constraintBottom_toTopOf="@+id/bntPaiNossoOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMt1SubTitulo"
-        app:srcCompat="@drawable/completo" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMt3DescricaoTV" />
 
     <Button
         android:id="@+id/bntPaiNossoOremos"
@@ -43,18 +44,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntCreioOremos" />
 
-    <Button
-        android:id="@+id/bntGloriaOremos"
-        android:layout_width="302dp"
-        android:layout_height="44dp"
+    <TextView
+        android:id="@+id/txtMt3DescricaoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:background="@color/bntColorIdiomaLT"
-        android:onClick="onClick_exibirGloria"
-        android:text="@string/lblGloriaTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        android:gravity="center|fill"
+        android:padding="5dp"
+        android:text="@string/lblIncioDescricao"
+        app:layout_constraintBottom_toTopOf="@+id/bntCreioOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntPaiNossoOremos" />
+        app:layout_constraintTop_toBottomOf="@+id/imgMt3TV" />
+
+    <TextView
+        android:id="@+id/txtMt3SubTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center|fill"
+        android:padding="5dp"
+        android:text="@string/lblIncioSubTitulo"
+        app:layout_constraintBottom_toTopOf="@+id/imgMt3TV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button7"
@@ -69,19 +83,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntGloriaOremos" />
 
-    <Button
-        android:id="@+id/bntCreioOremos"
-        android:layout_width="302dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/bntColorIdiomaLT"
-        android:onClick="onClick_exibirPaiNosso"
-        android:text="@string/lblPaiNossoTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/bntPaiNossoOremos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMt1DescricaoTV" />
-
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
@@ -92,30 +93,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
-    <TextView
-        android:id="@+id/txtMt1SubTitulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/bntGloriaOremos"
+        android:layout_width="302dp"
+        android:layout_height="44dp"
         android:layout_marginBottom="8dp"
-        android:gravity="center|fill"
-        android:padding="5dp"
-        android:text="@string/lblIncioSubTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/imgMt1TV"
+        android:background="@color/bntColorIdiomaLT"
+        android:onClick="onClick_exibirGloria"
+        android:text="@string/lblGloriaTitulo"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/bntPaiNossoOremos" />
 
-    <TextView
-        android:id="@+id/txtMt1DescricaoTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imgMt3TV"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:layout_marginBottom="8dp"
-        android:gravity="center|fill"
-        android:padding="5dp"
-        android:text="@string/lblIncioDescricao"
-        app:layout_constraintBottom_toTopOf="@+id/bntCreioOremos"
+        app:layout_constraintBottom_toTopOf="@+id/txtMt3DescricaoTV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgMt1TV" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMt3SubTitulo"
+        app:srcCompat="@drawable/completo"
+        android:contentDescription="TODO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

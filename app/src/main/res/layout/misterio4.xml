@@ -9,25 +9,24 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/titulo4Mt"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMt1SubTitulo"
+        app:layout_constraintBottom_toTopOf="@+id/txtMt4SubTitulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13999999"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <ImageView
-        android:id="@+id/imgMt1TV"
+        android:id="@+id/imgMt4TV"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMt1DescricaoTV"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMt4DescricaoTV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMt1SubTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtMt4SubTitulo"
         app:srcCompat="@drawable/completo" />
 
     <Button
@@ -80,7 +79,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bntPaiNossoOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMt1DescricaoTV" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMt4DescricaoTV" />
 
     <TextView
         android:id="@+id/textView8"
@@ -93,20 +92,20 @@
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
     <TextView
-        android:id="@+id/txtMt1SubTitulo"
+        android:id="@+id/txtMt4SubTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:gravity="center|fill"
         android:padding="5dp"
         android:text="@string/lblIncioSubTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/imgMt1TV"
+        app:layout_constraintBottom_toTopOf="@+id/imgMt4TV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/txtMt1DescricaoTV"
+        android:id="@+id/txtMt4DescricaoTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -116,6 +115,6 @@
         app:layout_constraintBottom_toTopOf="@+id/bntCreioOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgMt1TV" />
+        app:layout_constraintTop_toBottomOf="@+id/imgMt4TV" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

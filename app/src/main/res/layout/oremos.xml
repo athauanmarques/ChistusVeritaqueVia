@@ -12,21 +12,19 @@
         android:layout_marginBottom="16dp"
         android:text="@string/lblOremos"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/imgMt1TV"
+        app:layout_constraintBottom_toTopOf="@+id/imgOremos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <ImageView
-        android:id="@+id/imgMt1TV"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:id="@+id/imgOremos"
+        android:layout_width="296dp"
+        android:layout_height="304dp"
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/bntCreioOremos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/completo" />
@@ -41,7 +39,6 @@
         android:text="@string/lblPaiNossoTitulo"
         app:layout_constraintBottom_toTopOf="@+id/bntAveMariaOremos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntCreioOremos" />
 
@@ -55,7 +52,6 @@
         android:text="@string/bntAveMaria3"
         app:layout_constraintBottom_toTopOf="@+id/bntGloriaOremos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntPaiNossoOremos" />
 
@@ -63,13 +59,12 @@
         android:id="@+id/bntGloriaOremos"
         android:layout_width="302dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/bntColorIdiomaLT"
         android:onClick="onClick_exibirGloria"
         android:text="@string/lblGloriaTitulo"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntAveMariaOremos" />
 
@@ -83,18 +78,17 @@
         android:text="@string/lblCreioTitulo"
         app:layout_constraintBottom_toTopOf="@+id/bntPaiNossoOremos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgMt1TV" />
+        app:layout_constraintTop_toBottomOf="@+id/imgOremos" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="@string/lblDicaTercoSlide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntGloriaOremos" />
 

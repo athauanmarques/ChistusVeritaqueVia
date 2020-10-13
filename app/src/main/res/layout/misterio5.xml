@@ -9,24 +9,24 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/titulo5Mt"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMt1SubTitulo"
+        app:layout_constraintBottom_toTopOf="@+id/txtMt5SubTitulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <ImageView
-        android:id="@+id/imgMt1TV"
+        android:id="@+id/imgMt5TV"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMt1DescricaoTV"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMt5DescricaoTV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMt1SubTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtMt5SubTitulo"
         app:srcCompat="@drawable/completo" />
 
     <Button
@@ -59,7 +59,7 @@
         android:id="@+id/button7"
         android:layout_width="302dp"
         android:layout_height="20dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:background="@color/bntColorIdiomaLT"
         android:onClick="onClick_exibirJaculatória"
         android:text="@string/lblJaculatoriaTitulo"
@@ -79,23 +79,23 @@
         app:layout_constraintBottom_toTopOf="@+id/bntPaiNossoOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMt1DescricaoTV" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMt5DescricaoTV" />
 
     <TextView
-        android:id="@+id/txtMt1SubTitulo"
+        android:id="@+id/txtMt5SubTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:gravity="center|fill"
         android:padding="5dp"
         android:text="@string/lblIncioSubTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/imgMt1TV"
+        app:layout_constraintBottom_toTopOf="@+id/imgMt5TV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/txtMt1DescricaoTV"
+        android:id="@+id/txtMt5DescricaoTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -105,12 +105,13 @@
         app:layout_constraintBottom_toTopOf="@+id/bntCreioOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgMt1TV" />
+        app:layout_constraintTop_toBottomOf="@+id/imgMt5TV" />
 
     <Button
         android:id="@+id/bntSalveMariaTV"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:background="@color/colorPrimary"
         android:onClick="onClick_goSalveRainha"
         android:text="@string/bntAgradecimentoPT"
