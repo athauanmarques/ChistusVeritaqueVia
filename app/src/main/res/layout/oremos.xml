@@ -12,7 +12,7 @@
         android:layout_marginBottom="16dp"
         android:text="@string/lblOremos"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintBottom_toTopOf="@+id/imgMt1TV"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,11 +20,11 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/imgMt1TV"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/bntCreioOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,57 +32,60 @@
         app:srcCompat="@drawable/completo" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/bntPaiNossoOremos"
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
         android:background="@color/bntColorIdiomaLT"
+        android:onClick="onClick_exibirPaiNosso"
         android:text="@string/lblPaiNossoTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/bntAveMariaOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/bntCreioOremos" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bntAveMariaOremos"
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
         android:background="@color/bntColorIdiomaLT"
+        android:onClick="onClick_exibirAveMaria"
         android:text="@string/bntAveMaria3"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/bntGloriaOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/bntPaiNossoOremos" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/bntGloriaOremos"
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="24dp"
         android:background="@color/bntColorIdiomaLT"
+        android:onClick="onClick_exibirGloria"
         android:text="@string/lblGloriaTitulo"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/bntAveMariaOremos" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/bntCreioOremos"
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
         android:background="@color/bntColorIdiomaLT"
         android:onClick="onClick_exibirCreio"
         android:text="@string/lblCreioTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@+id/bntPaiNossoOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imgMt1TV" />
 
     <TextView
         android:id="@+id/textView8"
@@ -93,6 +96,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/bntGloriaOremos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

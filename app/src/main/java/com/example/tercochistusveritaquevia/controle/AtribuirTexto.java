@@ -304,7 +304,11 @@ public class AtribuirTexto extends ProgressoTerco{
         //true == latim
         if (tipoIdioma) {
             switch (opIdioma) {
-             case 1:
+                case 0:
+                    setTitulo(R.string.lblCreioTituloLT);
+                    setOracao(R.string.lblCreioLT);
+                    break;
+                 case 1:
                     setTitulo(R.string.lblPaiNossoTituloLT);
                     setOracao(R.string.lblPaiNossoLT);
                     break;
@@ -326,6 +330,10 @@ public class AtribuirTexto extends ProgressoTerco{
             }
         } else {
             switch (opIdioma) {
+                case 0:
+                    setTitulo(R.string.lblCreioTitulo);
+                    setOracao(R.string.lblCreio);
+                    break;
                case 1:
                     setTitulo(R.string.lblPaiNossoTitulo);
                     setOracao(R.string.lblPaiNosso);
