@@ -28,8 +28,12 @@
     <string name="lblAgradecimentoTitulo">Agradecimento do Terço</string>
     <string name="AgradecimentoAnunciado">Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos agora e para sempre tomar-nos debaixo de vosso poderoso amparo e para mais vos suplicar vos saudamos com uma Salve Rainha....</string>
 
-    <!-- ========== Terço ================== -->
+    <!-- Agradecimento -->
+    <string name="lblOremos">Oremos</string>
+
+    <!-- ========== Dicas ================== -->
     <string name="lblDicaTercoPosicao">Toque no terço para mudar a posição</string>
+    <string name="lblDicaTercoSlide">Para continuar arraste a tela lateralmente</string>
 
     <!-- _____________________________________________________________________________________________________________________________________-->
     <!-- _______________________________________________________VERSÃO PORTUGUÊS _____________________________________________________________-->
@@ -43,6 +47,8 @@
     <!-- Ave Maria -->
     <string name="lblAveMariaTitulo">Ave Maria</string>
     <string name="lblAveMaria">Ave Maria, cheia de graça, o Senhor é convosco, bendita sois vós entre as mulheres, e bendito é o fruto do vosso ventre, Jesus. Santa Maria, Mãe de Deus, rogai por nós, pecadores, agora e na hora da nossa morte. Amém.</string>
+    <string name="bntAveMaria10">10 Ave Maria</string>
+    <string name="bntAveMaria3">3 Ave Maria</string>
     <!-- Gloria -->
     <string name="lblGloriaTitulo">Glória</string>
     <string name="lblGloria">Glória ao Pai, ao Filho e ao Espírito Santo. Como era no princípio, agora e sempre. Amém</string>
