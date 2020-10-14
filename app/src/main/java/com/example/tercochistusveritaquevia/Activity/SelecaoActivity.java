@@ -39,7 +39,7 @@ public class SelecaoActivity extends AppCompatActivity {
     }
     public void abrirTercoPortugues(View view){
         Intent tercoOferencimento = new Intent(this, OferecimentoActivity.class);
-        Intent semAcompanhamentoTerco = new Intent(this, TercoVirtualActivity.class);
+        Intent semAcompanhamentoTerco = new Intent(this, MisterioSegActivity.class);
         reiniciarTerco.zerarTerco();
         AtribuirTexto.setTipoIdioma(false);
         if(ProgressoTerco.isTercoVirtual()){
@@ -51,13 +51,13 @@ public class SelecaoActivity extends AppCompatActivity {
     }
     public void abrirTercoLatim(View view){
         Intent tercoOferencimento = new Intent(this, OferecimentoActivity.class);
-        Intent semAcompanhamentoTerco = new Intent(this, TercoVirtualActivity.class);
+        Intent semAcompanhamentoTerco = new Intent(this, MisterioSegActivity.class);
         reiniciarTerco.zerarTerco();
         AtribuirTexto.setTipoIdioma(true);
         if(ProgressoTerco.isTercoVirtual()){
             startActivity(tercoOferencimento);
         } else {
-            startActivity(semAcompanhamentoTerco);
+             startActivity(semAcompanhamentoTerco);
         }
     }
 
