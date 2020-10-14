@@ -18,13 +18,11 @@ public class SelecaoActivity extends AppCompatActivity {
 
     private Switch swVirtualTerco;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selecao);
-
+        ProgressoTerco.setTercoVirtual(true);
         swVirtualTerco = findViewById(R.id.swVirtual);
 
         Toast toast = Toast.makeText(this,  dia.misterioSemanaExibir(), Toast.LENGTH_LONG);
