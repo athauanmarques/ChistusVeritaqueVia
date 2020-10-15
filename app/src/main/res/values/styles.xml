@@ -11,6 +11,11 @@
         
     </style>
 
+    <style name="caixaDialogo" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:textColor">@color/texto</item>
+        <item name="android:background">@color/bntColorIdiomaLT</item>
+    </style>
+
    
 
 </resources>
