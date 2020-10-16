@@ -11,106 +11,106 @@
         android:layout_height="wrap_content"
         android:text="@string/titulo4Mt"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMt1SubTitulo2"
+        app:layout_constraintBottom_toTopOf="@+id/txtMtSubTitulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
-        android:id="@+id/bntCreioSeg"
+        android:id="@+id/bntCreio"
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
         android:background="@color/bntColorIdiomaLT"
         android:onClick="goPaiNossoExibir"
         android:text="@string/lblPaiNossoTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/bntOremosSeg"
+        app:layout_constraintBottom_toTopOf="@+id/bntOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMt1DescricaoTV2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMtDescricao" />
 
     <TextView
-        android:id="@+id/txtMt1DescricaoTV2"
+        android:id="@+id/txtMtDescricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:gravity="center|fill"
         android:padding="5dp"
         android:text="@string/descricaoMt4Seg"
-        app:layout_constraintBottom_toTopOf="@+id/bntCreioSeg"
+        app:layout_constraintBottom_toTopOf="@+id/bntCreio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgMt1" />
+        app:layout_constraintTop_toBottomOf="@+id/imgMt" />
 
     <TextView
-        android:id="@+id/txtMt1SubTitulo2"
+        android:id="@+id/txtMtSubTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center|fill"
         android:padding="5dp"
         android:text="@string/subTituloMt4Seg"
-        app:layout_constraintBottom_toTopOf="@+id/imgMt1"
+        app:layout_constraintBottom_toTopOf="@+id/imgMt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/bntGloriaSeg"
+        android:id="@+id/bntGloria"
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
         android:background="@color/bntColorIdiomaLT"
         android:onClick="goGloriaExibir"
         android:text="@string/lblGloriaTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/bntPaiNossoSeg"
+        app:layout_constraintBottom_toTopOf="@+id/bntPaiNosso"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntOremosSeg" />
+        app:layout_constraintTop_toBottomOf="@+id/bntOremos" />
 
     <TextView
-        android:id="@+id/txtAvisoSeg"
+        android:id="@+id/txtAvisoTer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lblDicaTercoSlide"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntPaiNossoSeg" />
+        app:layout_constraintTop_toBottomOf="@+id/bntPaiNosso" />
 
     <Button
-        android:id="@+id/bntPaiNossoSeg"
+        android:id="@+id/bntPaiNosso"
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
         android:background="@color/bntColorIdiomaLT"
         android:onClick="goJaculatoriaExibir"
         android:text="@string/lblJaculatoriaTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/txtAvisoSeg"
+        app:layout_constraintBottom_toTopOf="@+id/txtAvisoTer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntGloriaSeg" />
+        app:layout_constraintTop_toBottomOf="@+id/bntGloria" />
 
     <ImageView
-        android:id="@+id/imgMt1"
+        android:id="@+id/imgMt"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMt1DescricaoTV2"
+        app:layout_constraintBottom_toTopOf="@+id/txtMtDescricao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMt1SubTitulo2"
+        app:layout_constraintTop_toBottomOf="@+id/txtMtSubTitulo"
         app:srcCompat="@drawable/segmt4" />
 
     <Button
-        android:id="@+id/bntOremosSeg"
+        android:id="@+id/bntOremos"
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
         android:background="@color/bntColorIdiomaLT"
         android:onClick="goAveMariaExibir"
         android:text="@string/bntAveMaria10"
-        app:layout_constraintBottom_toTopOf="@+id/bntGloriaSeg"
+        app:layout_constraintBottom_toTopOf="@+id/bntGloria"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntCreioSeg" />
+        app:layout_constraintTop_toBottomOf="@+id/bntCreio" />
 </androidx.constraintlayout.widget.ConstraintLayout>
