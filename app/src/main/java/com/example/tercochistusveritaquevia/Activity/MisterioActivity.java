@@ -30,7 +30,7 @@ public class MisterioActivity extends IntroActivity {
 
         addSlide(new FragmentSlide.Builder()
                 .background(R.color.fundo)
-                .fragment(R.layout.misterio_seg_oremos)
+                .fragment(R.layout.misterio_oremos)
                 .build()
         );
 
