@@ -12,12 +12,7 @@
     <!-- Seleção  -->
     <string name="latim">Latim</string>
     <string name="portugues">Português</string>
-    <string name="lblOpcoesTitulo">Opções</string>
-    <string name="lblOpcoesSubTitulo">Selecione o tipo de acompanhamento do Terço e a linguagem das orações</string>
-    <string name="lblVirtualTitulo">Terço Virtual</string>
-    <string name="lblSim">Sim</string>
-    <string name="lblNao">Não</string>
-    <string name="lblIdiomaTitulo">Selecione idioma</string>
+    <string name="lblOpcoesTitulo">Terço Virtual</string>
 
     <!-- Oferecimento -->
     <string name="lblOferecimento">Oferecimento do Terço</string>
@@ -40,7 +35,7 @@
     <!-- _____________________________________________________________________________________________________________________________________-->
     <!-- Creio -->
     <string name="lblCreioTitulo">Creio</string>
-    <string name="lblCreio">Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado. Desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na Santa Igreja Católica, na comunhão dos Santos, na remissão dos pecados, na ressurreição da carne, na vida eterna. Amém.</string>
+    <string name="lblCreio">Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo, seu único Filho, nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado. Desceu à mansão dos mortos; ressuscitou ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir a julgar os vivos e os mortos; creio no Espírito Santo, na Santa Igreja Católica, na comunhão dos Santos, na remissão dos pecados, na ressurreição da carne, na vida eterna.Amém.</string>
     <!-- Pai Nosso -->
     <string name="lblPaiNossoTitulo">Pai Nosso</string>
     <string name="lblPaiNosso">Pai-Nosso que estais nos céus, santificado seja vosso nome, venha a nós o vosso reino, seja feita a vossa vontade assim na terra como no céu. O pão nosso de cada dia nos dai hoje, perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido, e não nos deixeis cair em tentação, mas livrai-nos do mal.Amém.</string>
@@ -58,7 +53,7 @@
     <!-- Salve Rainha -->
     <string name="lblSalveRainhaTitulo">Salve Rainha</string>
     <string name="lblSalveRainhaOracao">Salve, Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos os degredados filhos de Eva. A vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses vossos olhos misericordiosos a nós volvei, e depois deste desterro mostrai-nos Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce e sempre Virgem Maria. Rogai por nós, Santa Mãe de Deus. Para que sejamos dignos das promessas de Cristo.Amém.</string>
-    <string name="bntSalveRainha">Voltar</string>
+    <string name="bntSalveRainha">Ao Início</string>
     <!-- _____________________________________________________________________________________________________________________________________-->
     <!-- _______________________________________________________VERSÃO LATIM _________________________________________________________________-->
     <!-- _____________________________________________________________________________________________________________________________________-->

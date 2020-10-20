@@ -14,51 +14,29 @@ import com.example.tercochistusveritaquevia.controle.ProgressoTerco;
 
 public class SelecaoActivity extends AppCompatActivity {
     ProgressoTerco reiniciarTerco = new ProgressoTerco();
-    AtribuirTexto dia = new AtribuirTexto();
 
-    private Switch swVirtualTerco;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selecao);
-        ProgressoTerco.setTercoVirtual(true);
-        swVirtualTerco = findViewById(R.id.swVirtual);
-
-        Toast toast = Toast.makeText(this,  dia.misterioSemanaExibir(), Toast.LENGTH_LONG);
-        toast.show();
-
-        swVirtualTerco.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ProgressoTerco.setTercoVirtual(swVirtualTerco.isChecked());
-            }
-        });
+       // ProgressoTerco.setTercoVirtual(true);
+        AtribuirTexto.setTipoIdioma(false); //Português padrão
+        reiniciarTerco.zerarTerco();
 
 
     }
-    public void abrirTercoPortugues(View view){
+    public void abrirTercoVirtual(View view){
         Intent tercoOferencimento = new Intent(this, OferecimentoActivity.class);
-        Intent semAcompanhamentoTerco = new Intent(this, MisterioActivity.class);
-        reiniciarTerco.zerarTerco();
-        AtribuirTexto.setTipoIdioma(false);
-        if(ProgressoTerco.isTercoVirtual()){
-            startActivity(tercoOferencimento);
-        } else {
-            startActivity(semAcompanhamentoTerco);
-        }
+        startActivity(tercoOferencimento);
 
     }
-    public void abrirTercoLatim(View view){
-        Intent tercoOferencimento = new Intent(this, OferecimentoActivity.class);
+    public void abrirSemTercoVirtual(View view){
         Intent semAcompanhamentoTerco = new Intent(this, MisterioActivity.class);
-        reiniciarTerco.zerarTerco();
-        AtribuirTexto.setTipoIdioma(true);
-        if(ProgressoTerco.isTercoVirtual()){
-            startActivity(tercoOferencimento);
-        } else {
-             startActivity(semAcompanhamentoTerco);
-        }
+        startActivity(semAcompanhamentoTerco);
+
+
     }
 
 }

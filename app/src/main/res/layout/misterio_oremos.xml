@@ -3,31 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpadrao">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/alex_brush"
         android:text="@string/lblOremos"
+        android:textAppearance="@style/stTitulo"
+        android:textColor="@color/textoTitulo"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/imgMt"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_bias="0.072" />
 
     <Button
         android:id="@+id/bntCreio"
         android:layout_width="302dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bntpadrao"
         android:onClick="goCreioExibir"
         android:text="@string/lblCreioTitulo"
         app:layout_constraintBottom_toTopOf="@+id/bntPaiNosso"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgMt" />
 
@@ -35,12 +40,13 @@
         android:id="@+id/bntGloria"
         android:layout_width="302dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bntpadrao"
         android:onClick="goGloriaExibir"
         android:text="@string/lblGloriaTitulo"
         app:layout_constraintBottom_toTopOf="@+id/txtAvisoTer"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntOremos" />
 
@@ -48,9 +54,13 @@
         android:id="@+id/txtAvisoTer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="@string/lblDicaTercoSlide"
+        android:textAppearance="@style/stTxtDicas"
+        android:textColor="@color/txtDica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntGloria" />
 
@@ -58,36 +68,41 @@
         android:id="@+id/bntPaiNosso"
         android:layout_width="302dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bntpadrao"
         android:onClick="goPaiNossoExibir"
         android:text="@string/lblPaiNossoTitulo"
         app:layout_constraintBottom_toTopOf="@+id/bntOremos"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntCreio" />
 
     <ImageView
         android:id="@+id/imgMt"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="409dp"
+        android:layout_height="295dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/bntCreio"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
         app:srcCompat="@drawable/nobis" />
 
     <Button
         android:id="@+id/bntOremos"
         android:layout_width="302dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bntpadrao"
         android:onClick="goAveMariaExibir"
         android:text="@string/bntAveMaria3"
         app:layout_constraintBottom_toTopOf="@+id/bntGloria"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntPaiNosso" />
 </androidx.constraintlayout.widget.ConstraintLayout>

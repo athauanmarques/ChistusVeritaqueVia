@@ -48,7 +48,7 @@ import static com.example.tercochistusveritaquevia.R.string.titulo5Mt;
 
 public class AtribuirTexto extends ProgressoTerco{
     private String msgMisterioDia;
-    private static boolean tipoIdioma;
+    private static boolean tipoIdioma; //true = latim / False = Português
     private int titulo, img, subTitulo, oracao, exibirComponente = 2, exibirBotao = 0;
 
 

@@ -25,6 +25,7 @@
         android:background="@color/bntColorIdiomaLT"
         android:onClick="goPaiNossoExibir"
         android:text="@string/lblPaiNossoTitulo"
+        android:theme="@style/AppTheme"
         app:layout_constraintBottom_toTopOf="@+id/bntOremos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

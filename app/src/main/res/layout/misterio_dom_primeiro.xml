@@ -3,114 +3,108 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpadrao">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/alex_brush"
         android:text="@string/titulo1Mt"
+        android:textColor="@color/textoTitulo"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMtSubTitulo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="52dp" />
 
     <Button
         android:id="@+id/bntCreio"
         android:layout_width="302dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:background="@drawable/bntpadrao"
         android:onClick="goPaiNossoExibir"
         android:text="@string/lblPaiNossoTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/bntOremos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMtDescricao" />
+        android:textAppearance="@style/stBotao"
+        android:translationX="10dp"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="470dp" />
 
     <TextView
         android:id="@+id/txtMtDescricao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:layout_width="410dp"
+        android:layout_height="119dp"
+        android:fontFamily="@font/merriweather_light"
         android:gravity="center|fill"
         android:padding="5dp"
         android:text="@string/descricaoMt1Dom"
-        app:layout_constraintBottom_toTopOf="@+id/bntCreio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgMt" />
+        android:textAppearance="@style/stTextoGeral"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="344dp" />
 
     <TextView
         android:id="@+id/txtMtSubTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather_light"
         android:gravity="center|fill"
         android:padding="5dp"
         android:text="@string/subTituloMt1Dom"
-        app:layout_constraintBottom_toTopOf="@+id/imgMt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        android:textAllCaps="true"
+        android:textAppearance="@style/stSubTitloMisterio"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="306dp" />
 
     <Button
         android:id="@+id/bntGloria"
         android:layout_width="302dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:background="@drawable/bntpadrao"
         android:onClick="goGloriaExibir"
         android:text="@string/lblGloriaTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/bntPaiNosso"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntOremos" />
-
-    <TextView
-        android:id="@+id/txtAvisoTer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/lblDicaTercoSlide"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntPaiNosso" />
+        android:textAppearance="@style/stBotao"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="575dp" />
 
     <Button
         android:id="@+id/bntPaiNosso"
         android:layout_width="302dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:background="@drawable/bntpadrao"
         android:onClick="goJaculatoriaExibir"
         android:text="@string/lblJaculatoriaTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/txtAvisoTer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntGloria" />
+        android:textAppearance="@style/stBotao"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="627dp" />
 
     <ImageView
         android:id="@+id/imgMt"
-        android:layout_width="300dp"
+        android:layout_width="411dp"
         android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMtDescricao"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMtSubTitulo"
-        app:srcCompat="@drawable/domt1" />
+        android:scaleType="center"
+        app:srcCompat="@drawable/domt1"
+        tools:layout_editor_absoluteY="90dp" />
 
     <Button
         android:id="@+id/bntOremos"
         android:layout_width="302dp"
         android:layout_height="44dp"
-        android:layout_marginBottom="8dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:background="@drawable/bntpadrao"
         android:onClick="goAveMariaExibir"
         android:text="@string/bntAveMaria10"
-        app:layout_constraintBottom_toTopOf="@+id/bntGloria"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntCreio" />
+        android:textAppearance="@style/stBotao"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="523dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDicaTercoSlide"
+        android:textAppearance="@style/stTxtDicas"
+        android:textColor="#FFC868"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="687dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
