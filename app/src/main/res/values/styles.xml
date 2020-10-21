@@ -1,21 +1,67 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        
         <item name="android:textColor">@color/texto</item>
-        <item name="android:background">@color/fundo</item>
-        
     </style>
 
-    <style name="caixaDialogo" parent="Theme.AppCompat.Dialog.Alert">
-        <item name="android:textColor">@color/texto</item>
+    <style name="stCaixaDialogo" parent="Theme.AppCompat.Dialog.Alert">
         <item name="android:background">@color/bntColorIdiomaLT</item>
     </style>
 
+    <style name="stTitulo">
+        <item name="font">@font/alex_brush</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:textColor">@color/textoTitulo</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="stSubTitloMisterio">
+        <item name="font">@font/merriweather_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center|fill</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="stTextoGeral">
+        <item name="font">@font/merriweather_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center|fill</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+    </style>
+    <style name="stBotao" parent="@style/AppTheme">
+        <item name="android:layout_width">302dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:background">@drawable/bntpadrao</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center|fill</item>
+    </style>
+    <style name="stTxtDicas" tools:ignore="DuplicateDefinition">
+        <item name="android:textAllCaps">true</item>
+        <item name="font">@font/merriweather_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center|fill</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textAppearance">@style/stTxtDicas</item>
+        <item name="android:textColor">@color/txtDica</item>
+    </style>
    
 
 </resources>

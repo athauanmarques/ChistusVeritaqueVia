@@ -18,13 +18,9 @@ public class OferecimentoActivity extends AppCompatActivity {
     }
 
     public void iniciarCreio(View view){
-        if(AtribuirTexto.isTipoIdioma()){
-            Intent creio = new Intent(this, CreioActivity.class);
-            startActivity(creio);
-        } else {
-            Intent creio = new Intent(this, TercoActivity.class);
-            startActivity(creio);
-        }
+            Intent terco = new Intent(this, TercoActivity.class);
+            startActivity(terco);
+
 
     }
 }

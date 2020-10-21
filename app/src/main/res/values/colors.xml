@@ -6,14 +6,17 @@
     <!-- Layout Todos -->
     <color name="fundo">#000000</color>
     <color name="texto">#ffffff</color>
+    <color name="textoTitulo">#FFC868</color>
 
     <!-- Layout Splash -->
-    <color name="letraInicio">#F8513E</color>
+    <color name="letraInicio">#FFC868</color>
 
     <!-- Layout Seleção idiomas -->
     <color name="bntColorIdiomaPT">#000000</color>
     <color name="bntColorIdiomaLT">#333333</color>
 
+    <!-- misterio slider-->
+    <color name="txtDica">#FFC868</color>
 
 
 

@@ -171,7 +171,7 @@ public class MisterioActivity extends IntroActivity {
     }
 
     public void aplicarTextoDialog(){
-        AlertDialog.Builder exbirOracao = new AlertDialog.Builder(this, R.style.caixaDialogo);
+        AlertDialog.Builder exbirOracao = new AlertDialog.Builder(this, R.style.stCaixaDialogo);
         exbirOracao.setTitle(atribuir.getTitulo());
         exbirOracao.setMessage(atribuir.getOracao());
         exbirOracao.show();

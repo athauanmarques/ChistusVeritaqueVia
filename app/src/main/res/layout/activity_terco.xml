@@ -4,61 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgpadrao"
     tools:context=".Activity.TercoActivity">
 
     <TextView
         android:id="@+id/txtTituloOracao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
+        android:fontFamily="@font/alex_brush"
         android:text="@string/lblCreioTitulo"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toTopOf="@+id/txtSub"
+        android:textColor="@color/textoTitulo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13999999"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_bias="0.06999999" />
 
     <TextView
         android:id="@+id/txtOracao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_width="0dp"
+        android:layout_height="241dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/merriweather_light"
+        android:foregroundGravity="center"
+        android:gravity="center"
         android:text="@string/lblCreio"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bntMisterio"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAjuda" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSub" />
 
     <ImageView
         android:id="@+id/imgTerco"
-        android:layout_width="236dp"
-        android:layout_height="347dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtAjuda"
+        android:layout_width="0dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtSub"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSub"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloOracao"
         app:srcCompat="@drawable/p0" />
-
-    <TextView
-        android:id="@+id/txtAjuda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="@string/lblDicaTercoPosicao"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toTopOf="@+id/txtOracao"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgTerco" />
 
     <Button
         android:id="@+id/bntMisterio"
         android:layout_width="177dp"
         android:layout_height="48dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/bntpadrao"
         android:text="@string/bntMisterio"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -70,12 +70,15 @@
         android:id="@+id/txtSub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="@string/lblIncioSubTitulo"
-        android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/imgTerco"
+        android:fontFamily="@font/merriweather_light"
+        android:text="@string/lblDicaTercoPosicao"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txtOracao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTituloOracao" />
+        app:layout_constraintTop_toBottomOf="@+id/imgTerco"
+        tools:text="@string/lblDicaTercoPosicao" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

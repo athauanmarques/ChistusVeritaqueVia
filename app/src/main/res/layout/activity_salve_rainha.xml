@@ -4,56 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgpadrao"
     tools:context=".Activity.SalveRainhaActivity">
 
     <TextView
         android:id="@+id/txtTituloRainha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/alex_brush"
         android:text="@string/lblSalveRainhaTitulo"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        android:textAppearance="@style/stTitulo"
+        android:textColor="@color/textoTitulo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.07999998"
         tools:text="@string/lblSalveRainhaTitulo" />
 
     <TextView
         android:id="@+id/txtOracaoRainha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginTop="16dp"
         android:text="@string/lblSalveRainhaOracao"
+        android:textAppearance="@style/stTextoGeral"
         app:layout_constraintBottom_toTopOf="@+id/bntCarpeDiem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="395dp"
+        android:layout_height="330dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/txtOracaoRainha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloRainha"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/rainha" />
+
     <Button
         android:id="@+id/bntCarpeDiem"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:background="@color/colorPrimary"
+        android:layout_width="348dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bntpadrao"
         android:text="@string/bntSalveRainha"
+        android:textAppearance="@style/stBotao"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtOracaoRainha" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="300dp"
-        android:layout_height="350dp"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtOracaoRainha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTituloRainha"
-        app:srcCompat="@drawable/rainha" />
 </androidx.constraintlayout.widget.ConstraintLayout>

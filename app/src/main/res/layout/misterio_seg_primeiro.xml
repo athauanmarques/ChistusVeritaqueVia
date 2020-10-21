@@ -3,26 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpadrao">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/alex_brush"
         android:text="@string/titulo1Mt"
+        android:textAppearance="@style/stTitulo"
+        android:textColor="@color/textoTitulo"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMtSubTitulo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_bias="0.075" />
 
     <Button
         android:id="@+id/bntCreio"
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:background="@drawable/bntpadrao"
         android:onClick="goPaiNossoExibir"
         android:text="@string/lblPaiNossoTitulo"
         app:layout_constraintBottom_toTopOf="@+id/bntOremos"
@@ -34,37 +39,42 @@
         android:id="@+id/txtMtDescricao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/merriweather_light"
         android:gravity="center|fill"
         android:padding="5dp"
         android:text="@string/descricaoMt1Seg"
         app:layout_constraintBottom_toTopOf="@+id/bntCreio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgMt" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMtSubTitulo" />
 
     <TextView
         android:id="@+id/txtMtSubTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather_light"
         android:gravity="center|fill"
         android:padding="5dp"
         android:text="@string/subTituloMt1Seg"
-        app:layout_constraintBottom_toTopOf="@+id/imgMt"
+        android:textAllCaps="true"
+        android:textAppearance="@style/stSubTitloMisterio"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMtDescricao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imgMt" />
 
     <Button
         android:id="@+id/bntGloria"
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:background="@drawable/bntpadrao"
         android:onClick="goGloriaExibir"
         android:text="@string/lblGloriaTitulo"
         app:layout_constraintBottom_toTopOf="@+id/bntPaiNosso"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bntOremos" />
 
@@ -72,7 +82,11 @@
         android:id="@+id/txtAvisoTer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/merriweather_light"
         android:text="@string/lblDicaTercoSlide"
+        android:textAllCaps="true"
+        android:textAppearance="@style/stTxtDicas"
+        android:textColor="@color/txtDica"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +97,7 @@
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:background="@drawable/bntpadrao"
         android:onClick="goJaculatoriaExibir"
         android:text="@string/lblJaculatoriaTitulo"
         app:layout_constraintBottom_toTopOf="@+id/txtAvisoTer"
@@ -95,10 +109,12 @@
         android:id="@+id/imgMt"
         android:layout_width="300dp"
         android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtMtDescricao"
+        app:layout_constraintBottom_toTopOf="@+id/txtMtSubTitulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMtSubTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
         app:srcCompat="@drawable/segmt1" />
 
     <Button
@@ -106,7 +122,7 @@
         android:layout_width="302dp"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/bntColorIdiomaLT"
+        android:background="@drawable/bntpadrao"
         android:onClick="goAveMariaExibir"
         android:text="@string/bntAveMaria10"
         app:layout_constraintBottom_toTopOf="@+id/bntGloria"
