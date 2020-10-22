@@ -53,7 +53,7 @@
     <!-- Salve Rainha -->
     <string name="lblSalveRainhaTitulo">Salve Rainha</string>
     <string name="lblSalveRainhaOracao">Salve, Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve! A vós bradamos os degredados filhos de Eva. A vós suspiramos, gemendo e chorando neste vale de lágrimas. Eia, pois, advogada nossa, esses vossos olhos misericordiosos a nós volvei, e depois deste desterro mostrai-nos Jesus, bendito fruto do vosso ventre, ó clemente, ó piedosa, ó doce e sempre Virgem Maria. Rogai por nós, Santa Mãe de Deus. Para que sejamos dignos das promessas de Cristo.Amém.</string>
-    <string name="bntSalveRainha">Ao Início</string>
+    <string name="bntSalveRainha">Voltar ao Terço</string>
     <!-- _____________________________________________________________________________________________________________________________________-->
     <!-- _______________________________________________________VERSÃO LATIM _________________________________________________________________-->
     <!-- _____________________________________________________________________________________________________________________________________-->
@@ -138,7 +138,5 @@
     <!-- Botão dos Agradecimento em Português -->
     <string name="bntAgradecimentoPT">Salve Maria</string>
     <string name="bntIrAgradecimentoPT">Agradecimento</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

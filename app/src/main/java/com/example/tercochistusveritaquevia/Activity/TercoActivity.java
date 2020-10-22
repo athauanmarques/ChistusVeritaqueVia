@@ -83,9 +83,14 @@ public class TercoActivity extends AppCompatActivity {
             txtSub.setText(atribuir.getSubTitulo());
             imgTerco.setImageResource(atribuir.getImg());
             txtOracao.setText(atribuir.getOracao());
-            //Exbir e  esconder subTexto
-                if (atribuir.getExibirBotao() == 2){
-                    bntTercoMT.setVisibility(View.VISIBLE);
+           //Exbir e  esconder subTexto
+                if (atribuir.getExibirComponente() == 2) {
+                    txtSub.setVisibility(View.GONE);
+                    if (atribuir.getExibirBotao() == 2) {
+                        bntTercoMT.setVisibility(View.VISIBLE);
+                    }
+                } else {
+                    txtSub.setVisibility(View.VISIBLE);
                 }
             }
 

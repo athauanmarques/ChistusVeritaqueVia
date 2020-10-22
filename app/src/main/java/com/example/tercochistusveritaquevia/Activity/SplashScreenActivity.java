@@ -29,9 +29,15 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent  intent = new Intent(SplashScreenActivity.this, SelecaoActivity.class);
+                Intent  intent = new Intent(SplashScreenActivity.this, OferecimentoActivity.class);
                 startActivity(intent);
                 finish();
+
+                /* Será implementado para próxima versão
+                    Intent  intent = new Intent(SplashScreenActivity.this, SelecaoActivity.class);
+                    startActivity(intent);
+                    finish();
+                */
             }
         },SPLASH_CONTADOR);
 

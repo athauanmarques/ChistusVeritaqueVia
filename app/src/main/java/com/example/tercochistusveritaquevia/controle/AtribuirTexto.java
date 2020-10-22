@@ -329,7 +329,20 @@ public class AtribuirTexto extends ProgressoTerco{
 
     }
 
+    public String misterioSemanaExibir() {
 
+        switch (diaHoje()) {
+            case 2: case 7: this.msgMisterioDia = "Oração de hoje: Mistérios da Alegria"; break;
+            case 3: case 6: this.msgMisterioDia = "Oração de hoje: Mistérios da Dor"; break;
+            case 4: case 1: this.msgMisterioDia = "Oração de hoje: Mistérios da Glória"; break;
+            case 5: this.msgMisterioDia = "Oração de hoje: Mistérios da Luz"; break;
+            default: throw new IllegalStateException("Unexpected value: " + diaHoje());
+        }
+        return getMsgMisterioDia();
+
+    }
+
+    //----------Não está implementado ----------------------
     public void idiomaSelecionado(int opIdioma) {
         //true == latim
         if (tipoIdioma) {
@@ -387,20 +400,6 @@ public class AtribuirTexto extends ProgressoTerco{
 
         }
     }
-
-    public String misterioSemanaExibir() {
-
-        switch (diaHoje()) {
-            case 2: case 7: this.msgMisterioDia = "Oração de hoje: Mistérios da Alegria"; break;
-            case 3: case 6: this.msgMisterioDia = "Oração de hoje: Mistérios da Dor"; break;
-            case 4: case 1: this.msgMisterioDia = "Oração de hoje: Mistérios da Glória"; break;
-            case 5: this.msgMisterioDia = "Oração de hoje: Mistérios da Luz"; break;
-            default: throw new IllegalStateException("Unexpected value: " + diaHoje());
-        }
-        return getMsgMisterioDia();
-
-    }
-
 
     //------------- Getters e Setters -----------------------
 

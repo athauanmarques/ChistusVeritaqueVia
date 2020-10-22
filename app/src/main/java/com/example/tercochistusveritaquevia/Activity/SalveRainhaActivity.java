@@ -23,7 +23,7 @@ public class SalveRainhaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_salve_rainha);
         bntCarpeDiem = findViewById(R.id.bntCarpeDiem);
-        final Intent intent = new Intent(this, SelecaoActivity.class);
+        final Intent intent = new Intent(this, TercoActivity.class);
         ProgressoTerco.setTercoVirtual(true);
 
         txtRainhaOracao = findViewById(R.id.txtOracaoRainha);
