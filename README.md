@@ -1,1 +1,1 @@
-# Santo Terço: ChistusVeritaqueVia
+# Santo Terço: Chistus Veritaque Via
