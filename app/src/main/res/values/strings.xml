@@ -28,6 +28,7 @@
 
     <!-- ========== Dicas ================== -->
     <string name="lblDicaTercoPosicao">Toque no terço para mudar a posição</string>
+    <string name="lblDicaImagem">Toque na Imagem para mudar a posição</string>
     <string name="lblDicaTercoSlide">Para continuar arraste a tela lateralmente</string>
 
     <!-- _____________________________________________________________________________________________________________________________________-->

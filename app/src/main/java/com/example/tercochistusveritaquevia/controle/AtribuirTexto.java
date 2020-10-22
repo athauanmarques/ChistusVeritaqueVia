@@ -99,18 +99,22 @@ public class AtribuirTexto extends ProgressoTerco{
             setExibirComponente(2);
             idiomaSelecionado(1); //Pai Nosso
             setImg(R.drawable.pai);
+            setSubTitulo(R.string.lblDicaImagem);
         } else if(op == 2) {
             idiomaSelecionado(2); //Ave Maria
             mudarFoto();
+            setSubTitulo(R.string.lblDicaTercoPosicao);
         } else if(op == 3){
             idiomaSelecionado(3); //Glória
             mudarFoto();
+            setSubTitulo(R.string.lblDicaTercoPosicao);
         } else if (op == 4){
             idiomaSelecionado(4); //jaculatoria
             setImg(R.drawable.jaculatoria);
+            setSubTitulo(R.string.lblDicaImagem);
         } else if (op == 5){
             idiomaSelecionado(1); //Pai Nosso
-            setSubTitulo(R.string.lblIncioSubTitulo);
+            setSubTitulo(R.string.lblDicaTercoPosicao);
             setImg(R.drawable.p1);
         } else if (op == 6){
             idiomaSelecionado(2); //Ave Maria

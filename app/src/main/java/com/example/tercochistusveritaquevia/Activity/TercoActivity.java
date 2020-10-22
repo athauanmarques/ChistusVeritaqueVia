@@ -85,9 +85,10 @@ public class TercoActivity extends AppCompatActivity {
             txtOracao.setText(atribuir.getOracao());
            //Exbir e  esconder subTexto
                 if (atribuir.getExibirComponente() == 2) {
-                    txtSub.setVisibility(View.GONE);
+
                     if (atribuir.getExibirBotao() == 2) {
                         bntTercoMT.setVisibility(View.VISIBLE);
+                        txtSub.setVisibility(View.GONE);
                     }
                 } else {
                     txtSub.setVisibility(View.VISIBLE);
