@@ -1,11 +1,18 @@
-
 # Santo Terço: Chistus Veritaque Via
 
-### O QUE É
+### Sobre o projeto
 Um serviço que integra o XXX como plataforma de YYY.
 
-### A QUEM SE DESTINA / OBJETIVO
+### OBJETIVO
 Este projeto é mantido sob o mais absoluto sigilo para a Empresa ZZZ. Se você está vendo isso certamente você faz parte do projeto. O objetivo deste documento é facilitar a compreenção do escopo do projeto e de como funciona.
+
+### Layout
+Molile
+
+Web
+
+### Tecnologias
+As seguintes ferramentas foram usadas na construção do projeto:
 
 ### INSTALAÇÃO LOCAL
 • Instale apache, php e sql ao seu modo (xampp, wamp ou individual), instale o composer e o git;
