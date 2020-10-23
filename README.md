@@ -1,5 +1,5 @@
 
-# APP EXEMPLO - Guia de início rápido
+# Santo Terço: Chistus Veritaque Via
 
 ### O QUE É
 Um serviço que integra o XXX como plataforma de YYY.
