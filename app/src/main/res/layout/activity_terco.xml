@@ -16,17 +16,12 @@
         android:text="@string/lblCreioTitulo"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/textoTitulo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        tools:layout_editor_absoluteY="56dp" />
 
     <TextView
         android:id="@+id/txtOracao"
         android:layout_width="411dp"
-        android:layout_height="262dp"
+        android:layout_height="212dp"
         android:fontFamily="@font/merriweather_light"
         android:foregroundGravity="center"
         android:gravity="center"
@@ -36,7 +31,7 @@
         android:textAllCaps="false"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/imgIcoPosicao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSub" />
@@ -45,35 +40,29 @@
         android:id="@+id/imgTerco"
         android:layout_width="411dp"
         android:layout_height="280dp"
+        android:contentDescription="@string/lblCreioTitulo"
         app:layout_constraintBottom_toTopOf="@+id/txtSub"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTituloOracao"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/p0" />
 
     <Button
         android:id="@+id/bntMisterio"
         android:layout_width="282dp"
         android:layout_height="55dp"
-        android:layout_marginBottom="32dp"
         android:background="@drawable/bntpadrao"
         android:text="@string/bntMisterio"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/txtSub"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="411dp"
+        android:layout_height="54dp"
         android:fontFamily="@font/merriweather_light"
+        android:gravity="center"
         android:text="@string/lblDicaTercoPosicao"
         android:textAllCaps="true"
         android:textColor="@color/colorAccent"
@@ -85,5 +74,90 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgTerco"
         tools:text="@string/lblDicaTercoPosicao" />
+
+    <ImageButton
+        android:id="@+id/imgIcoVoltar"
+        android:layout_width="132dp"
+        android:layout_height="96dp"
+        android:background="@color/mi_icon_color_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgIcoPosicao"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOracao"
+        app:srcCompat="@drawable/ic_voltar" />
+
+    <ImageButton
+        android:id="@+id/imgIcoIdioma"
+        android:layout_width="132dp"
+        android:layout_height="96dp"
+        android:background="@color/mi_icon_color_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgIcoPosicao"
+        app:layout_constraintTop_toTopOf="@+id/imgIcoPosicao"
+        app:srcCompat="@drawable/ic_latim" />
+
+    <ImageButton
+        android:id="@+id/imgIcoPosicao"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="@color/mi_icon_color_light"
+        android:foregroundGravity="center"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/txtPosicao"
+        app:layout_constraintEnd_toStartOf="@+id/imgIcoIdioma"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgIcoVoltar"
+        app:layout_constraintTop_toBottomOf="@+id/txtOracao"
+        app:srcCompat="@drawable/ic_posicao" />
+
+    <TextView
+        android:id="@+id/txtVoltar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:gravity="bottom|center"
+        android:padding="5dp"
+        android:text="@string/lblVoltar"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgIcoVoltar"
+        app:layout_constraintStart_toStartOf="@+id/imgIcoVoltar"
+        app:layout_constraintTop_toTopOf="@+id/imgIcoVoltar"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="@string/lblVoltar" />
+
+    <TextView
+        android:id="@+id/txtPosicao"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/mi_icon_color_light"
+        android:gravity="center"
+        android:text="@string/lblPosicao"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imgIcoIdioma"
+        app:layout_constraintStart_toEndOf="@+id/imgIcoVoltar"
+        app:layout_constraintTop_toBottomOf="@+id/imgIcoPosicao" />
+
+    <TextView
+        android:id="@+id/txtIdioma"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:gravity="bottom|center"
+        android:padding="5dp"
+        android:text="@string/lblIdiomaLatim"
+        android:textSize="8sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imgIcoIdioma"
+        app:layout_constraintTop_toTopOf="@+id/imgIcoIdioma"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,9 +27,14 @@
     <string name="lblOremos">Oremos</string>
 
     <!-- ========== Dicas ================== -->
-    <string name="lblDicaTercoPosicao">Toque no terço para mudar a posição</string>
+    <string name="lblDicaTercoPosicao">Toque no terço</string>
     <string name="lblDicaImagem">Toque na Imagem para mudar a posição</string>
     <string name="lblDicaTercoSlide">Para continuar arraste a tela lateralmente</string>
+    <!-- ========== Botões Terço ================== -->
+    <string name="lblIdiomaPortugues">Português</string>
+    <string name="lblIdiomaLatim">Latim</string>
+    <string name="lblPosicao">Mudar Posição</string>
+    <string name="lblVoltar">Voltar</string>
 
     <!-- _____________________________________________________________________________________________________________________________________-->
     <!-- _______________________________________________________VERSÃO PORTUGUÊS _____________________________________________________________-->
