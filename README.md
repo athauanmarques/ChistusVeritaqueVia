@@ -1,32 +1,29 @@
 # Santo Terço: Chistus Veritaque Via
 
 ### Sobre o projeto
-Um serviço que integra o XXX como plataforma de YYY.
+Este aplicativo permite que você acompanhe o rosário vendo imagens de cada mistério e acompanhando todo o percurso com um terço virtual. 
 
 ### OBJETIVO
-Este projeto é mantido sob o mais absoluto sigilo para a Empresa ZZZ. Se você está vendo isso certamente você faz parte do projeto. O objetivo deste documento é facilitar a compreenção do escopo do projeto e de como funciona.
+O intuído do projeto é meramente por fins educativos e provavelmente possível defesa para TCC.
 
 ### Layout
 Molile
 
 Web
 
-### Tecnologias
-As seguintes ferramentas foram usadas na construção do projeto:
 
 ### INSTALAÇÃO LOCAL
-• Instale apache, php e sql ao seu modo (xampp, wamp ou individual), instale o composer e o git;
+• Instale Android Studio (recomendavel) ou outra IDE que complia a linguagem java;
 • Em seu servidor local baixe o projeto usando `git clone`;
-• Digite: `composer install` para instalar as bibliotecas;
-• Instale `database.sql` em PHPMyAdmin;
-• Agora, para que o envio de e-mail funcione localmente *__habilide a extensão open_openssl e php_sockets__** no php.ini, basta abrir o php.ini e usando `Ctrl+F` busque pelos termos openssl, descomente e depois depois repita os procedimentos para sockets, não se esqueça de reiniciar o apache depois do procedimento;
+• Digite: `git clone https://github.com/athauanmarques/ChistusVeritaqueVia.git`;
+• Abre o IDE e selecione o projeto;
 
 ----------------------------
 #### SE VOCÊ CHEGOU ATÉ AQUI
 Muito obrigado pela atenção
 
-#### SOBRE O AUTOR/ORGANIZADOR
-Philipe Cairon Medeiros de Siqueira
-caironm.go@gmail.com
-Idéias? Vamos discutir. Telegram: @caironm
+#### SOBRE O AUTOR
+Athauan Marques da Cunha
+estovirksk@gmail.com
+Idéias? Vamos discutir.
 
