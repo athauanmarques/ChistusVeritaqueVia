@@ -10,9 +10,7 @@ O intuído do projeto é meramente por fins educativos e provavelmente possível
 
 ## Layout
 
-Molile
-![enter image description here](https://raw.githubusercontent.com/athauanmarques/ChistusVeritaqueVia/master/.github/Layout/Splash%20Screen.png?token=AFULQMCT7TT44ZT7FR55N3S7SWXV2)  ![enter image description here](https://raw.githubusercontent.com/athauanmarques/ChistusVeritaqueVia/master/.github/Layout/Ter%C3%A7o.png?token=AFULQMFCYK5HZ4V6OKFBJO27SWXVU)
-![enter image description here](https://raw.githubusercontent.com/athauanmarques/ChistusVeritaqueVia/master/.github/Layout/Misterio%20%E2%80%93%201.png?token=AFULQMDVWEGEL7GMBYIODV27SWXSI) ![enter image description here](https://raw.githubusercontent.com/athauanmarques/ChistusVeritaqueVia/master/.github/Layout/Oferecimento%20%E2%80%93%201.png?token=AFULQMEXRGZE6OGL34TNYEC7SWXU6)
+![enter image description here](https://raw.githubusercontent.com/athauanmarques/ChistusVeritaqueVia/0ff7aafeaa26a5406c00f2b31ea2edf2a6ce0f1c/.github/Layout/Splash%20Screen.png?token=AFULQMBWM7EMU6UOV5WA36K7SWYX4) ![enter image description here](https://raw.githubusercontent.com/athauanmarques/ChistusVeritaqueVia/0ff7aafeaa26a5406c00f2b31ea2edf2a6ce0f1c/.github/Layout/Ter%C3%A7o.png?token=AFULQMDKE5VTLFCOSZZQGO27SWY3C)
 # Instalação Local
 
 - Instale Android Studio (recomendavel) ou outra IDE que complia a linguagem java;
@@ -28,4 +26,3 @@ Athauan Marques da Cunha.
 estovirksk@gmail.com.br
 
 Idéias? Vamos discutir.
-
