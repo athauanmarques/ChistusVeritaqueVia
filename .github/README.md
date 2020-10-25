@@ -10,8 +10,8 @@ O intuído do projeto é meramente por fins educativos.
 
 ## Layout
 
-![](https://github.com/athauanmarques/ChistusVeritaqueVia/blob/master/.github/Layout/Splash%20Screen.png) ![](ChistusVeritaqueVia/.github/Layout/Terço.png.png) 
-![](ChistusVeritaqueVia/.github/Layout/Misterio – 1.png) ![](ChistusVeritaqueVia/.github/Layout/Oferecimento – 1.png) 
+![](https://github.com/athauanmarques/ChistusVeritaqueVia/blob/master/.github/Layout/Splash%20Screen.png) ![](https://github.com/athauanmarques/ChistusVeritaqueVia/blob/master/.github/Layout/Ter%C3%A7o.png) 
+![](https://github.com/athauanmarques/ChistusVeritaqueVia/blob/master/.github/Layout/Misterio%20%E2%80%93%201.png) ![](https://github.com/athauanmarques/ChistusVeritaqueVia/blob/master/.github/Layout/Oferecimento%20%E2%80%93%201.png) 
 
 # Instalação Local
 
