@@ -10,8 +10,8 @@ O intuído do projeto é meramente por fins educativos.
 
 ## Layout
 
-![](h.github/Layout/Splash Screen.png) ![](h.github/Layout/Terço.png.png) 
-![](h.github/Layout/Misterio – 1.png) ![](h.github/Layout/Oferecimento – 1.png) 
+![](.github/Layout/Splash Screen.png) ![](.github/Layout/Terço.png.png) 
+![](.github/Layout/Misterio – 1.png) ![](.github/Layout/Oferecimento – 1.png) 
 
 # Instalação Local
 
