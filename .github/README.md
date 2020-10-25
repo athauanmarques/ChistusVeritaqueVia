@@ -1,3 +1,5 @@
+![](https://github.com/athauanmarques/ChistusVeritaqueVia/blob/master/.github/Layout/logo.PNG)
+
 #  Santo Terço: Chistus Veritaque Via
 
 ## Sobre o projeto
