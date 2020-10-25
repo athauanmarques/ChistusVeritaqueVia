@@ -6,7 +6,7 @@ Este aplicativo permite que você acompanhe o rosário vendo imagens de cada mis
 
 ## Objetivo
 
-O intuído do projeto é meramente por fins educativos e provavelmente possível defesa para TCC.
+O intuído do projeto é meramente por fins educativos.
 
 ## Layout
 
