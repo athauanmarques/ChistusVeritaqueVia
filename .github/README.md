@@ -6,14 +6,12 @@ Este aplicativo permite que você acompanhe o rosário vendo imagens de cada mis
 
 ## Objetivo
 
-O intuído do projeto é meramente por fins educativos e provavelmente possível defesa para TCC.
+O intuído do projeto é meramente por fins educativos.
 
 ## Layout
 
-Molile
-
-Web
-
+![](https://github.com/athauanmarques/ChistusVeritaqueVia/blob/master/.github/Layout/Splash%20Screen.png) ![](https://github.com/athauanmarques/ChistusVeritaqueVia/blob/master/.github/Layout/Ter%C3%A7o.png) 
+![](https://github.com/athauanmarques/ChistusVeritaqueVia/blob/master/.github/Layout/Misterio%20%E2%80%93%201.png) ![](https://github.com/athauanmarques/ChistusVeritaqueVia/blob/master/.github/Layout/Oferecimento%20%E2%80%93%201.png) 
 
 # Instalação Local
 
@@ -30,5 +28,3 @@ Athauan Marques da Cunha.
 estovirksk@gmail.com.br
 
 Idéias? Vamos discutir.
-
-
