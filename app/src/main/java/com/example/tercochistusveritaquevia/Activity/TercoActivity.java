@@ -171,6 +171,7 @@ public class TercoActivity extends AppCompatActivity {
 
         // Mudar para o Português
         if (idiomaAtual.equals("Credo")) {
+            txtOracao.setTextSize(10);
             atribuir.idiomaSelecionado(0, atribuir.isTipoIdioma());
             txtTitulo.setText(atribuir.getTitulo());
             txtOracao.setText(atribuir.getOracao());
@@ -216,6 +217,7 @@ public class TercoActivity extends AppCompatActivity {
 
                      @SuppressLint("WrongConstant")
     public void atualizarTexto() {
+            txtOracao.setTextSize(16);
             atribuir.executarTerco();
             txtTitulo.setText(atribuir.getTitulo());
             txtSub.setText(atribuir.getSubTitulo());
