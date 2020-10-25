@@ -18,7 +18,7 @@ O intuído do projeto é meramente por fins educativos e provavelmente possível
 - Digite: `git clone https://github.com/athauanmarques/ChistusVeritaqueVia.git`;
 - Abre o IDE e selecione o projeto;
 
-##  SE VOCÊ CHEGOU ATÉ AQU
+##  SE VOCÊ CHEGOU ATÉ AQUI
 Muito obrigado pela atenção
 
 ## SOBRE O AUTOR
