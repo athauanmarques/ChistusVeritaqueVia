@@ -10,7 +10,7 @@ O intuído do projeto é meramente por fins educativos.
 
 ## Layout
 
-![](ChistusVeritaqueVia/.github/Layout/Splash Screen.png) ![](ChistusVeritaqueVia/.github/Layout/Terço.png.png) 
+![](Layout/Splash Screen.png) ![](ChistusVeritaqueVia/.github/Layout/Terço.png.png) 
 ![](ChistusVeritaqueVia/.github/Layout/Misterio – 1.png) ![](ChistusVeritaqueVia/.github/Layout/Oferecimento – 1.png) 
 
 # Instalação Local
