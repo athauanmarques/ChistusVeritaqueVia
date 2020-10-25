@@ -10,7 +10,9 @@ O intuído do projeto é meramente por fins educativos.
 
 ## Layout
 
-![enter image description here](https://raw.githubusercontent.com/athauanmarques/ChistusVeritaqueVia/0ff7aafeaa26a5406c00f2b31ea2edf2a6ce0f1c/.github/Layout/Splash%20Screen.png?token=AFULQMBWM7EMU6UOV5WA36K7SWYX4) ![enter image description here](https://raw.githubusercontent.com/athauanmarques/ChistusVeritaqueVia/0ff7aafeaa26a5406c00f2b31ea2edf2a6ce0f1c/.github/Layout/Ter%C3%A7o.png?token=AFULQMDKE5VTLFCOSZZQGO27SWY3C)
+![](h.github/Layout/Splash Screen.png) ![](h.github/Layout/Terço.png.png) 
+![](h.github/Layout/Misterio – 1.png) ![](h.github/Layout/Oferecimento – 1.png) 
+
 # Instalação Local
 
 - Instale Android Studio (recomendavel) ou outra IDE que complia a linguagem java;
