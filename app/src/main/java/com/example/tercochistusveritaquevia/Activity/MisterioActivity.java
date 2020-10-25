@@ -178,24 +178,24 @@ public class MisterioActivity extends IntroActivity {
     }
 
     public void goCreioExibir(View view){
-        atribuir.idiomaSelecionado(0);
+        atribuir.idiomaSelecionado(0, atribuir.isTipoIdioma());
         aplicarTextoDialog();
     }
 
     public void goPaiNossoExibir(View view){
-        atribuir.idiomaSelecionado(1);
+        atribuir.idiomaSelecionado(1, atribuir.isTipoIdioma());
         aplicarTextoDialog();
     }
     public void goAveMariaExibir(View view){
-        atribuir.idiomaSelecionado(2);
+        atribuir.idiomaSelecionado(2, atribuir.isTipoIdioma());
         aplicarTextoDialog();
     }
     public void goGloriaExibir(View view){
-        atribuir.idiomaSelecionado(3);
+        atribuir.idiomaSelecionado(3, atribuir.isTipoIdioma());
         aplicarTextoDialog();
     }
     public void goJaculatoriaExibir(View view){
-        atribuir.idiomaSelecionado(4);
+        atribuir.idiomaSelecionado(4, atribuir.isTipoIdioma());
         aplicarTextoDialog();
     }
 

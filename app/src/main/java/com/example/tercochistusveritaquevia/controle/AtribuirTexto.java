@@ -48,7 +48,7 @@ import static com.example.tercochistusveritaquevia.R.string.titulo5Mt;
 
 public class AtribuirTexto extends ProgressoTerco{
     private String msgMisterioDia;
-    private static boolean tipoIdioma; //true = latim / False = Português
+    private boolean tipoIdioma; //true = latim / False = Português
     private int titulo, img, subTitulo, oracao, exibirComponente = 2, exibirBotao = 0;
 
 
@@ -97,30 +97,30 @@ public class AtribuirTexto extends ProgressoTerco{
     public void fixarTexto(int op){
         if(op == 1) {
             setExibirComponente(2);
-            idiomaSelecionado(1); //Pai Nosso
+            idiomaSelecionado(1, isTipoIdioma()); //Pai Nosso
             setImg(R.drawable.pai);
             setSubTitulo(R.string.lblDicaImagem);
         } else if(op == 2) {
-            idiomaSelecionado(2); //Ave Maria
+            idiomaSelecionado(2, isTipoIdioma()); //Ave Maria
             mudarFoto();
             setSubTitulo(R.string.lblDicaTercoPosicao);
         } else if(op == 3){
-            idiomaSelecionado(3); //Glória
+            idiomaSelecionado(3, isTipoIdioma()); //Glória
             mudarFoto();
             setSubTitulo(R.string.lblDicaTercoPosicao);
         } else if (op == 4){
-            idiomaSelecionado(4); //jaculatoria
+            idiomaSelecionado(4, isTipoIdioma()); //jaculatoria
             setImg(R.drawable.jaculatoria);
             setSubTitulo(R.string.lblDicaImagem);
         } else if (op == 5){
-            idiomaSelecionado(1); //Pai Nosso
+            idiomaSelecionado(1, isTipoIdioma()); //Pai Nosso
             setSubTitulo(R.string.lblDicaTercoPosicao);
             setImg(R.drawable.p1);
         } else if (op == 6){
-            idiomaSelecionado(2); //Ave Maria
+            idiomaSelecionado(2, isTipoIdioma()); //Ave Maria
             setImg(R.drawable.p2);
         } else if (op == 7) {
-            idiomaSelecionado(3); //Glória
+            idiomaSelecionado(3, isTipoIdioma()); //Glória
             setImg(R.drawable.p5);
         }
     }
@@ -347,10 +347,10 @@ public class AtribuirTexto extends ProgressoTerco{
     }
 
     //----------Não está implementado ----------------------
-    public void idiomaSelecionado(int opIdioma) {
+    public void idiomaSelecionado(int opTipoOracao, boolean selcionadoIdioma) {
         //true == latim
-        if (tipoIdioma) {
-            switch (opIdioma) {
+        if (selcionadoIdioma) {
+            switch (opTipoOracao) {
                 case 0:
                     setTitulo(R.string.lblCreioTituloLT);
                     setOracao(R.string.lblCreioLT);
@@ -373,10 +373,10 @@ public class AtribuirTexto extends ProgressoTerco{
                     break;
 
                 default:
-                    throw new IllegalStateException("Unexpected value: " + opIdioma);
+                    throw new IllegalStateException("Unexpected value: " + isTipoIdioma());
             }
         } else {
-            switch (opIdioma) {
+            switch (opTipoOracao) {
                 case 0:
                     setTitulo(R.string.lblCreioTitulo);
                     setOracao(R.string.lblCreio);
@@ -399,7 +399,7 @@ public class AtribuirTexto extends ProgressoTerco{
                     break;
 
                 default:
-                    throw new IllegalStateException("Unexpected value: " + opIdioma);
+                    throw new IllegalStateException("Unexpected value: " + isTipoIdioma());
             }
 
         }
@@ -416,12 +416,12 @@ public class AtribuirTexto extends ProgressoTerco{
         this.msgMisterioDia = msgMisterioDia;
     }
 
-    public static boolean isTipoIdioma() {
+    public boolean isTipoIdioma() {
         return tipoIdioma;
     }
 
-    public static void setTipoIdioma(boolean tipoIdioma) {
-        AtribuirTexto.tipoIdioma = tipoIdioma;
+    public void setTipoIdioma(boolean tipoIdioma) {
+        this.tipoIdioma = tipoIdioma;
     }
 
     public int getExibirBotao() {

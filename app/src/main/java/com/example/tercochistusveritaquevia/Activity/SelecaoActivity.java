@@ -22,7 +22,7 @@ public class SelecaoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selecao);
        // ProgressoTerco.setTercoVirtual(true);
-        AtribuirTexto.setTipoIdioma(false); //Português padrão
+      //  AtribuirTexto.setTipoIdioma(false); //Português padrão
         reiniciarTerco.zerarTerco();
 
 

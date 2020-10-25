@@ -13,6 +13,7 @@ import android.widget.Toolbar;
 
 import com.example.tercochistusveritaquevia.R;
 import com.example.tercochistusveritaquevia.controle.AtribuirTexto;
+import com.example.tercochistusveritaquevia.controle.ProgressoTerco;
 
 import static com.example.tercochistusveritaquevia.R.*;
 
@@ -31,7 +32,7 @@ public class TercoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_terco);
 
-
+        atribuir.setTipoIdioma(false); //inicializar como idioma Português
 
         imgTerco = findViewById(R.id.imgTerco);
         bntTercoMT = findViewById(R.id.bntMisterio);
@@ -47,8 +48,6 @@ public class TercoActivity extends AppCompatActivity {
         imgPosicao = findViewById(id.imgIcoPosicao);
         imgVoltar = findViewById(id.imgIcoVoltar);
 
-      //  barraToolbar = findViewById(id.tercoToolbar);
-
 
             controleExibicao();
 
@@ -59,11 +58,21 @@ public class TercoActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         setContentView(layout.activity_terco);
+        atribuir.setTipoIdioma(false); //inicializar como idioma Português
 
         imgTerco = findViewById(R.id.imgTerco);
-        bntTercoMT = findViewById(id.bntMisterio);
+        bntTercoMT = findViewById(R.id.bntMisterio);
         txtTitulo = findViewById(id.txtTituloOracao);
         txtOracao = findViewById(id.txtOracao);
+        txtSub = findViewById(R.id.txtSub);
+
+        txtVoltar = findViewById(id.txtVoltar);
+        txtPosicao = findViewById(id.txtPosicao);
+        txtIdioma = findViewById(id.txtIdioma);
+
+        imgIdioma = findViewById(id.imgIcoIdioma);
+        imgPosicao = findViewById(id.imgIcoPosicao);
+        imgVoltar = findViewById(id.imgIcoVoltar);
 
         controleExibicao();
 
@@ -74,7 +83,7 @@ public class TercoActivity extends AppCompatActivity {
             @SuppressLint("WrongConstant")
             @Override
             public void onClick(View v) {
-                    atualizarTexto();
+                atualizarTexto();
             }
         });
 
@@ -105,7 +114,7 @@ public class TercoActivity extends AppCompatActivity {
         imgVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent voltar = new Intent( TercoActivity.this,   OferecimentoActivity.class);
+                Intent voltar = new Intent(TercoActivity.this, OferecimentoActivity.class);
                 startActivity(voltar);
             }
         });
@@ -113,7 +122,7 @@ public class TercoActivity extends AppCompatActivity {
         txtVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent voltar = new Intent( TercoActivity.this,   OferecimentoActivity.class);
+                Intent voltar = new Intent(TercoActivity.this, OferecimentoActivity.class);
                 startActivity(voltar);
             }
         });
@@ -121,97 +130,98 @@ public class TercoActivity extends AppCompatActivity {
         imgIdioma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mudarIdioma();
+                if (txtIdioma.getText().equals("Português")) {
+                    atribuir.setTipoIdioma(true);
+                    txtIdioma.setText(string.lblIdiomaLatim);
+                    imgIdioma.setImageResource(drawable.ic_latim);
+                    mudarIdioma();
+                } else {
+                    atribuir.setTipoIdioma(false);
+                    txtIdioma.setText(R.string.lblIdiomaPortugues);
+                    imgIdioma.setImageResource(drawable.ic_portugues);
+                    mudarIdioma();
+                }
             }
+
         });
 
         txtIdioma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mudarIdioma();
+
+                if (txtIdioma.getText().equals("Português")) {
+                    atribuir.setTipoIdioma(true);
+                    txtIdioma.setText(string.lblIdiomaLatim);
+                    imgIdioma.setImageResource(drawable.ic_latim);
+                    mudarIdioma();
+                } else {
+                    atribuir.setTipoIdioma(true);
+                    txtIdioma.setText(R.string.lblIdiomaPortugues);
+                    imgIdioma.setImageResource(drawable.ic_portugues);
+                    mudarIdioma();
+                }
             }
         });
-
     }
 
-    public void mudarIdioma(){
-         final String idiomaAtual = (String) txtTitulo.getText(),
-                      oracaoAtual = (String) txtOracao.getText(),
-                      compararAverMariaPT = Integer.toString(string.lblAveMaria),
-                      compararAverMariaLT = Integer.toString(string.lblAveMariaLT);
-        String idiomaExibicaoTexto = (String) txtIdioma.getText();
 
+    public void mudarIdioma() {
+        final String idiomaAtual = (String) txtTitulo.getText(),
+                oracaoAtual = (String) txtOracao.getText();
 
-
-                 // Mudar para o Português
-                 if(idiomaAtual.equals("Credo")){
-                     txtTitulo.setText(string.lblCreioTitulo);
-                     txtOracao.setText(string.lblCreio);
-                     txtIdioma.setText(string.lblIdiomaLatim);
-                     imgIdioma.setImageResource(drawable.ic_latim);
-                 }else if(idiomaAtual.equals("Pater Noster")){
-                     txtTitulo.setText(string.lblPaiNossoTitulo);
-                     txtOracao.setText(string.lblPaiNosso);
-                     txtIdioma.setText(string.lblIdiomaLatim);
-                     imgIdioma.setImageResource(drawable.ic_latim);;
-                 }else if(oracaoAtual.equals(compararAverMariaLT)){
-                     txtTitulo.setText(string.lblPaiNossoTitulo);
-                     txtOracao.setText(string.lblPaiNosso);
-                     txtIdioma.setText(string.lblIdiomaLatim);
-                     imgIdioma.setImageResource(drawable.ic_latim);
-                 }else if(idiomaAtual.equals("Gloria")){
-                     txtTitulo.setText(string.lblGloriaTitulo);
-                     txtOracao.setText(string.lblGloria);
-                     txtIdioma.setText(string.lblIdiomaLatim);
-                     imgIdioma.setImageResource(drawable.ic_latim);
-                 }else if(idiomaAtual.equals("Oratio Fatimae")){
-                     txtTitulo.setText(string.lblJaculatoriaTitulo);
-                     txtOracao.setText(string.lblJaculatoria);
-                     txtIdioma.setText(string.lblIdiomaLatim);
-                     imgIdioma.setImageResource(drawable.ic_latim);
-                 }//Mudar para o Latim
-                 else if(idiomaAtual.equals("Creio")){
-                    txtTitulo.setText(string.lblCreioTituloLT);
-                    txtOracao.setText(string.lblCreioLT);
-                     txtIdioma.setText(R.string.lblIdiomaPortugues);
-                     imgIdioma.setImageResource(drawable.ic_portugues);
-                }else if(idiomaAtual.equals("Pai Nosso")){
-                    txtTitulo.setText(string.lblPaiNossoTituloLT);
-                    txtOracao.setText(string.lblPaiNossoLT);
-                     txtIdioma.setText(R.string.lblIdiomaPortugues);
-                     imgIdioma.setImageResource(drawable.ic_portugues);
-                }else if(oracaoAtual.equals(compararAverMariaPT)){
-                    txtTitulo.setText(string.lblPaiNossoTituloLT);
-                    txtOracao.setText(string.lblPaiNossoLT);
-                     txtIdioma.setText(R.string.lblIdiomaPortugues);
-                     imgIdioma.setImageResource(drawable.ic_portugues);
-                }else if(idiomaAtual.equals("Glória")){
-                    txtTitulo.setText(string.lblGloriaTituloLT);
-                    txtOracao.setText(string.lblGloriaLT);
-                     txtIdioma.setText(R.string.lblIdiomaPortugues);
-                     imgIdioma.setImageResource(drawable.ic_portugues);
-                }else if(idiomaAtual.equals("Jaculatória")){
-                    txtTitulo.setText(string.lblJaculatoriaTituloLT);
-                    txtOracao.setText(string.lblJaculatoriaLT);
-                     txtIdioma.setText(R.string.lblIdiomaPortugues);
-                     imgIdioma.setImageResource(drawable.ic_portugues);
-                }
+        // Mudar para o Português
+        if (idiomaAtual.equals("Credo")) {
+            atribuir.idiomaSelecionado(0, atribuir.isTipoIdioma());
+            txtTitulo.setText(atribuir.getTitulo());
+            txtOracao.setText(atribuir.getOracao());
+        } else if (idiomaAtual.equals("Pater Noster")) {
+            atribuir.idiomaSelecionado(1, atribuir.isTipoIdioma());
+            txtTitulo.setText(atribuir.getTitulo());
+            txtOracao.setText(atribuir.getOracao());
+        } else if (idiomaAtual.equals("Gloria")) {
+            atribuir.idiomaSelecionado(3, atribuir.isTipoIdioma());
+            txtTitulo.setText(atribuir.getTitulo());
+            txtOracao.setText(atribuir.getOracao());
+        } else if (idiomaAtual.equals("Oratio Fatimae")) {
+            atribuir.idiomaSelecionado(4, atribuir.isTipoIdioma());
+            txtTitulo.setText(atribuir.getTitulo());
+            txtOracao.setText(atribuir.getOracao());
+        }//Mudar para o Latim
+        else if (idiomaAtual.equals("Creio")) {
+            atribuir.idiomaSelecionado(0, atribuir.isTipoIdioma());
+            txtTitulo.setText(atribuir.getTitulo());
+            txtOracao.setText(atribuir.getOracao());
+        } else if (idiomaAtual.equals("Pai Nosso")) {
+            atribuir.idiomaSelecionado(1, atribuir.isTipoIdioma());
+            txtTitulo.setText(atribuir.getTitulo());
+            txtOracao.setText(atribuir.getOracao());
+        } else if (idiomaAtual.equals("Glória")) {
+            atribuir.idiomaSelecionado(3, atribuir.isTipoIdioma());
+            txtTitulo.setText(atribuir.getTitulo());
+            txtOracao.setText(atribuir.getOracao());
+        } else if (idiomaAtual.equals("Jaculatória")) {
+            atribuir.idiomaSelecionado(4, atribuir.isTipoIdioma());
+            txtTitulo.setText(atribuir.getTitulo());
+            txtOracao.setText(atribuir.getOracao());
+        } else if (atribuir.isTipoIdioma() && idiomaAtual.equals("Ave Maria")) {
+            atribuir.idiomaSelecionado(2, atribuir.isTipoIdioma());
+            txtTitulo.setText(atribuir.getTitulo());
+            txtOracao.setText(atribuir.getOracao());
+        } else if (!atribuir.isTipoIdioma() && idiomaAtual.equals("Ave Maria")) {
+            atribuir.idiomaSelecionado(2, atribuir.isTipoIdioma());
+            txtTitulo.setText(atribuir.getTitulo());
+            txtOracao.setText(atribuir.getOracao());
         }
+    }
 
-
-
-
-
-
-
-
-    @SuppressLint("WrongConstant")
+                     @SuppressLint("WrongConstant")
     public void atualizarTexto() {
             atribuir.executarTerco();
             txtTitulo.setText(atribuir.getTitulo());
             txtSub.setText(atribuir.getSubTitulo());
             imgTerco.setImageResource(atribuir.getImg());
             txtOracao.setText(atribuir.getOracao());
+
            //Exbir e  esconder Botão agradecimento
                 if (atribuir.getExibirComponente() == 2) {
                     if (atribuir.getExibirBotao() == 2) {
@@ -224,7 +234,6 @@ public class TercoActivity extends AppCompatActivity {
                         imgIdioma.setVisibility(View.GONE);
                         imgPosicao.setVisibility(View.GONE);
                         imgVoltar.setVisibility(View.GONE);
-                        //    tercoToolbar.setVisibility(View.GONE);
                     }
                 } else {
                     txtSub.setVisibility(View.VISIBLE);

@@ -29,7 +29,7 @@ public class SalveRainhaActivity extends AppCompatActivity {
         txtRainhaOracao = findViewById(R.id.txtOracaoRainha);
         txtRainhaTitulo = findViewById(R.id.txtTituloRainha);
 
-        if(AtribuirTexto.isTipoIdioma()){
+        if(AtribuirTexto.isTercoVirtual()){
             txtRainhaTitulo.setText(R.string.lblSalveRainhaTituloLT);
             txtRainhaOracao.setText(R.string.lblSalveRainhaOracaoLT);
         }
