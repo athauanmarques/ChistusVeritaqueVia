@@ -1,7 +1,5 @@
 ![](https://github.com/athauanmarques/ChistusVeritaqueVia/blob/master/.github/Layout/logo.PNG)
 
-#  Santo Terço: Chistus Veritaque Via
-
 ## Sobre o projeto
 
 Este aplicativo permite que você acompanhe o rosário vendo imagens de cada mistério e acompanhando todo o percurso com um terço virtual.
