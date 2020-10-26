@@ -1,0 +1,17 @@
+Versões 
+
+commites
+mês.ano - que foi feito 
+10.20 - Alterado layout
+
+Breach
+mês.ano.qtsBugs.estadoApp - O que será implementado
+
+Estado do APP em desenvolvimento (app não está publicado)
+10.20.3254_DEV - floating Buttom
+
+Estado do APP está aberto para o público (está publicado mais tem alguns)
+10.20.3254_BETA - correção botão
+
+Estado do APP estável ALPHA (Está estável)
+10.20.3254_ALPHA - melhorar usabilidade do layout 
