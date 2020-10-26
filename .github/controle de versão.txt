@@ -6,12 +6,48 @@ mês.ano - que foi feito
 
 Breach
 mês.ano.qtsBugs.estadoApp - O que será implementado
+qtsBugs é de acordo com o relatório Andorid: 15 erros 107 warnings (soma)
+
 
 Estado do APP em desenvolvimento (app não está publicado)
-10.20.3254_DEV - floating Buttom
+10.20.122_DEV - floating Buttom
 
 Estado do APP está aberto para o público (está publicado mais tem alguns)
-10.20.3254_BETA - correção botão
+10.20.122_BETA - correção botão
 
 Estado do APP estável ALPHA (Está estável)
-10.20.3254_ALPHA - melhorar usabilidade do layout 
+10.20.122_ALPHA - melhorar usabilidade do layout 
+
+-------------------------------------
+Releases
+
+Tag = vMes.ano-Dev.qts de vezes que foi lançando no mesmo estado
+exemplo:
+
+v10.20-dev.1
+v10.20-dev.2
+v11.20-dev.3
+
+
+Melhorias (O que foi feito)
+- ahuahuahu
+
+
+Implentações possiveis (O que pode ser acrescentado)
+-
+-
+-
+
+
+Relatório IDE
+- Android: 15 erros 107 warnings
+- Java: 64
+- Proofreading: 2705 typos
+- XML: 19
+
+Comentário
+Existem layouts e activitys que não estão sendo utilizados:
+- MisterioActivity
+- SelecaoActivity
+OBS: Será modificado para outra função ou deletado.
+
