@@ -11,26 +11,27 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/alex_brush"
         android:text="@string/lblAgradecimentoTitulo"
         android:textAppearance="@style/stTitulo"
         android:textColor="@color/letraInicio"
-        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45"
-        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.028"
         tools:text="@string/lblAgradecimentoTitulo" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="250dp"
-        android:layout_marginBottom="32dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
         app:srcCompat="@drawable/tercobranco" />
@@ -38,9 +39,7 @@
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_height="0dp"
         android:fontFamily="@font/merriweather_light"
         android:gravity="center"
         android:padding="20dp"
@@ -50,6 +49,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/bntSalveMaria"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -57,7 +57,7 @@
         android:id="@+id/bntSalveMaria"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/bntpadrao"
         android:padding="20dp"
         android:text="@string/bntAgradecimentoPT"
@@ -66,5 +66,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

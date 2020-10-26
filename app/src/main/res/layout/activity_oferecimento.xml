@@ -13,45 +13,22 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:fontFamily="@font/alex_brush"
         android:text="@string/lblOferecimento"
         android:textAppearance="@style/stTitulo"
         android:textColor="@color/textoTitulo"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29000002"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="351dp"
-        android:layout_height="171dp"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="@font/merriweather_light"
-        android:gravity="center|center_horizontal|center_vertical"
-        android:text="@string/lblDescricaoOF"
-        android:textAppearance="@style/stTextoGeral"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        android:typeface="normal"
-        app:autoSizeTextType="none"
-        app:layout_constraintBottom_toTopOf="@+id/bntIniciar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintVertical_bias="0.075" />
 
     <Button
         android:id="@+id/bntIniciar"
         android:layout_width="341dp"
         android:layout_height="57dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/bntpadrao"
         android:onClick="iniciarCreio"
         android:text="@string/bntIniciarOF"
@@ -59,22 +36,38 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="300dp"
-        android:layout_marginStart="51dp"
-        android:layout_marginLeft="51dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginRight="51dp"
-        android:layout_marginBottom="32dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
         app:srcCompat="@drawable/jaculatoria" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/merriweather_light"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:padding="5dp"
+        android:text="@string/lblDescricaoOF"
+        android:textAppearance="@style/stTextoGeral"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:autoSizeTextType="none"
+        app:layout_constraintBottom_toTopOf="@+id/bntIniciar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toolbar;
@@ -21,10 +22,10 @@ public class TercoActivity extends AppCompatActivity {
 
     AtribuirTexto atribuir = new AtribuirTexto();
 
-    private ImageView imgTerco, imgIdioma, imgPosicao, imgVoltar;
+    private ImageView imgIdioma, imgPosicao, imgVoltar;
+    private ImageButton imgTerco;
     private Button bntTercoMT;
     private TextView txtTitulo, txtOracao, txtSub, txtVoltar, txtPosicao, txtIdioma;
-    private Toolbar barraToolbar;
 
     @SuppressLint("WrongConstant")
     @Override
@@ -32,9 +33,9 @@ public class TercoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_terco);
 
-        atribuir.setTipoIdioma(false); //inicializar como idioma Português
+       // atribuir.setTipoIdioma(false); //inicializar como idioma Português
 
-        imgTerco = findViewById(R.id.imgTerco);
+        imgTerco = findViewById(id.imgTerco);
         bntTercoMT = findViewById(R.id.bntMisterio);
         txtTitulo = findViewById(id.txtTituloOracao);
         txtOracao = findViewById(id.txtOracao);
@@ -58,7 +59,7 @@ public class TercoActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         setContentView(layout.activity_terco);
-        atribuir.setTipoIdioma(false); //inicializar como idioma Português
+      //  atribuir.setTipoIdioma(false); //inicializar como idioma Português
 
         imgTerco = findViewById(R.id.imgTerco);
         bntTercoMT = findViewById(R.id.bntMisterio);
@@ -132,14 +133,14 @@ public class TercoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (txtIdioma.getText().equals("Português")) {
                     atribuir.setTipoIdioma(true);
+                    mudarIdioma(atribuir.isTipoIdioma());
                     txtIdioma.setText(string.lblIdiomaLatim);
                     imgIdioma.setImageResource(drawable.ic_latim);
-                    mudarIdioma();
                 } else {
                     atribuir.setTipoIdioma(false);
+                    mudarIdioma(atribuir.isTipoIdioma());
                     txtIdioma.setText(R.string.lblIdiomaPortugues);
                     imgIdioma.setImageResource(drawable.ic_portugues);
-                    mudarIdioma();
                 }
             }
 
@@ -148,68 +149,66 @@ public class TercoActivity extends AppCompatActivity {
         txtIdioma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 if (txtIdioma.getText().equals("Português")) {
                     atribuir.setTipoIdioma(true);
+                    mudarIdioma(atribuir.isTipoIdioma());
                     txtIdioma.setText(string.lblIdiomaLatim);
                     imgIdioma.setImageResource(drawable.ic_latim);
-                    mudarIdioma();
                 } else {
-                    atribuir.setTipoIdioma(true);
+                    atribuir.setTipoIdioma(false);
+                    mudarIdioma(atribuir.isTipoIdioma());
                     txtIdioma.setText(R.string.lblIdiomaPortugues);
                     imgIdioma.setImageResource(drawable.ic_portugues);
-                    mudarIdioma();
+
                 }
             }
         });
     }
 
 
-    public void mudarIdioma() {
-        final String idiomaAtual = (String) txtTitulo.getText(),
-                oracaoAtual = (String) txtOracao.getText();
-
+    public void mudarIdioma(boolean tipoIdioma) {
+        final String idiomaAtual = (String) txtTitulo.getText();
         // Mudar para o Português
         if (idiomaAtual.equals("Credo")) {
             txtOracao.setTextSize(10);
-            atribuir.idiomaSelecionado(0, atribuir.isTipoIdioma());
+            atribuir.idiomaSelecionado(0, tipoIdioma);
             txtTitulo.setText(atribuir.getTitulo());
             txtOracao.setText(atribuir.getOracao());
         } else if (idiomaAtual.equals("Pater Noster")) {
-            atribuir.idiomaSelecionado(1, atribuir.isTipoIdioma());
+            atribuir.idiomaSelecionado(1, tipoIdioma);
             txtTitulo.setText(atribuir.getTitulo());
             txtOracao.setText(atribuir.getOracao());
         } else if (idiomaAtual.equals("Gloria")) {
-            atribuir.idiomaSelecionado(3, atribuir.isTipoIdioma());
+            atribuir.idiomaSelecionado(3, tipoIdioma);
             txtTitulo.setText(atribuir.getTitulo());
             txtOracao.setText(atribuir.getOracao());
         } else if (idiomaAtual.equals("Oratio Fatimae")) {
-            atribuir.idiomaSelecionado(4, atribuir.isTipoIdioma());
+            atribuir.idiomaSelecionado(4, tipoIdioma);
             txtTitulo.setText(atribuir.getTitulo());
             txtOracao.setText(atribuir.getOracao());
         }//Mudar para o Latim
         else if (idiomaAtual.equals("Creio")) {
-            atribuir.idiomaSelecionado(0, atribuir.isTipoIdioma());
+            atribuir.idiomaSelecionado(0, tipoIdioma);
             txtTitulo.setText(atribuir.getTitulo());
             txtOracao.setText(atribuir.getOracao());
         } else if (idiomaAtual.equals("Pai Nosso")) {
-            atribuir.idiomaSelecionado(1, atribuir.isTipoIdioma());
+            atribuir.idiomaSelecionado(1, tipoIdioma);
             txtTitulo.setText(atribuir.getTitulo());
             txtOracao.setText(atribuir.getOracao());
         } else if (idiomaAtual.equals("Glória")) {
-            atribuir.idiomaSelecionado(3, atribuir.isTipoIdioma());
+            atribuir.idiomaSelecionado(3, tipoIdioma);
             txtTitulo.setText(atribuir.getTitulo());
             txtOracao.setText(atribuir.getOracao());
         } else if (idiomaAtual.equals("Jaculatória")) {
-            atribuir.idiomaSelecionado(4, atribuir.isTipoIdioma());
+            atribuir.idiomaSelecionado(4, tipoIdioma);
             txtTitulo.setText(atribuir.getTitulo());
             txtOracao.setText(atribuir.getOracao());
         } else if (atribuir.isTipoIdioma() && idiomaAtual.equals("Ave Maria")) {
-            atribuir.idiomaSelecionado(2, atribuir.isTipoIdioma());
+            atribuir.idiomaSelecionado(2, tipoIdioma);
             txtTitulo.setText(atribuir.getTitulo());
             txtOracao.setText(atribuir.getOracao());
         } else if (!atribuir.isTipoIdioma() && idiomaAtual.equals("Ave Maria")) {
-            atribuir.idiomaSelecionado(2, atribuir.isTipoIdioma());
+            atribuir.idiomaSelecionado(2, tipoIdioma);
             txtTitulo.setText(atribuir.getTitulo());
             txtOracao.setText(atribuir.getOracao());
         }
@@ -217,7 +216,7 @@ public class TercoActivity extends AppCompatActivity {
 
                      @SuppressLint("WrongConstant")
     public void atualizarTexto() {
-            txtOracao.setTextSize(16);
+            txtOracao.setTextSize(12);
             atribuir.executarTerco();
             txtTitulo.setText(atribuir.getTitulo());
             txtSub.setText(atribuir.getSubTitulo());

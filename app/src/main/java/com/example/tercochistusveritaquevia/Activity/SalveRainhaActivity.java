@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.example.tercochistusveritaquevia.R;
@@ -14,27 +15,67 @@ import com.example.tercochistusveritaquevia.controle.ProgressoTerco;
 
 public class SalveRainhaActivity extends AppCompatActivity {
 
-    private Button bntCarpeDiem;
-    private TextView txtRainhaTitulo, txtRainhaOracao;
+
+    private TextView txtRainhaTitulo, txtRainhaOracao, txtIdiomaRainha, txtInicio;
+    private ImageButton imgIdiomaRainha, imgInicio;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_salve_rainha);
-        bntCarpeDiem = findViewById(R.id.bntCarpeDiem);
-        final Intent intent = new Intent(this, TercoActivity.class);
-        ProgressoTerco.setTercoVirtual(true);
+        final Intent intent = new Intent(this, OferecimentoActivity.class);
 
         txtRainhaOracao = findViewById(R.id.txtOracaoRainha);
         txtRainhaTitulo = findViewById(R.id.txtTituloRainha);
+        txtIdiomaRainha = findViewById(R.id.txtIdiomaRainha);
+        txtInicio = findViewById(R.id.txtInicio);
+        imgIdiomaRainha = findViewById(R.id.imgIdiomaRainha);
+        imgInicio = findViewById(R.id.imgIncio);
 
-        if(AtribuirTexto.isTercoVirtual()){
-            txtRainhaTitulo.setText(R.string.lblSalveRainhaTituloLT);
-            txtRainhaOracao.setText(R.string.lblSalveRainhaOracaoLT);
-        }
+        imgIdiomaRainha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (txtIdiomaRainha.getText().equals("Português")) {
+                    txtRainhaOracao.setText(R.string.lblSalveRainhaOracaoLT);
+                    txtRainhaTitulo.setText(R.string.lblSalveRainhaTituloLT);
+                    txtIdiomaRainha.setText(R.string.lblIdiomaLatim);
+                    imgIdiomaRainha.setImageResource(R.drawable.ic_latim);
+                } else {
+                    txtRainhaOracao.setText(R.string.lblSalveRainhaOracao);
+                    txtRainhaTitulo.setText(R.string.lblSalveRainhaTitulo);
+                    txtIdiomaRainha.setText(R.string.lblIdiomaPortugues);
+                    imgIdiomaRainha.setImageResource(R.drawable.ic_portugues);
+                }
+            }
+        });
+        txtIdiomaRainha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (txtIdiomaRainha.getText().equals("Português")) {
+                    txtRainhaOracao.setText(R.string.lblSalveRainhaOracaoLT);
+                    txtRainhaTitulo.setText(R.string.lblSalveRainhaTituloLT);
+                    txtIdiomaRainha.setText(R.string.lblIdiomaLatim);
+                    imgIdiomaRainha.setImageResource(R.drawable.ic_latim);
+                } else {
+                    txtRainhaOracao.setText(R.string.lblSalveRainhaOracao);
+                    txtRainhaTitulo.setText(R.string.lblSalveRainhaTitulo);
+                    txtIdiomaRainha.setText(R.string.lblIdiomaPortugues);
+                    imgIdiomaRainha.setImageResource(R.drawable.ic_portugues);
+                }
+            }
+        });
 
-        bntCarpeDiem.setOnClickListener(new View.OnClickListener() {
+
+
+        txtInicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent);
+            }
+        });
+
+        imgInicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(intent);
