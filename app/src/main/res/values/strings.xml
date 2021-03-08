@@ -21,8 +21,27 @@
     <!-- Agradecimento -->
     <string name="lblOremos">Oremos</string>
 
-     <!--Salve Rainha -->
-     <string name="lblInicioHome">Ao Início</string>
+    <!--Salve Rainha -->
+    <string name="lblInicioHome">Ao Início</string>
+
+    <!-- ========== Solidariedade ================== -->
+
+    <!--Mensagens ao usuários -->
+    <string name="lblTituloSolid">Solidariedade</string>
+    <string name="lblMsgSolid">A todas as pessoas que estão sofrento ao Covid-19.Ao meu pai Durval Marques da Cunha estamos orando pela sua recuperação.</string>
+
+    <!-- Solidariedade -->
+    <string name="lblTituloMsgUser">Mensagem aos Usuários</string>
+    <string name="lblMsgUser">Infelizmente estamos passando por momentos difíceis em relação Covid-19. Vamos juntos orar por todos familiares que estão sofrento e que precisam de paz, força, saúde e fé.Por intercessão da Nossa Senhora da Aparecida.Intercessão todos santos e santas que possam nos guiar sempre nesta luta.</string>
+    <string name="bntSantaRita">Santa Rita de Cássia</string>
+    <string name="bntMsgSantoTerco">Santo Terço</string>
+
+    <!-- Santa Rita de Cássia -->
+    <string name="lblTituloSantaRita">Santa Rita de Cássia</string>
+    <string name="lblOracaoSantaRita">Ó poderosa e gloriosa Santa Rita chamada Santa das causas impossíveis, advogada dos casos desesperados, auxiliadora da última hora, refúgio e abrigo da dor que arrasta para o abismo do pecado e da desesperança, com toda a confiança em Vosso poder junto ao Coração Sagrado de Jesus, a Vós recorro no caso difícil e imprevisto, que dolorosamente oprime o meu coração.</string>
+    <string name="lblPedidoSantaRita">(Faça o seu pedido)</string>
+    <string name="lblOracao2SantaRita">Obtenha a graça que desejo, pois sendo-me necessária, eu a quero. Apresentada por Vós a minha oração, o meu pedido, por Vós que sois tão amada por Deus, certamente será atendido. Dizei a Nosso Senhor que me valerei da graça para melhorar a minha vida e os meus costumes e para cantar na Terra e no Céu a Divina Misericórdia.</string>
+    <string name="lblOracao3SantaRita">Santa Rita das causas impossíveis, intercedei por nós! Amém.</string>
 
     <!-- ========== Dicas ================== -->
     <string name="lblDicaTercoPosicao">Toque no terço</string>

@@ -17,7 +17,8 @@
 
     <!-- misterio slider-->
     <color name="txtDica">#FFC868</color>
-
+    <color name="bntmsg">#730485</color>
+    <color name="bntmsgtrue">#730485</color>
 
 
 </resources>
