@@ -28,7 +28,7 @@
 
     <!--Mensagens ao usuários -->
     <string name="lblTituloSolid">Solidariedade</string>
-    <string name="lblMsgSolid">A todas as pessoas que estão sofrento ao Covid-19.Ao meu pai Durval Marques da Cunha estamos orando pela sua recuperação.</string>
+    <string name="lblMsgSolid">A todas as pessoas que estão sofrento ao Covid-19 e agradecer pela a recuperação do meu pai.</string>
 
     <!-- Solidariedade -->
     <string name="lblTituloMsgUser">Mensagem aos Usuários</string>
