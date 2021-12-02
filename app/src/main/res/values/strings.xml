@@ -17,7 +17,7 @@
     <!-- Agradecimento -->
     <string name="lblAgradecimentoTitulo">Agradecimento do Terço</string>
     <string name="AgradecimentoAnunciado">Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos agora e para sempre tomar-nos debaixo de vosso poderoso amparo e para mais vos suplicar vos saudamos com uma Salve Rainha....</string>
-
+zo
     <!-- Agradecimento -->
     <string name="lblOremos">Oremos</string>
 
@@ -27,7 +27,7 @@
     <!-- ========== Solidariedade ================== -->
 
     <!--Mensagens ao usuários -->
-    <string name="lblTituloSolid">Solidariedade</string>
+    <string name="lblTituloSolid">Solidariedade</string>         
     <string name="lblMsgSolid">A todas as pessoas que estão sofrento ao Covid-19 e agradecer pela a recuperação do meu pai.</string>
 
     <!-- Solidariedade -->

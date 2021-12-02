@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bgpadrao"
     android:orientation="vertical"
+    android:exported="true"
     tools:context=".Activity.SelecaoActivity">
 
 

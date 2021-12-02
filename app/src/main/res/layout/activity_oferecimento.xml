@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="fill"
     android:background="@drawable/bgpadrao"
+    android:exported="true"
     android:foregroundGravity="fill"
     tools:context=".Activity.OferecimentoActivity">
 

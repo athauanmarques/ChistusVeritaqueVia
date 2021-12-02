@@ -1,19 +1,19 @@
 package com.example.tercochistusveritaquevia.Activity;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static com.example.tercochistusveritaquevia.R.layout.activity_mensagem;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.tercochistusveritaquevia.R;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MensagemActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mensagem);
+        setContentView(activity_mensagem);
     }
 
     public void goSantaRita(View view){

@@ -4,95 +4,122 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgorar"
+    android:background="@drawable/msgbg"
     tools:context=".Activity.MensagemActivity">
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/alex_brush"
         android:text="@string/lblTituloMsgUser"
         android:textColor="@color/letraInicio"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/superiorbarra"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/lgap"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alex_brush"
+            android:text="@string/lblTituloSolid"
+            android:textColor="@color/letraInicio"
+            android:textSize="30sp" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16000003"
-        app:srcCompat="@drawable/orarmsg" />
-
-    <Button
-        android:id="@+id/bntSantaRita"
-        android:layout_width="0dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/bntmsg2"
-        android:onClick="goSantaRita"
-        android:text="@string/bntSantaRita"
-        android:textColor="@color/letraInicio"
-        android:textColorHighlight="@color/bntmsgtrue"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bntTerco"
+        android:layout_width="166dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:srcCompat="@drawable/msgsimbolo"
+        tools:ignore="ContentDescription" />
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/merriweather_light"
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="371dp"
+        android:layout_height="447dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/barramsg"
         android:gravity="center"
-        android:text="@string/lblMsgUser"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bntSantaRita"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_chainStyle="packed" />
-
-    <Button
-        android:id="@+id/bntTerco"
-        android:layout_width="0dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
-        android:background="@drawable/bntmsg"
-        android:onClick="goSantoTerco"
-        android:text="@string/bntMsgSantoTerco"
-        android:textColor="@color/letraInicio"
-        android:textStyle="bold"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bntSantaRita" />
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/merriweather_light"
+            android:gravity="center"
+            android:text="@string/lblMsgUser"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bntSantaRita"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bntrita"
+            android:drawingCacheQuality="high"
+            android:onClick="goSantaRita"
+            android:text="@string/bntSantaRita"
+            android:textColor="@color/letraInicio"
+            android:textColorHighlight="@color/bntmsgtrue"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/bntTercoSanto"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bnttercoap"
+            android:drawingCacheQuality="auto"
+            android:onClick="goSantoTerco"
+            android:text="@string/bntMsgSantoTerco"
+            android:textColor="@color/letraInicio"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

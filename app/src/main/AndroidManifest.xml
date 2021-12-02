@@ -8,17 +8,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.SantaActivity"></activity>
-        <activity android:name=".Activity.MensagemActivity" />
-        <activity android:name=".Activity.SolidariedadeActivity" />
-        <activity android:name=".Activity.MisterioActivity" />
-        <activity android:name=".Activity.SalveRainhaActivity" />
-        <activity android:name=".Activity.AgradecimentoActivity" />
-        <activity android:name=".Activity.TercoActivity" />
-        <activity android:name=".Activity.OferecimentoActivity" />
-        <activity android:name=".Activity.SelecaoActivity" /> <!-- <activity android:name=".Activity.SplashScreenActivity" /> -->
-        <activity android:name=".Activity.SplashScreenActivity">
+        <activity android:name=".Activity.SantaActivity" android:exported="true"/>
+        <activity android:name=".Activity.MensagemActivity" android:exported="true"/> <!-- <activity android:name=".Activity.SplashScreenActivity" /> -->
+        <activity android:name=".Activity.MisterioActivity" android:exported="true"/>
+        <activity android:name=".Activity.SalveRainhaActivity" android:exported="true"/>
+        <activity android:name=".Activity.AgradecimentoActivity" android:exported="true"/>
+        <activity android:name=".Activity.TercoActivity" android:exported="true"/>
+        <activity android:name=".Activity.OferecimentoActivity" android:exported="true"/>
+        <activity android:name=".Activity.SelecaoActivity" android:exported="true"/>
+        <activity android:name=".Activity.SplashScreenActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
