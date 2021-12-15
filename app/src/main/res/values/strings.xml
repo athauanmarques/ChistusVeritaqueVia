@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TercoChistusVeritaqueVia</string>
+    <string name="app_name">Santo Terço: Chistus</string>
 
     <!-- Splash -->
     <string name="logoDescricao">Chistus Veritaque Via</string>
@@ -54,15 +54,14 @@
     <string name="lblSobreTexto"> Olá usuários, me chamo Athauan,<br/> sou estudante em análise e desenvolvimento de sistemas e apaixonado por tecnologia. O grande o motivo na qual me fez desenvolver esse aplicativo foi por causa do meu pai que ficou internado por contrair o Covid-19, graças as orações e ao nosso bom Deus hoje ele está bem. <br/><br/> Em breve esta pandemia vai passar e a nossa fé ficará mais forte. <br/><br/>O objetivo desse aplicativo é por fins educativos e profissional, por este motivo a monetização não será aplicado. Mas de alguma maneira quiser entrar em contato, compartilhar nas redes sociais ou fazer alguma contribuição fique a vontade: </string>
     <string name="lblSobreContato">Contato:</string>
     <string name="lblSobreCompartilhe">Compartilhe e avalie:</string>
-     <string name="lblSobreContribuicao">Contribuição</string>
+    <string name="lblSobreContribuicao">Contribuição</string>
     <string name="lblSobreAgradecer">Muito Obrigado<br>Por utilizar o santo terço: Chistus Veritaque Via</br></string>
     <string name="lblSobreForteAbraco">Forte Abraço</string>
-    <string name="lblSobreVersao"><b>Versão</b> André: v10.21 | UI: AP-12.21</string>
-
+    <string name="lblSobreVersao"><b>Versão </b> André: v10.21 | UI: AP-12.21</string>
 
     <!-- ========== Dicas ================== -->
-    <string name="lblDicaTercoPosicao">Toque no terço</string>
-    <string name="lblDicaImagem">Toque na Imagem para mudar a posição</string>
+    <string name="lblDicaTercoPosicao"> </string>
+    <string name="lblDicaImagem"> </string>
     <!-- ========== Botões Terço ================== -->
     <string name="lblIdiomaPortugues">Português</string>
     <string name="lblIdiomaLatim">Latim</string>
@@ -177,5 +176,6 @@
     <!-- Botão dos Agradecimento em Português -->
     <string name="bntAgradecimentoPT">Salve Maria</string>
     <string name="bntIrAgradecimentoPT">Agradecimento</string>
+    <string name="pix">PIX</string>
 
 </resources>

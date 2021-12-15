@@ -67,7 +67,7 @@
             android:scrollbars="vertical"
             android:text="@string/lblCreio"
             android:textAllCaps="false"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
     </LinearLayout>

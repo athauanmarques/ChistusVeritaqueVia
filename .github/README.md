@@ -5,8 +5,8 @@
 Este aplicativo permite que você acompanhe o rosário vendo imagens de cada mistério e acompanhando todo o percurso com um terço virtual.
 
 ## Objetivo
+O objetivo desse aplicativo é por fins educativos e profissional, mas o principal motivo na qual me fez desenvolver esse aplicativo foi por causa do meu pai que ficou internado por contrair o Covid-19, graças as orações e ao nosso bom Deus hoje ele está bem. 
 
-O intuído do projeto é meramente por fins educativos.
 
 ## Layout
 
@@ -25,6 +25,6 @@ Muito obrigado pela atenção
 
 ## SOBRE O AUTOR
 Athauan Marques da Cunha.
-estovirksk@gmail.com.br
+athauan.marques@gmail.com.br
 
 Idéias? Vamos discutir.

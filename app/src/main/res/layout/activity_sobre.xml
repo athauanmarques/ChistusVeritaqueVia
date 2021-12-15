@@ -14,11 +14,10 @@
         android:background="@drawable/superiorbarra"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView16"
@@ -41,35 +40,24 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout4"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="26dp"
         android:background="@drawable/ic_sobrebarra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout13"
-        app:layout_constraintVertical_bias="0.0">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout4"
-            android:layout_width="409dp"
-            android:layout_height="0dp"
-            android:background="@drawable/ic_sobrebarra">
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
 
         <ImageView
             android:id="@+id/imageView17"
             android:layout_width="wrap_content"
             android:layout_height="84dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="24dp"
             app:layout_constraintBottom_toTopOf="@+id/textView25"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/eu" />
 
         <ImageButton
@@ -79,21 +67,10 @@
             android:background="@android:color/transparent"
             android:scaleType="centerInside"
             app:layout_constraintBottom_toTopOf="@+id/textView27"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView26"
             app:srcCompat="@drawable/gmail" />
-
-        <ImageButton
-            android:id="@+id/imgPix"
-            android:layout_width="wrap_content"
-            android:layout_height="42dp"
-            android:background="@color/material_on_surface_stroke"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toTopOf="@+id/textView28"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView31"
-            app:srcCompat="@drawable/pix" />
 
         <ImageButton
             android:id="@+id/imgGooglePlay"
@@ -103,18 +80,25 @@
             android:scaleType="centerInside"
             app:layout_constraintBottom_toTopOf="@+id/textView31"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView27"
             app:srcCompat="@drawable/googleplay" />
+
+        <ImageButton
+            android:id="@+id/imgPix"
+            android:layout_width="409dp"
+            android:layout_height="32dp"
+            android:background="@color/material_on_surface_stroke"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toTopOf="@+id/textView28"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31"
+            app:srcCompat="@drawable/pix" />
 
         <TextView
             android:id="@+id/textView24"
             android:layout_width="340dp"
             android:layout_height="233dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginRight="24dp"
             android:padding="10dp"
             android:text="@string/lblSobreTexto"
             android:textSize="12sp"
@@ -212,15 +196,14 @@
             android:id="@+id/linearLayout14"
             android:layout_width="369dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="16dp"
             android:background="@drawable/barraoferecer"
             android:gravity="center"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintTop_toBottomOf="@+id/textView30">
 
             <TextView
                 android:id="@+id/textView29"

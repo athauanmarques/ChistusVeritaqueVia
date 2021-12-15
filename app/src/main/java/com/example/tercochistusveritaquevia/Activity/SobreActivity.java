@@ -3,6 +3,7 @@ package com.example.tercochistusveritaquevia.Activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ShareCompat;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
@@ -11,6 +12,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.example.tercochistusveritaquevia.R;
@@ -19,6 +21,7 @@ public class SobreActivity extends AppCompatActivity {
 
     private ImageButton imgGmail, imgGooglePlay, imgPix;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,13 +32,15 @@ public class SobreActivity extends AppCompatActivity {
         imgGooglePlay = findViewById(R.id.imgGooglePlay);
         imgPix = findViewById(R.id.imgPix);
 
+        Toast toast = Toast.makeText(this, "athauan.marques.dev@gmail.com - PIX", Toast.LENGTH_LONG);
 
 
 
         imgGmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                enviarEmail("athauan.marques.dev@gmail.com","Santo Terço: Contato");
+             enviarEmail("athauan.marques.dev@gmail.com","Santo Terço: Contato");
+
             }
         });
 
@@ -55,7 +60,6 @@ public class SobreActivity extends AppCompatActivity {
         imgPix.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(), "PIX: athauan.marques.dev@gmail.com", Toast.LENGTH_LONG);
                 toast.show();
             }
         });
@@ -64,7 +68,7 @@ public class SobreActivity extends AppCompatActivity {
     }
 
     public void enviarEmail(String addresses, String subject) {
-         Intent intent = new Intent(Intent.ACTION_SENDTO);
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_EMAIL, addresses);
         intent.putExtra(Intent.EXTRA_SUBJECT, subject);
