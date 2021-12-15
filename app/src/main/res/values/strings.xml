@@ -17,20 +17,15 @@
     <!-- Agradecimento -->
     <string name="lblAgradecimentoTitulo">Agradecimento do Terço</string>
     <string name="AgradecimentoAnunciado">Infinitas graças vos damos, Soberana Rainha, pelos benefícios que todos os dias recebemos de vossas mãos liberais. Dignai-vos agora e para sempre tomar-nos debaixo de vosso poderoso amparo e para mais vos suplicar vos saudamos com uma Salve Rainha....</string>
-zo
+    zo
     <!-- Agradecimento -->
     <string name="lblOremos">Oremos</string>
 
     <!--Salve Rainha -->
-    <string name="lblInicioHome">Ao Início</string>
-
-    <!-- ========== Solidariedade ================== -->
-
-    <!--Mensagens ao usuários -->
-    <string name="lblTituloSolid">Solidariedade</string>         
-    <string name="lblMsgSolid">A todas as pessoas que estão sofrento ao Covid-19 e agradecer pela a recuperação do meu pai.</string>
+    <string name="lblIrCarpeDiem">Carpe Diem</string>
 
     <!-- Solidariedade -->
+    <string name="lblTituloSolid">Solidariedade</string>
     <string name="lblTituloMsgUser">Mensagem aos Usuários</string>
     <string name="lblMsgUser">Infelizmente estamos passando por momentos difíceis em relação Covid-19. Vamos juntos orar por todos familiares que estão sofrento e que precisam de paz, força, saúde e fé.Por intercessão da Nossa Senhora da Aparecida.Intercessão todos santos e santas que possam nos guiar sempre nesta luta.</string>
     <string name="bntSantaRita">Santa Rita de Cássia</string>
@@ -38,15 +33,36 @@ zo
 
     <!-- Santa Rita de Cássia -->
     <string name="lblTituloSantaRita">Santa Rita de Cássia</string>
+    <string name="lblTituloSantaRitaOracao">Oração</string>
     <string name="lblOracaoSantaRita">Ó poderosa e gloriosa Santa Rita chamada Santa das causas impossíveis, advogada dos casos desesperados, auxiliadora da última hora, refúgio e abrigo da dor que arrasta para o abismo do pecado e da desesperança, com toda a confiança em Vosso poder junto ao Coração Sagrado de Jesus, a Vós recorro no caso difícil e imprevisto, que dolorosamente oprime o meu coração.</string>
     <string name="lblPedidoSantaRita">(Faça o seu pedido)</string>
     <string name="lblOracao2SantaRita">Obtenha a graça que desejo, pois sendo-me necessária, eu a quero. Apresentada por Vós a minha oração, o meu pedido, por Vós que sois tão amada por Deus, certamente será atendido. Dizei a Nosso Senhor que me valerei da graça para melhorar a minha vida e os meus costumes e para cantar na Terra e no Céu a Divina Misericórdia.</string>
     <string name="lblOracao3SantaRita">Santa Rita das causas impossíveis, intercedei por nós! Amém.</string>
 
+    <!-- Caper Diem  -->
+    <string name="lblTituloCarpeDiem">Carpe Diem</string>
+    <string name="lblSubTituloCarpeDiemMsg">Muito Obrigado</string> 
+    <string name="lblMsgCarpeDiem1">Por utilizar o santo terço: Chistus Veritaque Via</string> 
+    <string name="lblMsgCarpeDiem2">Fique a vontade selecione as opções</string>
+    <string name="bntCarpeDiemSair">Sair</string>
+    <string name="bntCarpeDiemSobre">Sobre</string>
+    <string name="bntCarpeDiemVoltarInicio">Voltar ao Início</string>
+
+    <!-- Sobre  -->
+    <string name="lblTituloSobre">Sobre</string>
+    <string name="lblSobreMsg">Mensagem do Desenvolvedor</string>
+    <string name="lblSobreTexto"> Olá usuários, me chamo Athauan,<br/> sou estudante em análise e desenvolvimento de sistemas e apaixonado por tecnologia. O grande o motivo na qual me fez desenvolver esse aplicativo foi por causa do meu pai que ficou internado por contrair o Covid-19, graças as orações e ao nosso bom Deus hoje ele está bem. <br/><br/> Em breve esta pandemia vai passar e a nossa fé ficará mais forte. <br/><br/>O objetivo desse aplicativo é por fins educativos e profissional, por este motivo a monetização não será aplicado. Mas de alguma maneira quiser entrar em contato, compartilhar nas redes sociais ou fazer alguma contribuição fique a vontade: </string>
+    <string name="lblSobreContato">Contato:</string>
+    <string name="lblSobreCompartilhe">Compartilhe e avalie:</string>
+     <string name="lblSobreContribuicao">Contribuição</string>
+    <string name="lblSobreAgradecer">Muito Obrigado<br>Por utilizar o santo terço: Chistus Veritaque Via</br></string>
+    <string name="lblSobreForteAbraco">Forte Abraço</string>
+    <string name="lblSobreVersao"><b>Versão</b> André: v10.21 | UI: AP-12.21</string>
+
+
     <!-- ========== Dicas ================== -->
     <string name="lblDicaTercoPosicao">Toque no terço</string>
     <string name="lblDicaImagem">Toque na Imagem para mudar a posição</string>
-    <string name="lblDicaTercoSlide">Para continuar arraste a tela lateralmente</string>
     <!-- ========== Botões Terço ================== -->
     <string name="lblIdiomaPortugues">Português</string>
     <string name="lblIdiomaLatim">Latim</string>

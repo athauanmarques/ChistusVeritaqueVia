@@ -4,112 +4,164 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgpadrao"
+    android:background="@drawable/splbg"
     android:exported="true"
     tools:context=".Activity.SalveRainhaActivity">
-
-    <TextView
-        android:id="@+id/txtTituloRainha"
-        android:layout_width="0dp"
-        android:layout_height="36dp"
-        android:fontFamily="@font/alex_brush"
-        android:gravity="bottom|center"
-        android:text="@string/lblSalveRainhaTitulo"
-        android:textAppearance="@style/stTitulo"
-        android:textColor="@color/textoTitulo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079"
-        tools:text="@string/lblSalveRainhaTitulo" />
-
-    <TextView
-        android:id="@+id/txtOracaoRainha"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fontFamily="@font/merriweather_light"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="@string/lblSalveRainhaOracao"
-        android:textAppearance="@style/stTextoGeral"
-        app:layout_constraintBottom_toTopOf="@+id/imgIdiomaRainha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/txtOracaoRainha"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTituloRainha"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_chainStyle="spread"
         app:srcCompat="@drawable/rainha" />
 
-    <TextView
-        android:id="@+id/txtIdiomaRainha"
+    <LinearLayout
+        android:id="@+id/linearLayout10"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/mi_icon_color_light"
+        android:background="@drawable/superiorbarra"
         android:gravity="center"
-        android:padding="5dp"
-        android:text="@string/lblIdiomaPortugues"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txtInicio"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0">
 
-    <TextView
-        android:id="@+id/txtInicio"
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="18dp"
+            app:srcCompat="@drawable/lgap" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alex_brush"
+            android:gravity="center"
+            android:text="@string/bntMsgSantoTerco"
+            android:textAppearance="@style/stTitulo"
+            android:textColor="@color/textoTitulo"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/mi_icon_color_light"
-        android:gravity="center"
-        android:padding="5dp"
-        android:text="@string/lblInicioHome"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/barramsg"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/txtIdiomaRainha"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7">
 
-    <ImageButton
-        android:id="@+id/imgIdiomaRainha"
+        <TextView
+            android:id="@+id/txtTituloRainha"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:fontFamily="@font/alex_brush"
+            android:gravity="bottom|center"
+            android:text="@string/lblSalveRainhaTitulo"
+            android:textAppearance="@style/stTitulo"
+            android:textColor="@color/textoTitulo"
+            tools:text="@string/lblSalveRainhaTitulo" />
+
+        <TextView
+            android:id="@+id/txtOracaoRainha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/merriweather_light"
+            android:gravity="center"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:text="@string/lblSalveRainhaOracao"
+            android:textAppearance="@style/stTextoGeral" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/mi_icon_color_light"
-        android:padding="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtIdiomaRainha"
-        app:layout_constraintEnd_toStartOf="@+id/imgIncio"
-        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_height="140dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/barramsg"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout11"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_portugues" />
+        app:layout_constraintVertical_bias="1.0">
 
-    <ImageButton
-        android:id="@+id/imgIncio"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/mi_icon_color_light"
-        android:padding="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/txtIdiomaRainha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgIdiomaRainha"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_inicio" />
+        <ImageButton
+            android:id="@+id/imgIdiomaRainha"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/txtIdiomaRainha"
+            app:layout_constraintEnd_toStartOf="@+id/imgIncio"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/ic_portugues" />
+
+        <TextView
+            android:id="@+id/txtIdiomaRainha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/lblIdiomaPortugues"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtInicio"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgIdiomaRainha" />
+
+        <ImageButton
+            android:id="@+id/imgIncio"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/txtInicio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgIdiomaRainha"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+        <TextView
+            android:id="@+id/txtInicio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/lblIrCarpeDiem"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/txtIdiomaRainha"
+            app:layout_constraintTop_toBottomOf="@+id/imgIncio" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

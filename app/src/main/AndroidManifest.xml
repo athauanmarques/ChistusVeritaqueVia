@@ -4,22 +4,40 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:hardwareAccelerated="false"
-        android:largeHeap="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Activity.SantaActivity" android:exported="true"/>
-        <activity android:name=".Activity.MensagemActivity" android:exported="true"/> <!-- <activity android:name=".Activity.SplashScreenActivity" /> -->
-        <activity android:name=".Activity.MisterioActivity" android:exported="true"/>
-        <activity android:name=".Activity.SalveRainhaActivity" android:exported="true"/>
-        <activity android:name=".Activity.AgradecimentoActivity" android:exported="true"/>
-        <activity android:name=".Activity.TercoActivity" android:exported="true"/>
-        <activity android:name=".Activity.OferecimentoActivity" android:exported="true"/>
-        <activity android:name=".Activity.SelecaoActivity" android:exported="true"/>
-        <activity android:name=".Activity.SplashScreenActivity" android:exported="true">
+        android:theme="@style/themeAparecida">
+        <activity
+            android:name=".Activity.SobreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CarpeDiemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SantaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.MensagemActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SalveRainhaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.AgradecimentoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.TercoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.OferecimentoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.SplashScreenActivity"
+            android:exported="true"> <!-- <activity android:name=".Activity.SplashScreenActivity" /> -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

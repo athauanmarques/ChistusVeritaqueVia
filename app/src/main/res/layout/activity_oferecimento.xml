@@ -5,70 +5,110 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="fill"
-    android:background="@drawable/bgpadrao"
-    android:exported="true"
-    android:foregroundGravity="fill"
+    android:background="@drawable/splbg"
     tools:context=".Activity.OferecimentoActivity">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/alex_brush"
-        android:text="@string/lblOferecimento"
-        android:textAppearance="@style/stTitulo"
-        android:textColor="@color/textoTitulo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
 
     <Button
         android:id="@+id/bntIniciar"
         android:layout_width="341dp"
         android:layout_height="57dp"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/bntpadrao"
+        android:background="@drawable/bntrita"
         android:onClick="iniciarCreio"
         android:text="@string/bntIniciarOF"
         android:textAppearance="@style/stBotao"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="300dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        android:layout_width="415dp"
+        android:layout_height="399dp"
+        android:layout_marginTop="52dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_chainStyle="packed"
-        app:srcCompat="@drawable/jaculatoria" />
+        app:srcCompat="@drawable/oferecer" />
 
-    <TextView
-        android:id="@+id/textView4"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:fontFamily="@font/merriweather_light"
-        android:gravity="center|center_horizontal|center_vertical"
-        android:padding="5dp"
-        android:text="@string/lblDescricaoOF"
-        android:textAppearance="@style/stTextoGeral"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:typeface="normal"
-        app:autoSizeTextType="none"
-        app:layout_constraintBottom_toTopOf="@+id/bntIniciar"
+        android:layout_height="wrap_content"
+        android:background="@drawable/superiorbarra"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="18dp"
+            app:srcCompat="@drawable/lgap" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:fontFamily="@font/alex_brush"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="@string/bntMsgSantoTerco"
+            android:textAppearance="@style/stTitulo"
+            android:textColor="@color/textoTitulo"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/barraoferecer"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alex_brush"
+            android:text="@string/lblOferecimento"
+            android:textAppearance="@style/stTitulo"
+            android:textColor="@color/textoTitulo"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:fontFamily="@font/merriweather_light"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:text="@string/lblDescricaoOF"
+            android:textAppearance="@style/stTextoGeral"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:autoSizeTextType="none" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

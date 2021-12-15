@@ -3,24 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.25493421052631576" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/barramsg.xml" value="0.2305921052631579" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/barraoferecer.xml" value="0.25493421052631576" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/barratransparente.xml" value="0.25493421052631576" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/bntrita.xml" value="0.2305921052631579" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/bnttercoap.xml" value="0.2305921052631579" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/ic_bntstterco.xml" value="0.2305921052631579" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/ic_fundolgap.xml" value="0.2305921052631579" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/ic_inicio.xml" value="0.25493421052631576" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2305921052631579" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/ic_portugues.xml" value="0.25493421052631576" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/ic_posicao.xml" value="0.25493421052631576" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/ic_splashap.xml" value="0.2305921052631579" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/ic_superiobarra.xml" value="0.2305921052631579" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/ic_voltar.xml" value="0.25493421052631576" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/drawable/superiorbarra.xml" value="0.2305921052631579" />
-        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_agradecimento.xml" value="0.1" />
-        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_mensagem.xml" value="0.24473684210526317" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_agradecimento.xml" value="0.25" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_carpe_diem.xml" value="0.25" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_mensagem.xml" value="0.25" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_misterio.xml" value="0.22039473684210525" />
-        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_oferecimento.xml" value="0.1450657894736842" />
-        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_salve_rainha.xml" value="0.1450657894736842" />
-        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_santa.xml" value="0.1450657894736842" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_oferecimento.xml" value="0.25" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_salve_rainha.xml" value="0.25" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_santa.xml" value="0.33" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_selecao.xml" value="0.1450657894736842" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_sobre.xml" value="0.25" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_solidariedade.xml" value="0.1450657894736842" />
-        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_splash_screen.xml" value="0.5" />
-        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_terco.xml" value="0.1450657894736842" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/activity_terco.xml" value="0.22" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/misterio_dom_primeiro.xml" value="0.24473684210526317" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/misterio_dom_quarto.xml" value="0.1450657894736842" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/misterio_dom_quinto.xml" value="0.1450657894736842" />
@@ -42,10 +52,12 @@
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/misterio_ter_quinto.xml" value="0.1450657894736842" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/misterio_ter_segundo.xml" value="0.1450657894736842" />
         <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/layout/misterio_ter_terceiro.xml" value="0.1450657894736842" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.15822368421052632" />
+        <entry key="..\:/Users/imgte/ChistusVeritaqueVia/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.15822368421052632" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

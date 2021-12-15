@@ -7,8 +7,7 @@
         <shape android:shape="rectangle">
             <!--            modify color to match your preferences-->
             <solid android:color="#00023D"/>
-            <corners android:bottomLeftRadius="162px"  android:bottomRightRadius="162px"/>
-            <size android:width="1451px" android:height="323px"/>
+            <corners android:topLeftRadius="98px"  android:topRightRadius="98px" android:bottomLeftRadius="162px"  android:bottomRightRadius="162px"/>
             <padding android:left="15dp"
                 android:right="15dp"
                 android:top="15dp"

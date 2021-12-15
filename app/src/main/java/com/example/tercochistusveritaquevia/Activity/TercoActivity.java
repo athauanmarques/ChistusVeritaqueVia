@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -24,7 +27,6 @@ public class TercoActivity extends AppCompatActivity {
 
     private ImageView imgIdioma, imgPosicao, imgVoltar;
     private ImageButton imgTerco;
-    private Button bntTercoMT;
     private TextView txtTitulo, txtOracao, txtSub, txtVoltar, txtPosicao, txtIdioma;
 
     @SuppressLint("WrongConstant")
@@ -36,33 +38,6 @@ public class TercoActivity extends AppCompatActivity {
        // atribuir.setTipoIdioma(false); //inicializar como idioma Português
 
         imgTerco = findViewById(id.imgTerco);
-        bntTercoMT = findViewById(R.id.bntMisterio);
-        txtTitulo = findViewById(id.txtTituloOracao);
-        txtOracao = findViewById(id.txtOracao);
-        txtSub = findViewById(R.id.txtSub);
-
-        txtVoltar = findViewById(id.txtVoltar);
-        txtPosicao = findViewById(id.txtPosicao);
-        txtIdioma = findViewById(id.txtIdioma);
-
-        imgIdioma = findViewById(id.imgIcoIdioma);
-        imgPosicao = findViewById(id.imgIcoPosicao);
-        imgVoltar = findViewById(id.imgIcoVoltar);
-
-
-            controleExibicao();
-
-    }
-
-    @SuppressLint("WrongConstant")
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        setContentView(layout.activity_terco);
-      //  atribuir.setTipoIdioma(false); //inicializar como idioma Português
-
-        imgTerco = findViewById(R.id.imgTerco);
-        bntTercoMT = findViewById(R.id.bntMisterio);
         txtTitulo = findViewById(id.txtTituloOracao);
         txtOracao = findViewById(id.txtOracao);
         txtSub = findViewById(R.id.txtSub);
@@ -76,6 +51,32 @@ public class TercoActivity extends AppCompatActivity {
         imgVoltar = findViewById(id.imgIcoVoltar);
 
         controleExibicao();
+        barraStatusTranparente();
+
+    }
+
+    @SuppressLint("WrongConstant")
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        setContentView(layout.activity_terco);
+      //  atribuir.setTipoIdioma(false); //inicializar como idioma Português
+
+        imgTerco = findViewById(R.id.imgTerco);
+        txtTitulo = findViewById(id.txtTituloOracao);
+        txtOracao = findViewById(id.txtOracao);
+        txtSub = findViewById(R.id.txtSub);
+
+        txtVoltar = findViewById(id.txtVoltar);
+        txtPosicao = findViewById(id.txtPosicao);
+        txtIdioma = findViewById(id.txtIdioma);
+
+        imgIdioma = findViewById(id.imgIcoIdioma);
+        imgPosicao = findViewById(id.imgIcoPosicao);
+        imgVoltar = findViewById(id.imgIcoVoltar);
+
+        controleExibicao();
+        barraStatusTranparente();
 
     }
 
@@ -101,14 +102,6 @@ public class TercoActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 atualizarTexto();
-            }
-        });
-
-        bntTercoMT.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(TercoActivity.this, AgradecimentoActivity.class);
-                startActivity(intent);
             }
         });
 
@@ -226,15 +219,8 @@ public class TercoActivity extends AppCompatActivity {
            //Exbir e  esconder Botão agradecimento
                 if (atribuir.getExibirComponente() == 2) {
                     if (atribuir.getExibirBotao() == 2) {
-                        bntTercoMT.setVisibility(View.VISIBLE);
-                        txtSub.setVisibility(View.GONE);
-
-                        txtVoltar.setVisibility(View.GONE);
-                        txtPosicao.setVisibility(View.GONE);
-                        txtIdioma.setVisibility(View.GONE);
-                        imgIdioma.setVisibility(View.GONE);
-                        imgPosicao.setVisibility(View.GONE);
-                        imgVoltar.setVisibility(View.GONE);
+                        Intent intent = new Intent(TercoActivity.this, AgradecimentoActivity.class);
+                        startActivity(intent);
                     }
                 } else {
                     txtSub.setVisibility(View.VISIBLE);
@@ -242,6 +228,18 @@ public class TercoActivity extends AppCompatActivity {
 
 
 
+            }
+
+            public void barraStatusTranparente(){
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                    Window w = getWindow();
+                    w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
+                }
+
+                getWindow().setFlags(
+                        WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                        WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+                );
             }
 
 

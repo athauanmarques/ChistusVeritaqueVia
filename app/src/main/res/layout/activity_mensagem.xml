@@ -25,8 +25,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/superiorbarra"
         android:gravity="center"
         android:orientation="vertical"
@@ -39,7 +39,8 @@
         <ImageView
             android:id="@+id/imageView10"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="18dp"
             app:srcCompat="@drawable/lgap"
             tools:ignore="ContentDescription" />
 
@@ -50,14 +51,14 @@
             android:fontFamily="@font/alex_brush"
             android:text="@string/lblTituloSolid"
             android:textColor="@color/letraInicio"
-            android:textSize="30sp" />
+            android:textSize="25sp" />
     </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="166dp"
-        android:layout_height="226dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/textView21"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -69,11 +70,11 @@
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="371dp"
-        android:layout_height="447dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:background="@drawable/barramsg"
         android:gravity="center"
         android:orientation="vertical"
@@ -90,6 +91,7 @@
             android:layout_margin="10dp"
             android:fontFamily="@font/merriweather_light"
             android:gravity="center"
+            android:scrollbars="vertical"
             android:text="@string/lblMsgUser"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -97,7 +99,7 @@
         <Button
             android:id="@+id/bntSantaRita"
             android:layout_width="300dp"
-            android:layout_height="45dp"
+            android:layout_height="60dp"
             android:layout_margin="10dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/bntrita"
@@ -112,7 +114,7 @@
         <Button
             android:id="@+id/bntTercoSanto"
             android:layout_width="300dp"
-            android:layout_height="45dp"
+            android:layout_height="60dp"
             android:background="@drawable/bnttercoap"
             android:drawingCacheQuality="auto"
             android:onClick="goSantoTerco"

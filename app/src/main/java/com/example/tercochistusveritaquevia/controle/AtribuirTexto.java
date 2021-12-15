@@ -91,7 +91,8 @@ public class AtribuirTexto extends ProgressoTerco{
             else if(getPosicaoTercoAtual() >= 64 && getPosicaoTercoAtual() <= 73) { fixarTexto(2); }
             else if(getPosicaoTercoAtual() == 74) {  fixarTexto(3); }
             //Agredecimentos
-            else if(getPosicaoTercoAtual() == 75) { fixarTexto(4); setExibirBotao(2); }
+            else if(getPosicaoTercoAtual() == 75) { fixarTexto(4); }
+            else if(getPosicaoTercoAtual() == 76) { setExibirBotao(2); }
     }
 
     public void fixarTexto(int op){
