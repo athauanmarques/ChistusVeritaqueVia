@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:fontFamily="@font/alex_brush"
-            android:text="@string/bntMsgSantoTerco"
+            android:text="@string/lblSubTituloCarpeDiemMsg"
             android:textAppearance="@style/stTitulo"
             android:textColor="@color/letraInicio"
             android:textSize="25sp"
