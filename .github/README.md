@@ -26,7 +26,6 @@ O objetivo desse aplicativo é por fins educativos e profissional, mas o princip
 Muito obrigado pela atenção
 
 ## SOBRE O AUTOR
-Athauan Marques da Cunha.
 athauan.marques@gmail.com.br
 
 Idéias? Vamos discutir.
