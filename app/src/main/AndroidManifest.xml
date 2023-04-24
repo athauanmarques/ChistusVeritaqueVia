@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tercochistusveritaquevia">
+    package="com.commandotech.tercochistusveritaquevia">
 
     <application
         android:allowBackup="true"
@@ -12,31 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/themeAparecida">
         <activity
-            android:name=".Activity.SobreActivity"
+            android:name="com.commandotech.tercochistusveritaquevia.Activity.SobreActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.CarpeDiemActivity"
+            android:name="com.commandotech.tercochistusveritaquevia.Activity.CarpeDiemActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.SantaActivity"
+            android:name="com.commandotech.tercochistusveritaquevia.Activity.SantaActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.MensagemActivity"
+            android:name="com.commandotech.tercochistusveritaquevia.Activity.MensagemActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.SalveRainhaActivity"
+            android:name="com.commandotech.tercochistusveritaquevia.Activity.SalveRainhaActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.AgradecimentoActivity"
+            android:name="com.commandotech.tercochistusveritaquevia.Activity.AgradecimentoActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.TercoActivity"
+            android:name="com.commandotech.tercochistusveritaquevia.Activity.TercoActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.OferecimentoActivity"
+            android:name="com.commandotech.tercochistusveritaquevia.Activity.OferecimentoActivity"
             android:exported="true" />
         <activity
-            android:name=".Activity.SplashScreenActivity"
+            android:name="com.commandotech.tercochistusveritaquevia.Activity.SplashScreenActivity"
             android:exported="true"> <!-- <activity android:name=".Activity.SplashScreenActivity" /> -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
